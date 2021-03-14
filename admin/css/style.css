@@ -1,0 +1,66 @@
+/*cherche*/
+.r{
+	display:none;
+	position: absolute;
+    background-color: #FFF;
+    width: 100%;
+    padding: 20px;
+	}
+	.r ul li  a {
+	color: #00C;
+	 font-weight:bold;	
+		}
+.mapa {
+	height: 500px;
+	width:100%;
+}
+.fond {
+	background-color: #FF6;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+	}
+
+.media-object  {
+	height: 100px;
+	width: 100px;
+}
+.delete {
+	color: #F60;
+	cursor: pointer;
+	text-align: right;
+	margin: 0px;
+	padding: 0px;
+}
+
+.media {
+	background-color: #F0F0F0;
+	margin-bottom: 3px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	padding: 5px;
+}
+
+.top_espace{
+ margin-top: 20px; 
+}
+.paged {
+font-weight: bold;
+font-size: 25px;
+}
+@media (max-width: 480px){
+.thumbnail img {
+  display: block;
+  max-width:300px;
+  max-height:200px;
+  width: auto;
+  height: auto;
+	}
+
+}

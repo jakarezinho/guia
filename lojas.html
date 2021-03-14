@@ -1,0 +1,2513 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://lojascomhistoria.pt/css/styles.css"/>
+
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+            <meta name="description" content="Lojas">
+        <meta property="og:description" content="Lojas" />
+    
+            <meta name="keywords" content="Lojas,História,Lisboa,CML,Câmara Municipal de Lisboa">
+    
+            <meta name="author" content="Lojas com História">
+    
+            <meta property="og:title" content="Descubra as Lojas com História em Lisboa - Lojas com História" />
+        <title>Descubra as Lojas com História em Lisboa - Lojas Com História</title>
+    
+        <meta property="og:image" content="/images/lch-share-01.png" />
+        <meta property="og:image" content="/images/lch-share-02.png" />
+        <meta property="og:image" content="/images/lch-share-03.png" />
+        <meta property="og:image" content="/images/lch-share-04.png" />
+        <meta property="og:image" content="/images/lch-share-05.png" />
+        <meta property="og:image" content="/images/lch-share-06.png" />
+
+    
+    <meta property="og:url" content="http://lojascomhistoria.pt/lojas" />
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    
+
+
+</head>
+    <body>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '228245314320222',
+                xfbml      : true,
+                version    : 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+        <input type="hidden" name="" class="hidden-category-filter" value=""/>
+        <input type="hidden" name="" class="hidden-location-filter" value=""/>
+
+        <div id="main" data-page="explore">
+            <header class="">
+    <div class="container">
+        <a href="/" class="logo site-link"></a>
+
+        <a href="#" class="hamburger"></a>
+
+        <nav>
+            <ul>
+                <li><a href="/lojas" class="site-link  active " data-map-filter="all">Lojas</a></li>
+                
+                <li><a href="/documentarios" class="site-link ">Documentários</a></li>
+                <li><a href="/sobre" class="site-link ">Sobre</a></li>
+                
+                <li><a  href="/lojas?lang=pt" >PT</a> <span>·</span> <a  href="/shops?lang=en" >EN</a></li>
+            </ul>
+            <div class="search">
+                <div class="form-wrapper">
+                    <form action="/lojas" method="get" class="search-form" title="Pesquisa por lojas, produtos ou serviços">
+    <input type="text" class="big search-input" name="search-term" placeholder="Pesquisa por lojas, produtos ou serviços" />
+    <button type="submit" class="btn search-submit"></button>
+</form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>                <button class="red expand-map" data-expand="Expandir mapa →" data-shops="← Lista de Lojas"></button>
+
+    <div class="explore-page">
+        <div class="container">
+            <div class="row top">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <select name="category" class="category">
+                        <option value="">Todas as categorias</option>
+                                                    <option data-icon="restauracao"  value="restauracao">Restauração</option>
+                                                    <option data-icon="saude"  value="saude-bem-estar">Saúde &amp; Bem-estar</option>
+                                                    <option data-icon="diversos"  value="diversos">Diversos</option>
+                                                    <option data-icon="servicos"  value="servicos-reparacoes">Serviços &amp; Reparações</option>
+                                                    <option data-icon="comidas"  value="comidas-bebidas">Comidas &amp; Bebidas</option>
+                                                    <option data-icon="vestuario"  value="vestuario-acessorios">Vestuário &amp; Acessórios</option>
+                                                    <option data-icon="lar"  value="lar-decoracao">Lar &amp; Decoração</option>
+                                                    <option data-icon="cultura"  value="cultura-lazer">Cultura &amp; Lazer</option>
+                                            </select>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <select name="zone" class="location">
+                        <option value="">Todas as zonas</option>
+                                                    <option    value="alcantara-belem">Ajuda, Alcântara e Belém</option>
+                                                    <option    value="alfama-castelo-graca">Alfama Castelo e Graça</option>
+                                                    <option    value="alvalade">Alvalade</option>
+                                                    <option    value="avenidas-novas">Avenidas Novas</option>
+                                                    <option    value="bairro-alto">Bairro Alto</option>
+                                                    <option    value="baixa">Baixa</option>
+                                                    <option    value="campo-de-ourique">Campo de Ourique</option>
+                                                    <option    value="castilho">Castilho</option>
+                                                    <option    value="chiado">Chiado</option>
+                                                    <option    value="estrela-amoreiras">Estrela e Amoreiras</option>
+                                                    <option    value="guerra-junqueiro-londres-roma">Guerra Junqueiro, Londres e Roma</option>
+                                                    <option    value="liberdade">Liberdade</option>
+                                                    <option    value="martim-moniz-intendente-mouraria">Martim Moniz, Intendente e Mouraria</option>
+                                                    <option    value="parque-das-nacoes-olivais">Parque das Nações e Olivais</option>
+                                                    <option    value="principe-real">Príncipe Real</option>
+                                                    <option    value="santos-cais-do-sodre">Santos e Cais do Sodré</option>
+                                                    <option    value="sao-bento">São Bento</option>
+                                                    <option    value="sete-rios-benfica">Sete Rios e Benfica</option>
+                                            </select>
+                </div>
+            </div>
+            <div class="results-wrapper">
+                <svg version="1.1" id="loading-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+	<rect id="border" x="3.5" y="3.5" fill="none" stroke="#2C2C2C" stroke-width="7" stroke-miterlimit="10" width="73" height="87"/>
+
+    <polyline class="path-1" fill="none" stroke="#2C2C2C" stroke-width="7" stroke-miterlimit="10" points="77,39.5 17.5,39.5 17.5,7 "/>
+    <polyline class="path-2" fill="none" stroke="#2C2C2C" stroke-width="7" stroke-miterlimit="10" points="62.5,87 62.5,53.5 3,53.5 "/>
+    <line class="path-3" fill="none" stroke="#2C2C2C" stroke-width="7" stroke-miterlimit="10" x1="62.5" y1="7" x2="62.5" y2="36"/>
+    <line class="path-4" fill="none" stroke="#2C2C2C" stroke-width="7" stroke-miterlimit="10" x1="17.5" y1="87" x2="17.5" y2="54"/>
+</svg>                <div id="ajax-explore-results">
+                    <div class="header">
+        <h1>Lojas</h1>
+    </div>
+
+<div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-44">
+                <a href="/lojas/a-brasileira" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/5329ac4816a853848a12e575d843ce24.jpg"  alt="A Brasileira">
+
+                    <h4>A Brasileira</h4>
+                    <p class="label brown category">Café</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-31">
+                <a href="/lojas/a-carioca" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/bfdb3490aaf6887b1f175ae75cae9e34.jpg"  alt="A Carioca">
+
+                    <h4>A Carioca</h4>
+                    <p class="label brown category">Chás e cafés</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-32">
+                <a href="/lojas/a-ginjinha" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/9aa7975a1c85c1799f72259d37445241.jpg"  alt="A Ginjinha">
+
+                    <h4>A Ginjinha</h4>
+                    <p class="label brown category">Bebidas</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-33">
+                <a href="/lojas/a-ginjinha-sem-rival" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/2ecf86d43364fedf0333c13cddfa72ca.jpg"  alt="A Ginjinha Sem Rival">
+
+                    <h4>A Ginjinha Sem Rival</h4>
+                    <p class="label brown category">Bebidas</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-35">
+                <a href="/lojas/a-minhota" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/101e69e9e2a0f53c79bddaca4eaad9b0.jpg"  alt="A Minhota">
+
+                    <h4>A Minhota</h4>
+                    <p class="label brown category">Café</p>
+                    <p class="label grey location">Liberdade</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-36">
+                <a href="/lojas/andre-opticas-optica-do-chiado" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/8b1e5a7cc5c3f9f3238b2d246b759782.jpg"  alt="André Ópticas (Óptica do Chiado)">
+
+                    <h4>André Ópticas (Óptica do Chiado)</h4>
+                    <p class="label brown category">Óptica</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-37">
+                <a href="/lojas/anibal-gravador" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/a5864a3144eaed238492cd3ccebb113d.jpg"  alt="Aníbal Gravador">
+
+                    <h4>Aníbal Gravador</h4>
+                    <p class="label brown category">Gravador</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-48">
+                <a href="/lojas/arqui-chique" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/faf53b74ed437f91864ae4fceb2b1f4d.jpg"  alt="Arqui Chique">
+
+                    <h4>Arqui Chique</h4>
+                    <p class="label brown category">Retrosaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-1">
+                <a href="/lojas/au-petit-peintre" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/5e1e7120d61524b43cafbf535f440da1.jpg"  alt="Au Petit Peintre">
+
+                    <h4>Au Petit Peintre</h4>
+                    <p class="label brown category">Papelaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-42">
+                <a href="/lojas/a-veneziana" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/43fb8cf0c1e9dbcf193dfeb641a8d62a.jpg"  alt="A Veneziana">
+
+                    <h4>A Veneziana</h4>
+                    <p class="label brown category">Gelataria</p>
+                    <p class="label grey location">Liberdade</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-41">
+                <a href="/lojas/bar-americano" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/afd1e2861b2c0dc70417f161979fab7d.jpg"  alt="Bar Americano">
+
+                    <h4>Bar Americano</h4>
+                    <p class="label brown category">Bar</p>
+                    <p class="label grey location">Santos e Cais do Sodré</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-43">
+                <a href="/lojas/barbearia-campos" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/fc75e1991085eb2d6cd2696f564ed171.jpg"  alt="Barbearia Campos">
+
+                    <h4>Barbearia Campos</h4>
+                    <p class="label brown category">Barbearia</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-4">
+                <a href="/lojas/british-bar" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/ef4cf3c5fd52fb146842c94e351cefa5.jpg"  alt="British Bar">
+
+                    <h4>British Bar</h4>
+                    <p class="label brown category">Bar</p>
+                    <p class="label grey location">Santos e Cais do Sodré</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-45">
+                <a href="/lojas/cafe-nicola" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/aef6e14c97208c5cfa2bee416d5b89c3.jpg"  alt="Café Nicola">
+
+                    <h4>Café Nicola</h4>
+                    <p class="label brown category">Café</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-46">
+                <a href="/lojas/cafe-restaurante-martinho-da-arcada" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/04678fc3ab4a81bbae34f4e25eff310c.jpg"  alt="Café Restaurante Martinho da Arcada">
+
+                    <h4>Café Restaurante Martinho da Arcada</h4>
+                    <p class="label brown category">Café, Restaurante</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-47">
+                <a href="/lojas/camisaria-pitta" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/58af9f205fe6cac112c9e4c03811b422.jpg"  alt="Camisaria Pitta">
+
+                    <h4>Camisaria Pitta</h4>
+                    <p class="label brown category">Camisaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-7">
+                <a href="/lojas/casa-achilles" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/55d5b9d6c226675bbe48a0c0e9ac2bb2.jpg"  alt="Casa Achilles">
+
+                    <h4>Casa Achilles</h4>
+                    <p class="label brown category">Ferragens</p>
+                    <p class="label grey location">Príncipe Real</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-49">
+                <a href="/lojas/casa-buttuller" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/5e1c724e1c3ef8721eb6c10e6b0a67e8.jpg"  alt="Casa Buttuller">
+
+                    <h4>Casa Buttuller</h4>
+                    <p class="label brown category">Artigos Militares</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-50">
+                <a href="/lojas/casa-forra" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/c63dad38e0c4f919e29480a8ea6ebf70.jpg"  alt="Casa Forra">
+
+                    <h4>Casa Forra</h4>
+                    <p class="label brown category">Tecidos, Peles</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-51">
+                <a href="/lojas/casa-frazao" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/a556f0a10458e275e515fd973b0fb689.jpg"  alt="Casa Frazão">
+
+                    <h4>Casa Frazão</h4>
+                    <p class="label brown category">Tecidos</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-52">
+                <a href="/lojas/casa-havaneza" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/0066334a7df4fab4ed9fec4b492d8661.jpg"  alt="Casa Havaneza">
+
+                    <h4>Casa Havaneza</h4>
+                    <p class="label brown category">Tabacaria</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-53">
+                <a href="/lojas/casa-macario" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/4b6a2ccee14ec64c004006ec730dfc83.jpg"  alt="Casa Macário">
+
+                    <h4>Casa Macário</h4>
+                    <p class="label brown category">Chás e Cafés, Bebidas</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-54">
+                <a href="/lojas/casanostra" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/871e58aa24882abd9da95893859315cc.jpg"  alt="Casanostra">
+
+                    <h4>Casanostra</h4>
+                    <p class="label brown category">Restaurante</p>
+                    <p class="label grey location">Bairro Alto</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-55">
+                <a href="/lojas/casa-pereira" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/8bb6f988da2a5d838b06e284026acebd.jpg"  alt="Casa Pereira">
+
+                    <h4>Casa Pereira</h4>
+                    <p class="label brown category">Chás e Cafés, Bebidas</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-3">
+                <a href="/lojas/casa-pereira-da-conceicao" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/e15e4d820fd073be3c36358fb2fa3081.jpg"  alt="Casa Pereira da Conceição">
+
+                    <h4>Casa Pereira da Conceição</h4>
+                    <p class="label brown category">Chás e Cafés, Louça</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-56">
+                <a href="/lojas/casa-xangai" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/5b98963aa50ee253641ef8e9854b6203.jpg"  alt="Casa Xangai">
+
+                    <h4>Casa Xangai</h4>
+                    <p class="label brown category">Tecidos, Roupa do Lar</p>
+                    <p class="label grey location">Avenidas Novas</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-18">
+                <a href="/lojas/caza-das-vellas-loreto" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/4e4aca9fd059f469caf9bd0489fb382a.jpg"  alt="Caza das Vellas Loreto">
+
+                    <h4>Caza das Vellas Loreto</h4>
+                    <p class="label brown category">Velas</p>
+                    <p class="label grey location">Bairro Alto</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-57">
+                <a href="/lojas/chapelaria-azevedo-rua" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/8320499201f61b5530d9adfcbfee29e9.jpg"  alt="Chapelaria Azevedo Rua">
+
+                    <h4>Chapelaria Azevedo Rua</h4>
+                    <p class="label brown category">Chapelaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-58">
+                <a href="/lojas/confeitaria-nacional" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/4995b64d1d7a711d87597991cbff5177.jpg"  alt="Confeitaria Nacional">
+
+                    <h4>Confeitaria Nacional</h4>
+                    <p class="label brown category">Pastelaria, Restaurante</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-59">
+                <a href="/lojas/conserveira-de-lisboa" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/d71fbb00cbe1ed8712d103565f5b9936.jpg"  alt="Conserveira de Lisboa">
+
+                    <h4>Conserveira de Lisboa</h4>
+                    <p class="label brown category">Conservaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-60">
+                <a href="/lojas/drogaria-de-sao-domingos" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/8bfd0f4597f405322084643ad2eef065.jpg"  alt="Drogaria de São Domingos">
+
+                    <h4>Drogaria de São Domingos</h4>
+                    <p class="label brown category">Drogaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-61">
+                <a href="/lojas/espingardaria-central-a-montez" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/daee173bc1d690dec5ae9616e403fe32.jpg"  alt="Espingardaria Central A. Montez">
+
+                    <h4>Espingardaria Central A. Montez</h4>
+                    <p class="label brown category">Espingardaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-63">
+                <a href="/lojas/farmacia-andrade" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/c35d6b8c8f20fde5977e2a73ac1d9d8f.jpg"  alt="Farmácia Andrade">
+
+                    <h4>Farmácia Andrade</h4>
+                    <p class="label brown category">Farmácia</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-64">
+                <a href="/lojas/farmacia-barreto" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/727ddc79edc212d9d4e13bfc309dc6ba.jpg"  alt="Farmácia Barreto">
+
+                    <h4>Farmácia Barreto</h4>
+                    <p class="label brown category">Farmácia</p>
+                    <p class="label grey location">Bairro Alto</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-65">
+                <a href="/lojas/farmacia-morao" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/b11f021df45ee6f7a988d5e544f31985.jpg"  alt="Farmácia Morão">
+
+                    <h4>Farmácia Morão</h4>
+                    <p class="label brown category">Farmácia</p>
+                    <p class="label grey location">Alfama Castelo e Graça</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-66">
+                <a href="/lojas/farmacia-normal" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/8f54565ac7742007c77408cab9e5b1c9.jpg"  alt="Farmácia Normal">
+
+                    <h4>Farmácia Normal</h4>
+                    <p class="label brown category">Farmácia</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-67">
+                <a href="/lojas/ferragens-guedes" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/0ffc7bfb83c8809429eafeb2597ef301.jpg"  alt="Ferragens Guedes">
+
+                    <h4>Ferragens Guedes</h4>
+                    <p class="label brown category">Ferragens</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-68">
+                <a href="/lojas/florista-pequeno-jardim" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/70a63b25360badd1ca6a4f5db40234a4.jpg"  alt="Florista Pequeno Jardim">
+
+                    <h4>Florista Pequeno Jardim</h4>
+                    <p class="label brown category">Florista</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-69">
+                <a href="/lojas/fotografia-triunfo" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/71f1ce2607ddfb73cc1bd6da0fddc2b9.jpg"  alt="Fotografia Triunfo">
+
+                    <h4>Fotografia Triunfo</h4>
+                    <p class="label brown category">Fotógrafo, Fotografia</p>
+                    <p class="label grey location">São Bento</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-70">
+                <a href="/lojas/francisco-soares-da-silva" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/852bd40a29a71a80ed291833dc7dc018.jpg"  alt="Francisco Soares da Silva">
+
+                    <h4>Francisco Soares da Silva</h4>
+                    <p class="label brown category">Passamanarias</p>
+                    <p class="label grey location">Estrela e Amoreiras</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-71">
+                <a href="/lojas/franco-gravador" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/0a96047363f0f498e448682a1ba5d36c.jpg"  alt="Franco Gravador">
+
+                    <h4>Franco Gravador</h4>
+                    <p class="label brown category">Gravador</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-72">
+                <a href="/lojas/galeto" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/c25e8c450f562f810fecb4fd2f2fe017.jpg"  alt="Galeto">
+
+                    <h4>Galeto</h4>
+                    <p class="label brown category">Snack-Bar, Restaurante</p>
+                    <p class="label grey location">Avenidas Novas</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-73">
+                <a href="/lojas/ginjinha-rubi" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/64ad53ab4dbf243a7d316a417e3f6129.jpg"  alt="Ginjinha Rubi">
+
+                    <h4>Ginjinha Rubi</h4>
+                    <p class="label brown category">Bebidas</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-6">
+                <a href="/lojas/hospital-das-bonecas" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/6b3d2380802017ce5df89bc1f82924c7.jpg"  alt="Hospital das Bonecas">
+
+                    <h4>Hospital das Bonecas</h4>
+                    <p class="label brown category">Brinquedos</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-74">
+                <a href="/lojas/joalharia-do-carmo" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/af4efe8169ab79ea02eac9cbfeee0841.jpg"  alt="Joalharia do Carmo">
+
+                    <h4>Joalharia do Carmo</h4>
+                    <p class="label brown category">Joalharia</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-75">
+                <a href="/lojas/joalharia-ferreira-marques" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/905cbd682e0837452c768c39f09d6d50.jpg"  alt="Joalharia Ferreira Marques">
+
+                    <h4>Joalharia Ferreira Marques</h4>
+                    <p class="label brown category">Joalharia, Ourivesaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-76">
+                <a href="/lojas/leao-douro" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/957f4a4853055c28cb738b9847f9c326.jpg"  alt="Leão d’Ouro">
+
+                    <h4>Leão d’Ouro</h4>
+                    <p class="label brown category">Restaurante</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-77">
+                <a href="/lojas/leitao-irmao" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/4b53c43f8b50cf3463a66d8126051cd9.jpg"  alt="Leitão &amp; Irmão">
+
+                    <h4>Leitão &amp; Irmão</h4>
+                    <p class="label brown category">Ourivesaria, Joalharia</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-78">
+                <a href="/lojas/leitaria-a-camponeza" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/2262797f69b0d4a75da3eaf635a8cc9e.jpg"  alt="Leitaria &quot;A Camponeza&quot;">
+
+                    <h4>Leitaria &quot;A Camponeza&quot;</h4>
+                    <p class="label brown category">Restaurante</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-79">
+                <a href="/lojas/livraria-aillaud-lellos" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/f84c4c20d4ce9b502b0d7f2182ea64ab.jpg"  alt="Livraria Aillaud &amp; Lellos">
+
+                    <h4>Livraria Aillaud &amp; Lellos</h4>
+                    <p class="label brown category">Livraria</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-80">
+                <a href="/lojas/livraria-ferin" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/83dc9aacebb0e36b08d6b3b999177b79.jpg"  alt="Livraria Ferin">
+
+                    <h4>Livraria Ferin</h4>
+                    <p class="label brown category">Livraria</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-81">
+                <a href="/lojas/londres-salao" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/20dc471c175bad273819e7fdd02af021.jpg"  alt="Londres Salão">
+
+                    <h4>Londres Salão</h4>
+                    <p class="label brown category">Tecidos</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-82">
+                <a href="/lojas/luvaria-ulisses" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/5acdbbd8bb37ac70e17e1fdaa9013933.jpg"  alt="Luvaria Ulisses">
+
+                    <h4>Luvaria Ulisses</h4>
+                    <p class="label brown category">Luvaria</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-26">
+                <a href="/lojas/manteigaria-silva" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/883c93361e4f3aea31a0c155b92c39e1.jpg"  alt="Manteigaria Silva">
+
+                    <h4>Manteigaria Silva</h4>
+                    <p class="label brown category">Mercearia, Charcutaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-84">
+                <a href="/lojas/manuel-tavares" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/6a6bdd75b6db89a8136c6e791cef808c.jpg"  alt="Manuel Tavares">
+
+                    <h4>Manuel Tavares</h4>
+                    <p class="label brown category">Mercearia, Charcutaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-9">
+                <a href="/lojas/optica-jomil" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/8f87331c22d40774a661a727e6945bb5.jpg"  alt="Óptica Jomil">
+
+                    <h4>Óptica Jomil</h4>
+                    <p class="label brown category">Oculista, Óptica</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-85">
+                <a href="/lojas/ourivesaria-barreto-goncalves" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/7ce22627e8070133b742d02a2631d753.jpg"  alt="Ourivesaria Barreto &amp; Gonçalves">
+
+                    <h4>Ourivesaria Barreto &amp; Gonçalves</h4>
+                    <p class="label brown category">Ourivesaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-86">
+                <a href="/lojas/ourivesaria-sarmento" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/0730598fd25337f2c1aae577acc352a5.jpg"  alt="Ourivesaria Sarmento">
+
+                    <h4>Ourivesaria Sarmento</h4>
+                    <p class="label brown category">Ourivesaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-87">
+                <a href="/lojas/panificacao-mecanica" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/9eec5e08007e805628176ba9cef7bf7e.jpg"  alt="Panificação Mecânica">
+
+                    <h4>Panificação Mecânica</h4>
+                    <p class="label brown category">Padaria</p>
+                    <p class="label grey location">Campo de Ourique</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-88">
+                <a href="/lojas/paris-em-lisboa" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/e9dee17fbfba0b0e3be3a5a3a64222ac.jpg"  alt="Paris em Lisboa">
+
+                    <h4>Paris em Lisboa</h4>
+                    <p class="label brown category">Roupa do Lar, Pronto-a-vestir</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-89">
+                <a href="/lojas/pasteis-de-belem" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/e6257ab47f1599c8eb6a069895e029db.jpg"  alt="Pastéis de Belém">
+
+                    <h4>Pastéis de Belém</h4>
+                    <p class="label brown category">Pastelaria</p>
+                    <p class="label grey location">Ajuda, Alcântara e Belém</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-90">
+                <a href="/lojas/pastelaria-benard" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/0d8cdae569b46926c5b9dd143b92bef3.jpg"  alt="Pastelaria Benard">
+
+                    <h4>Pastelaria Benard</h4>
+                    <p class="label brown category">Pastelaria</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-91">
+                <a href="/lojas/pastelaria-mexicana" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/5b50d60f70bfed4092f6fd7277780329.jpg"  alt="Pastelaria Mexicana">
+
+                    <h4>Pastelaria Mexicana</h4>
+                    <p class="label brown category">Pastelaria, Restaurante</p>
+                    <p class="label grey location">Guerra Junqueiro, Londres e Roma</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-92">
+                <a href="/lojas/pastelaria-versailles" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/e916052dd0da8a4dfcc55bb7adece34e.jpg"  alt="Pastelaria Versailles">
+
+                    <h4>Pastelaria Versailles</h4>
+                    <p class="label brown category">Pastelaria</p>
+                    <p class="label grey location">Avenidas Novas</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-93">
+                <a href="/lojas/pavilhao-chines" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/90b91da9a59529c501b23be9f78ec2c4.jpg"  alt="Pavilhão Chinês">
+
+                    <h4>Pavilhão Chinês</h4>
+                    <p class="label brown category">Bar</p>
+                    <p class="label grey location">Príncipe Real</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-94">
+                <a href="/lojas/perola-de-sao-mamede" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/21d2bbff76e6da0919e68d02a29329a8.jpg"  alt="Pérola de São Mamede">
+
+                    <h4>Pérola de São Mamede</h4>
+                    <p class="label brown category">Mercearia</p>
+                    <p class="label grey location">Príncipe Real</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-2">
+                <a href="/lojas/perola-do-chaimite" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/860b0cb757274e8975264369ab3885a6.jpg"  alt="Pérola do Chaimite">
+
+                    <h4>Pérola do Chaimite</h4>
+                    <p class="label brown category">Chás e Cafés</p>
+                    <p class="label grey location">Avenidas Novas</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-95">
+                <a href="/lojas/perola-do-rossio" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/063e0fd684f4818dd63f9b081f985dae.jpg"  alt="Pérola do Rossio">
+
+                    <h4>Pérola do Rossio</h4>
+                    <p class="label brown category">Chás e Cafés</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-96">
+                <a href="/lojas/primeira-casa-das-bandeiras" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/5f217c32e4fd829e1eba7178815477e4.jpg"  alt="Primeira Casa das Bandeiras">
+
+                    <h4>Primeira Casa das Bandeiras</h4>
+                    <p class="label brown category">Bandeiras</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-5">
+                <a href="/lojas/principe-real-enxovais" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/6d46f52910347ece0a832e1a67715727.jpg"  alt="Príncipe Real Enxovais">
+
+                    <h4>Príncipe Real Enxovais</h4>
+                    <p class="label brown category">Enxovais, Roupa do Lar</p>
+                    <p class="label grey location">Príncipe Real</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-97">
+                <a href="/lojas/quiosque-tivoli" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/e97f5035e7438ca44da47315211f245f.jpg"  alt="Quiosque Tivoli">
+
+                    <h4>Quiosque Tivoli</h4>
+                    <p class="label brown category">Casa de Jogo, Tabacaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-98">
+                <a href="/lojas/restaurante-estrela-da-se" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/a8074d33cc0357f21cb519b07aeb2371.jpg"  alt="Restaurante Estrela da Sé">
+
+                    <h4>Restaurante Estrela da Sé</h4>
+                    <p class="label brown category">Restaurante</p>
+                    <p class="label grey location">Alfama Castelo e Graça</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-99">
+                <a href="/lojas/restaurante-faz-frio" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/5940e8b33d2845c9a5b382e30e08cdf2.jpg"  alt="Restaurante Faz Frio">
+
+                    <h4>Restaurante Faz Frio</h4>
+                    <p class="label brown category">Restaurante</p>
+                    <p class="label grey location">Príncipe Real</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-100">
+                <a href="/lojas/restaurante-joao-do-grao" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/d5306dddc0250531025c19cecaba56e1.jpg"  alt="Restaurante João do Grão">
+
+                    <h4>Restaurante João do Grão</h4>
+                    <p class="label brown category">Restaurante</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-101">
+                <a href="/lojas/restaurante-tavares" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/74f496536eb2252590c4f90e342df364.jpg"  alt="Restaurante Tavares">
+
+                    <h4>Restaurante Tavares</h4>
+                    <p class="label brown category">Restaurante</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-102">
+                <a href="/lojas/retrosaria-bijou" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/c7e9a8e442a0afae169f38133e5980da.jpg"  alt="Retrosaria Bijou">
+
+                    <h4>Retrosaria Bijou</h4>
+                    <p class="label brown category">Retrosaria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-103">
+                <a href="/lojas/sapataria-do-carmo" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/facae7335890ea737a3c58d52fc5c5fb.jpg"  alt="Sapataria do Carmo">
+
+                    <h4>Sapataria do Carmo</h4>
+                    <p class="label brown category">Sapataria</p>
+                    <p class="label grey location">Chiado</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-104">
+                <a href="/lojas/sapataria-lord" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/d08051accb6ab9ada2eeaff4adfed94e.jpg"  alt="Sapataria Lord">
+
+                    <h4>Sapataria Lord</h4>
+                    <p class="label brown category">Sapataria</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-105">
+                <a href="/lojas/soares-rebelo" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/5c74caba22ae98fd0ef0f88cdcb07a60.jpg"  alt="Soares &amp; Rebelo">
+
+                    <h4>Soares &amp; Rebelo</h4>
+                    <p class="label brown category">Sementes</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-106">
+                <a href="/lojas/tabacaria-martins" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/ff7502d0feb786a25644944f05f7b42a.jpg"  alt="Tabacaria Martins">
+
+                    <h4>Tabacaria Martins</h4>
+                    <p class="label brown category">Tabacaria, Quiosque</p>
+                    <p class="label grey location">Bairro Alto</p>
+                </a>
+            </article>
+        </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+            <article class="result" data-id="store-id-107">
+                <a href="/lojas/tabacaria-monaco" class="site-link">
+                    <img class="lazy" src="/images/shop-placeholder.jpg" data-src="/small/uploads/images/08deccef326a995eede7c9021591a0e3.jpg"  alt="Tabacaria Mónaco">
+
+                    <h4>Tabacaria Mónaco</h4>
+                    <p class="label brown category">Tabacaria, Quiosque</p>
+                    <p class="label grey location">Baixa</p>
+                </a>
+            </article>
+        </div>
+        <input id="stores-json" type="hidden" value="[{&quot;id&quot;:44,&quot;name&quot;:&quot;A Brasileira&quot;,&quot;lat&quot;:38.71064,&quot;lng&quot;:-9.14211,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/5329ac4816a853848a12e575d843ce24.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Caf\u00e9&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Garrett 120\/122\u003Cbr\u003E1200-205 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 346 9541&quot;,&quot;email&quot;:&quot;abrasileira.chiado@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/a-brasileira&quot;},{&quot;id&quot;:31,&quot;name&quot;:&quot;A Carioca&quot;,&quot;lat&quot;:38.71105,&quot;lng&quot;:-9.14302,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/bfdb3490aaf6887b1f175ae75cae9e34.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Ch\u00e1s e caf\u00e9s&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua da Miseric\u00f3rdia 9, \u003Cbr\u003E1200-270 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 0377&quot;,&quot;email&quot;:&quot;acarioca@mail.telepac.pt&quot;,&quot;link&quot;:&quot;\/lojas\/a-carioca&quot;},{&quot;id&quot;:32,&quot;name&quot;:&quot;A Ginjinha&quot;,&quot;lat&quot;:38.71464,&quot;lng&quot;:-9.1391,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/9aa7975a1c85c1799f72259d37445241.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Bebidas&quot;,&quot;address&quot;:&quot;\u003Cp\u003ELargo de S\u00e3o Domingos 8\u003Cbr\u003E1100-201 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 814 5374&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/a-ginjinha&quot;},{&quot;id&quot;:33,&quot;name&quot;:&quot;A Ginjinha Sem Rival&quot;,&quot;lat&quot;:38.71508,&quot;lng&quot;:-9.13961,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/2ecf86d43364fedf0333c13cddfa72ca.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Bebidas&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua das Portas de Santo Ant\u00e3o 7\u003Cbr\u003E1150-268 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 346 8231&quot;,&quot;email&quot;:&quot;ginjasemrival@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/a-ginjinha-sem-rival&quot;},{&quot;id&quot;:35,&quot;name&quot;:&quot;A Minhota&quot;,&quot;lat&quot;:38.71991,&quot;lng&quot;:-9.14379,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Liberdade&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/101e69e9e2a0f53c79bddaca4eaad9b0.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Caf\u00e9&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua de S\u00e3o Jos\u00e9 138\/140\u003Cbr\u003E1150-326 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 6197&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/a-minhota&quot;},{&quot;id&quot;:36,&quot;name&quot;:&quot;Andr\u00e9 \u00d3pticas (\u00d3ptica do Chiado)&quot;,&quot;lat&quot;:38.71067,&quot;lng&quot;:-9.14097,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/8b1e5a7cc5c3f9f3238b2d246b759782.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;\u00d3ptica&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Garret 63\/65\u003Cbr\u003E1200-203 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 326 4000&quot;,&quot;email&quot;:&quot;chiado@andreopticas.com&quot;,&quot;link&quot;:&quot;\/lojas\/andre-opticas-optica-do-chiado&quot;},{&quot;id&quot;:37,&quot;name&quot;:&quot;An\u00edbal Gravador&quot;,&quot;lat&quot;:38.71003,&quot;lng&quot;:-9.13917,&quot;icon&quot;:&quot;icon-servicos-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/a5864a3144eaed238492cd3ccebb113d.jpg&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;activity&quot;:&quot;Gravador&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Nova do Almada 64\u003Cbr\u003E1200-289 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 6162&quot;,&quot;email&quot;:&quot;anibalgravador@netcabo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/anibal-gravador&quot;},{&quot;id&quot;:48,&quot;name&quot;:&quot;Arqui Chique&quot;,&quot;lat&quot;:38.70964,&quot;lng&quot;:-9.13689,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/faf53b74ed437f91864ae4fceb2b1f4d.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Retrosaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua da Concei\u00e7\u00e3o 83\u003Cbr\u003E1100-152 Lisboa \u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 1773&quot;,&quot;email&quot;:&quot;coucellos.coelho@mail.telepac.pt&quot;,&quot;link&quot;:&quot;\/lojas\/arqui-chique&quot;},{&quot;id&quot;:1,&quot;name&quot;:&quot;Au Petit Peintre&quot;,&quot;lat&quot;:38.71009,&quot;lng&quot;:-9.13853,&quot;icon&quot;:&quot;icon-cultura-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/5e1e7120d61524b43cafbf535f440da1.jpg&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;activity&quot;:&quot;Papelaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua de S\u00e3o Nicolau 104,\u003Cbr\u003E1100-549 Lisboa\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;+351 21 342 37 67&quot;,&quot;email&quot;:&quot;aupetitpeintre@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/au-petit-peintre&quot;},{&quot;id&quot;:42,&quot;name&quot;:&quot;A Veneziana&quot;,&quot;lat&quot;:38.71485,&quot;lng&quot;:-9.14146,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Liberdade&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/43fb8cf0c1e9dbcf193dfeb641a8d62a.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Gelataria&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPra\u00e7a dos Restauradores 8\u003Cbr\u003E1250-187 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 2860&quot;,&quot;email&quot;:&quot;aveneziana@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/a-veneziana&quot;},{&quot;id&quot;:41,&quot;name&quot;:&quot;Bar Americano&quot;,&quot;lat&quot;:38.7068,&quot;lng&quot;:-9.14276,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Santos e Cais do Sodr\u00e9&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/afd1e2861b2c0dc70417f161979fab7d.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Bar&quot;,&quot;address&quot;:&quot;\u003Cp\u003ER. Bernardino Costa 35\u003Cbr\u003E1200-130 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 96 946 2182&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/bar-americano&quot;},{&quot;id&quot;:43,&quot;name&quot;:&quot;Barbearia Campos&quot;,&quot;lat&quot;:38.71034,&quot;lng&quot;:-9.14234,&quot;icon&quot;:&quot;icon-diversos-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/fc75e1991085eb2d6cd2696f564ed171.jpg&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;activity&quot;:&quot;Barbearia&quot;,&quot;address&quot;:&quot;\u003Cp\u003ELargo Chiado 4\u003Cbr\u003E1200 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 8476&quot;,&quot;email&quot;:&quot;barbearia.campos@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/barbearia-campos&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;British Bar&quot;,&quot;lat&quot;:38.70686,&quot;lng&quot;:-9.14314,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Santos e Cais do Sodr\u00e9&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/ef4cf3c5fd52fb146842c94e351cefa5.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Bar&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Bernardino Costa 52, \u003C\/p\u003E\u003Cp\u003E1200-053 Lisboa\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;+351 21 342 2367&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/british-bar&quot;},{&quot;id&quot;:45,&quot;name&quot;:&quot;Caf\u00e9 Nicola&quot;,&quot;lat&quot;:38.71313,&quot;lng&quot;:-9.13978,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/aef6e14c97208c5cfa2bee416d5b89c3.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Caf\u00e9&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPra\u00e7a Dom Pedro IV 24\/25\u003Cbr\u003E1200-091 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 346 0579&quot;,&quot;email&quot;:&quot;nicola.cafe@hotmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/cafe-nicola&quot;},{&quot;id&quot;:46,&quot;name&quot;:&quot;Caf\u00e9 Restaurante Martinho da Arcada&quot;,&quot;lat&quot;:38.70861,&quot;lng&quot;:-9.13593,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/04678fc3ab4a81bbae34f4e25eff310c.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Caf\u00e9, Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPra\u00e7a do Comercio 3\u003Cbr\u003E1100-148 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 887 9259&quot;,&quot;email&quot;:&quot;reservas@martinhodaarcada.pt&quot;,&quot;link&quot;:&quot;\/lojas\/cafe-restaurante-martinho-da-arcada&quot;},{&quot;id&quot;:47,&quot;name&quot;:&quot;Camisaria Pitta&quot;,&quot;lat&quot;:38.71153,&quot;lng&quot;:-9.1381,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/58af9f205fe6cac112c9e4c03811b422.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Camisaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Augusta 195\/197\u003Cbr\u003E1100-050 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 7526&quot;,&quot;email&quot;:&quot;pittaalfaiates.camiseiros@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/camisaria-pitta&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;Casa Achilles&quot;,&quot;lat&quot;:38.71709,&quot;lng&quot;:-9.15003,&quot;icon&quot;:&quot;icon-servicos-marker&quot;,&quot;location&quot;:&quot;Pr\u00edncipe Real&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/55d5b9d6c226675bbe48a0c0e9ac2bb2.jpg&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;activity&quot;:&quot;Ferragens&quot;,&quot;address&quot;:&quot;\u003Cdiv\u003ERua de S\u00e3o Mar\u00e7al 194, \u003Cbr\u003E1200-494 Lisboa\u003C\/div\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 5394&quot;,&quot;email&quot;:&quot;info@casa-achilles.com&quot;,&quot;link&quot;:&quot;\/lojas\/casa-achilles&quot;},{&quot;id&quot;:49,&quot;name&quot;:&quot;Casa Buttuller&quot;,&quot;lat&quot;:38.71495,&quot;lng&quot;:-9.13842,&quot;icon&quot;:&quot;icon-diversos-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/5e1c724e1c3ef8721eb6c10e6b0a67e8.jpg&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;activity&quot;:&quot;Artigos Militares&quot;,&quot;address&quot;:&quot;\u003Cp\u003ER. Barros Queir\u00f3s 37\u003Cbr\u003E1100-076 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 3471&quot;,&quot;email&quot;:&quot;geral@casabuttuller.com&quot;,&quot;link&quot;:&quot;\/lojas\/casa-buttuller&quot;},{&quot;id&quot;:50,&quot;name&quot;:&quot;Casa Forra&quot;,&quot;lat&quot;:38.71382,&quot;lng&quot;:-9.13647,&quot;icon&quot;:&quot;icon-servicos-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/c63dad38e0c4f919e29480a8ea6ebf70.jpg&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;activity&quot;:&quot;Tecidos, Peles&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPo\u00e7o do Borrat\u00e9m 32\u003Cbr\u003E1100-240 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 218882734&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/casa-forra&quot;},{&quot;id&quot;:51,&quot;name&quot;:&quot;Casa Fraz\u00e3o&quot;,&quot;lat&quot;:38.71251,&quot;lng&quot;:-9.13849,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/a556f0a10458e275e515fd973b0fb689.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Tecidos&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Augusta 259\/265\u003Cbr\u003E1100-052 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 1639&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/casa-frazao&quot;},{&quot;id&quot;:52,&quot;name&quot;:&quot;Casa Havaneza&quot;,&quot;lat&quot;:38.71059,&quot;lng&quot;:-9.1422,&quot;icon&quot;:&quot;icon-cultura-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/0066334a7df4fab4ed9fec4b492d8661.jpg&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;activity&quot;:&quot;Tabacaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ELargo do Chiado 25\u003Cbr\u003E1200-108 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 0340&quot;,&quot;email&quot;:&quot;chiado@casahavaneza.com&quot;,&quot;link&quot;:&quot;\/lojas\/casa-havaneza&quot;},{&quot;id&quot;:53,&quot;name&quot;:&quot;Casa Mac\u00e1rio&quot;,&quot;lat&quot;:38.71265,&quot;lng&quot;:-9.13838,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/4b6a2ccee14ec64c004006ec730dfc83.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Ch\u00e1s e Caf\u00e9s, Bebidas&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Augusta 272\u003Cbr\u003E1100-057 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 047 9867&quot;,&quot;email&quot;:&quot;casamacario@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/casa-macario&quot;},{&quot;id&quot;:54,&quot;name&quot;:&quot;Casanostra&quot;,&quot;lat&quot;:38.71236,&quot;lng&quot;:-9.14519,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Bairro Alto&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/871e58aa24882abd9da95893859315cc.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003ETravessa do Po\u00e7o da Cidade 60\u003Cbr\u003E1200-334 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 5931&quot;,&quot;email&quot;:&quot;italma@sapo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/casanostra&quot;},{&quot;id&quot;:55,&quot;name&quot;:&quot;Casa Pereira&quot;,&quot;lat&quot;:38.71091,&quot;lng&quot;:-9.14045,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/8bb6f988da2a5d838b06e284026acebd.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Ch\u00e1s e Caf\u00e9s, Bebidas&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Garret 38\u003Cbr\u003E1200-049 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 6694&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/casa-pereira&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Casa Pereira da Concei\u00e7\u00e3o&quot;,&quot;lat&quot;:38.71015,&quot;lng&quot;:-9.13738,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/e15e4d820fd073be3c36358fb2fa3081.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Cha\u0301s e Cafe\u0301s, Lou\u00e7a&quot;,&quot;address&quot;:&quot;Rua Augusta 102\u003Cbr\u003E1100-053 Lisboa&quot;,&quot;telefone&quot;:&quot;+351 21 342 30 00&quot;,&quot;email&quot;:&quot;guida@casapereiradaconceicao.com&quot;,&quot;link&quot;:&quot;\/lojas\/casa-pereira-da-conceicao&quot;},{&quot;id&quot;:56,&quot;name&quot;:&quot;Casa Xangai&quot;,&quot;lat&quot;:38.73577,&quot;lng&quot;:-9.14568,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Avenidas Novas&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/5b98963aa50ee253641ef8e9854b6203.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Tecidos, Roupa do Lar&quot;,&quot;address&quot;:&quot;\u003Cp\u003EAvenida da Rep\u00fablica 19-A\u003Cbr\u003E1050-185 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 314 0857&quot;,&quot;email&quot;:&quot;xangai@mail.telepac.pt&quot;,&quot;link&quot;:&quot;\/lojas\/casa-xangai&quot;},{&quot;id&quot;:18,&quot;name&quot;:&quot;Caza das Vellas Loreto&quot;,&quot;lat&quot;:38.71061,&quot;lng&quot;:-9.14486,&quot;icon&quot;:&quot;icon-lar-marker&quot;,&quot;location&quot;:&quot;Bairro Alto&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/4e4aca9fd059f469caf9bd0489fb382a.jpg&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Velas&quot;,&quot;address&quot;:&quot;Rua do Loreto 53\u003Cbr\u003E1200-036 Lisboa&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 5387&quot;,&quot;email&quot;:&quot;cazadasvellasloreto@sapo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/caza-das-vellas-loreto&quot;},{&quot;id&quot;:57,&quot;name&quot;:&quot;Chapelaria Azevedo Rua&quot;,&quot;lat&quot;:38.71452,&quot;lng&quot;:-9.1391,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/8320499201f61b5530d9adfcbfee29e9.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Chapelaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPra\u00e7a D. Pedro IV 73\u003Cbr\u003E1100-202 Lisboa\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 7511&quot;,&quot;email&quot;:&quot;azevedorua@sapo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/chapelaria-azevedo-rua&quot;},{&quot;id&quot;:58,&quot;name&quot;:&quot;Confeitaria Nacional&quot;,&quot;lat&quot;:38.71312,&quot;lng&quot;:-9.13816,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/4995b64d1d7a711d87597991cbff5177.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Pastelaria, Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPra\u00e7a da Figueira 18B\u003Cbr\u003E1100-241 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 4470&quot;,&quot;email&quot;:&quot;info@confeitarianacional.com&quot;,&quot;link&quot;:&quot;\/lojas\/confeitaria-nacional&quot;},{&quot;id&quot;:59,&quot;name&quot;:&quot;Conserveira de Lisboa&quot;,&quot;lat&quot;:38.70925,&quot;lng&quot;:-9.13472,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/d71fbb00cbe1ed8712d103565f5b9936.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Conservaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua dos Bacalhoeiros 34\/34A\u003Cbr\u003E1100-071 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 886 4009&quot;,&quot;email&quot;:&quot;info@conserveiradelisboa.pt&quot;,&quot;link&quot;:&quot;\/lojas\/conserveira-de-lisboa&quot;},{&quot;id&quot;:60,&quot;name&quot;:&quot;Drogaria de S\u00e3o Domingos&quot;,&quot;lat&quot;:38.71427,&quot;lng&quot;:-9.13864,&quot;icon&quot;:&quot;icon-diversos-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/8bfd0f4597f405322084643ad2eef065.jpg&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;activity&quot;:&quot;Drogaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ER. Dom Ant\u00e3o de Almada 4-A\u003Cbr\u003E1100-372 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 6636&quot;,&quot;email&quot;:&quot;info@drogariasaodomingos.pt&quot;,&quot;link&quot;:&quot;\/lojas\/drogaria-de-sao-domingos&quot;},{&quot;id&quot;:61,&quot;name&quot;:&quot;Espingardaria Central A. Montez&quot;,&quot;lat&quot;:38.71437,&quot;lng&quot;:-9.14025,&quot;icon&quot;:&quot;icon-diversos-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/daee173bc1d690dec5ae9616e403fe32.jpg&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;activity&quot;:&quot;Espingardaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPra\u00e7a D. Jo\u00e3o da C\u00e2mara 3\u003Cbr\u003E1200-147 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 5731&quot;,&quot;email&quot;:&quot;a.mtz@amontez.pt&quot;,&quot;link&quot;:&quot;\/lojas\/espingardaria-central-a-montez&quot;},{&quot;id&quot;:63,&quot;name&quot;:&quot;Farm\u00e1cia Andrade&quot;,&quot;lat&quot;:38.71027,&quot;lng&quot;:-9.14312,&quot;icon&quot;:&quot;icon-saude-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/c35d6b8c8f20fde5977e2a73ac1d9d8f.jpg&quot;,&quot;category&quot;:&quot;Sa\u00fade &amp; Bem-estar&quot;,&quot;activity&quot;:&quot;Farm\u00e1cia&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua do Alecrim 125\u003Cbr\u003E1200-016 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 324 1676&quot;,&quot;email&quot;:&quot;farmaciaandrade.lisboa@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/farmacia-andrade&quot;},{&quot;id&quot;:64,&quot;name&quot;:&quot;Farm\u00e1cia Barreto&quot;,&quot;lat&quot;:38.71073,&quot;lng&quot;:-9.1444,&quot;icon&quot;:&quot;icon-saude-marker&quot;,&quot;location&quot;:&quot;Bairro Alto&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/727ddc79edc212d9d4e13bfc309dc6ba.jpg&quot;,&quot;category&quot;:&quot;Sa\u00fade &amp; Bem-estar&quot;,&quot;activity&quot;:&quot;Farm\u00e1cia&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Loreto 24\/30\u00a0\u003Cbr\u003E1200-242 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 7284&quot;,&quot;email&quot;:&quot;farmaciabarretolda@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/farmacia-barreto&quot;},{&quot;id&quot;:65,&quot;name&quot;:&quot;Farm\u00e1cia Mor\u00e3o&quot;,&quot;lat&quot;:38.7169,&quot;lng&quot;:-9.13034,&quot;icon&quot;:&quot;icon-saude-marker&quot;,&quot;location&quot;:&quot;Alfama Castelo e Gra\u00e7a&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/b11f021df45ee6f7a988d5e544f31985.jpg&quot;,&quot;category&quot;:&quot;Sa\u00fade &amp; Bem-estar&quot;,&quot;activity&quot;:&quot;Farm\u00e1cia&quot;,&quot;address&quot;:&quot;\u003Cp\u003E Largo da Gra\u00e7a 63\u003Cbr\u003E1170-165 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 882 4924&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/farmacia-morao&quot;},{&quot;id&quot;:66,&quot;name&quot;:&quot;Farm\u00e1cia Normal&quot;,&quot;lat&quot;:38.71224,&quot;lng&quot;:-9.13733,&quot;icon&quot;:&quot;icon-saude-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/8f54565ac7742007c77408cab9e5b1c9.jpg&quot;,&quot;category&quot;:&quot;Sa\u00fade &amp; Bem-estar&quot;,&quot;activity&quot;:&quot;Farm\u00e1cia&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua da Prata 218\u003Cbr\u003E1100-202 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 886 2282&quot;,&quot;email&quot;:&quot;farmacia.normal.lisboa@grupo-holon.pt&quot;,&quot;link&quot;:&quot;\/lojas\/farmacia-normal&quot;},{&quot;id&quot;:67,&quot;name&quot;:&quot;Ferragens Guedes&quot;,&quot;lat&quot;:38.71565,&quot;lng&quot;:-9.1399,&quot;icon&quot;:&quot;icon-servicos-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/0ffc7bfb83c8809429eafeb2597ef301.jpg&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;activity&quot;:&quot;Ferragens&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Portas Santo Ant\u00e3o 32,\u003Cbr\u003E1150-268 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 0594&quot;,&quot;email&quot;:&quot;guedessguedes@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/ferragens-guedes&quot;},{&quot;id&quot;:68,&quot;name&quot;:&quot;Florista Pequeno Jardim&quot;,&quot;lat&quot;:38.71068,&quot;lng&quot;:-9.14095,&quot;icon&quot;:&quot;icon-lar-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/70a63b25360badd1ca6a4f5db40234a4.jpg&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Florista&quot;,&quot;address&quot;:&quot;\u003Cp\u003ER. Garrett 61\u003Cbr\u003E1200-203 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 2426&quot;,&quot;email&quot;:&quot;pequenojardimchiado@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/florista-pequeno-jardim&quot;},{&quot;id&quot;:69,&quot;name&quot;:&quot;Fotografia Triunfo&quot;,&quot;lat&quot;:38.71028,&quot;lng&quot;:-9.15066,&quot;icon&quot;:&quot;icon-servicos-marker&quot;,&quot;location&quot;:&quot;S\u00e3o Bento&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/71f1ce2607ddfb73cc1bd6da0fddc2b9.jpg&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;activity&quot;:&quot;Foto\u0301grafo, Fotografia&quot;,&quot;address&quot;:&quot;\u003Cp\u003ER. do Po\u00e7o dos Negros 69\u003Cbr\u003E1200-336 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 390 8926&quot;,&quot;email&quot;:&quot;fototriunfo@sapo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/fotografia-triunfo&quot;},{&quot;id&quot;:70,&quot;name&quot;:&quot;Francisco Soares da Silva&quot;,&quot;lat&quot;:38.72244,&quot;lng&quot;:-9.15577,&quot;icon&quot;:&quot;icon-lar-marker&quot;,&quot;location&quot;:&quot;Estrela e Amoreiras&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/852bd40a29a71a80ed291833dc7dc018.jpg&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Passamanarias&quot;,&quot;address&quot;:&quot;\u003Cp\u003ETv. F\u00e1brica dos Pentes 4A\u003Cbr\u003E1250-106 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 387 5032&quot;,&quot;email&quot;:&quot;geral@fss.com.pt&quot;,&quot;link&quot;:&quot;\/lojas\/francisco-soares-da-silva&quot;},{&quot;id&quot;:71,&quot;name&quot;:&quot;Franco Gravador&quot;,&quot;lat&quot;:38.71119,&quot;lng&quot;:-9.13722,&quot;icon&quot;:&quot;icon-servicos-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/0a96047363f0f498e448682a1ba5d36c.jpg&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;activity&quot;:&quot;Gravador&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua da Vit\u00f3ria 40\u003Cbr\u003E1100-619 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 346 1406&quot;,&quot;email&quot;:&quot;francogravador@sapo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/franco-gravador&quot;},{&quot;id&quot;:72,&quot;name&quot;:&quot;Galeto&quot;,&quot;lat&quot;:38.73572,&quot;lng&quot;:-9.14496,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Avenidas Novas&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/c25e8c450f562f810fecb4fd2f2fe017.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Snack-Bar, Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003EAvenida da Rep\u00fablica 14\u003Cbr\u003E1050-191 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 354 4444&quot;,&quot;email&quot;:&quot;galeto@netcabo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/galeto&quot;},{&quot;id&quot;:73,&quot;name&quot;:&quot;Ginjinha Rubi&quot;,&quot;lat&quot;:38.71493,&quot;lng&quot;:-9.13828,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/64ad53ab4dbf243a7d316a417e3f6129.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Bebidas&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Barros Queir\u00f3s 27\u003Cbr\u003E1100-076 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 346 3264&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/ginjinha-rubi&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Hospital das Bonecas&quot;,&quot;lat&quot;:38.71418,&quot;lng&quot;:-9.13777,&quot;icon&quot;:&quot;icon-servicos-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/6b3d2380802017ce5df89bc1f82924c7.jpg&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;activity&quot;:&quot;Brinquedos&quot;,&quot;address&quot;:&quot;\u003Cdiv\u003EPra\u00e7a da Figueira 7\u003Cbr\u003E1100-240 Lisboa\u003C\/div\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 8574&quot;,&quot;email&quot;:&quot;info@hospitaldebonecas.com&quot;,&quot;link&quot;:&quot;\/lojas\/hospital-das-bonecas&quot;},{&quot;id&quot;:74,&quot;name&quot;:&quot;Joalharia do Carmo&quot;,&quot;lat&quot;:38.71237,&quot;lng&quot;:-9.13969,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/af4efe8169ab79ea02eac9cbfeee0841.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Joalharia&quot;,&quot;address&quot;:&quot;\u003Cp\u003ER. do Carmo 87B\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u003Cbr\u003E1200-093 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 3050&quot;,&quot;email&quot;:&quot;joalhariadocarmo@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/joalharia-do-carmo&quot;},{&quot;id&quot;:75,&quot;name&quot;:&quot;Joalharia Ferreira Marques&quot;,&quot;lat&quot;:38.71289,&quot;lng&quot;:-9.13907,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/905cbd682e0837452c768c39f09d6d50.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Joalharia, Ourivesaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPra\u00e7a D. Pedro IV 7\/9\u003Cbr\u003E1100-199 Lisboa \u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 3723&quot;,&quot;email&quot;:&quot;joferreiramarques@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/joalharia-ferreira-marques&quot;},{&quot;id&quot;:76,&quot;name&quot;:&quot;Le\u00e3o d\u2019Ouro&quot;,&quot;lat&quot;:38.71403,&quot;lng&quot;:-9.14042,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/957f4a4853055c28cb738b9847f9c326.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua 1\u00ba Dezembro 103-107\u003Cbr\u003E1200-358 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 6195&quot;,&quot;email&quot;:&quot;leao_douro@sapo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/leao-douro&quot;},{&quot;id&quot;:77,&quot;name&quot;:&quot;Leit\u00e3o &amp; Irm\u00e3o&quot;,&quot;lat&quot;:38.71066,&quot;lng&quot;:-9.14264,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/4b53c43f8b50cf3463a66d8126051cd9.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Ourivesaria, Joalharia&quot;,&quot;address&quot;:&quot;\u003Cp\u003ELargo do Chiado 16\/17\u003Cbr\u003E1200-108 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 325 7870&quot;,&quot;email&quot;:&quot;geral@leitao-irmao.com&quot;,&quot;link&quot;:&quot;\/lojas\/leitao-irmao&quot;},{&quot;id&quot;:78,&quot;name&quot;:&quot;Leitaria \&quot;A Camponeza\&quot;&quot;,&quot;lat&quot;:38.71173,&quot;lng&quot;:-9.13862,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/2262797f69b0d4a75da3eaf635a8cc9e.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua dos Sapateiros 155\u003Cbr\u003E1100-577 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 92 313 2488&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/leitaria-a-camponeza&quot;},{&quot;id&quot;:79,&quot;name&quot;:&quot;Livraria Aillaud &amp; Lellos&quot;,&quot;lat&quot;:38.71185,&quot;lng&quot;:-9.13966,&quot;icon&quot;:&quot;icon-cultura-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/f84c4c20d4ce9b502b0d7f2182ea64ab.jpg&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;activity&quot;:&quot;Livraria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua do Carmo 82\u003Cbr\u003E1200-094 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 4450&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/livraria-aillaud-lellos&quot;},{&quot;id&quot;:80,&quot;name&quot;:&quot;Livraria Ferin&quot;,&quot;lat&quot;:38.71003,&quot;lng&quot;:-9.1393,&quot;icon&quot;:&quot;icon-cultura-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/83dc9aacebb0e36b08d6b3b999177b79.jpg&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;activity&quot;:&quot;Livraria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Nova do Almada 72\u003Cbr\u003E1249-098 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 4422&quot;,&quot;email&quot;:&quot;livraria.ferin@ferin.pt&quot;,&quot;link&quot;:&quot;\/lojas\/livraria-ferin&quot;},{&quot;id&quot;:81,&quot;name&quot;:&quot;Londres Sal\u00e3o&quot;,&quot;lat&quot;:38.71271,&quot;lng&quot;:-9.13856,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/20dc471c175bad273819e7fdd02af021.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Tecidos&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Augusta 277-279\u003Cbr\u003E1100-052 Lisboa \u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 3278&quot;,&quot;email&quot;:&quot;quadros.lda@mail.telepac.pt&quot;,&quot;link&quot;:&quot;\/lojas\/londres-salao&quot;},{&quot;id&quot;:82,&quot;name&quot;:&quot;Luvaria Ulisses&quot;,&quot;lat&quot;:38.71245,&quot;lng&quot;:-9.13971,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/5acdbbd8bb37ac70e17e1fdaa9013933.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Luvaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua do Carmo 87-A\u003Cbr\u003E1200-093 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 0295&quot;,&quot;email&quot;:&quot;info@luvariaulisses.com&quot;,&quot;link&quot;:&quot;\/lojas\/luvaria-ulisses&quot;},{&quot;id&quot;:26,&quot;name&quot;:&quot;Manteigaria Silva&quot;,&quot;lat&quot;:38.71406,&quot;lng&quot;:-9.1387,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/883c93361e4f3aea31a0c155b92c39e1.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Mercearia, Charcutaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Dom Ant\u00e3o de Almada 1, C e D, 1100-197\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 49 05&quot;,&quot;email&quot;:&quot;geral@manteigariasilva.pt&quot;,&quot;link&quot;:&quot;\/lojas\/manteigaria-silva&quot;},{&quot;id&quot;:84,&quot;name&quot;:&quot;Manuel Tavares&quot;,&quot;lat&quot;:38.71309,&quot;lng&quot;:-9.1383,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/6a6bdd75b6db89a8136c6e791cef808c.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Mercearia, Charcutaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua da Betesga 1A\/B\u003Cbr\u003E1100-090 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 4209&quot;,&quot;email&quot;:&quot;info@manueltavares.com&quot;,&quot;link&quot;:&quot;\/lojas\/manuel-tavares&quot;},{&quot;id&quot;:9,&quot;name&quot;:&quot;\u00d3ptica Jomil&quot;,&quot;lat&quot;:38.71204,&quot;lng&quot;:-9.13917,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/8f87331c22d40774a661a727e6945bb5.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Oculista, \u00d3ptica&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua \u00c1urea 249\u003Cbr\u003E1100-062 Lisboa\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 0719&quot;,&quot;email&quot;:&quot;email@email.pt&quot;,&quot;link&quot;:&quot;\/lojas\/optica-jomil&quot;},{&quot;id&quot;:85,&quot;name&quot;:&quot;Ourivesaria Barreto &amp; Gon\u00e7alves&quot;,&quot;lat&quot;:38.71527,&quot;lng&quot;:-9.13973,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/7ce22627e8070133b742d02a2631d753.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Ourivesaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua das Portas de Santo Ant\u00e3o 17\u003Cbr\u003E1150-264 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 4789&quot;,&quot;email&quot;:&quot;info@barretogoncalves.com&quot;,&quot;link&quot;:&quot;\/lojas\/ourivesaria-barreto-goncalves&quot;},{&quot;id&quot;:86,&quot;name&quot;:&quot;Ourivesaria Sarmento&quot;,&quot;lat&quot;:38.7121,&quot;lng&quot;:-9.13911,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/0730598fd25337f2c1aae577acc352a5.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Ourivesaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua \u00c1urea 251\u003Cbr\u003E1100-062 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 6774&quot;,&quot;email&quot;:&quot;wasarmento@net.novis.pt&quot;,&quot;link&quot;:&quot;\/lojas\/ourivesaria-sarmento&quot;},{&quot;id&quot;:87,&quot;name&quot;:&quot;Panifica\u00e7\u00e3o Mec\u00e2nica&quot;,&quot;lat&quot;:38.72031,&quot;lng&quot;:-9.1613,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Campo de Ourique&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/9eec5e08007e805628176ba9cef7bf7e.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Padaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Silva Carvalho 209\u003Cbr\u003E1250-250 Lisboa\u00a0\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 045 8708&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/panificacao-mecanica&quot;},{&quot;id&quot;:88,&quot;name&quot;:&quot;Paris em Lisboa&quot;,&quot;lat&quot;:38.71059,&quot;lng&quot;:-9.1417,&quot;icon&quot;:&quot;icon-lar-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/e9dee17fbfba0b0e3be3a5a3a64222ac.jpg&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Roupa do Lar, Pronto-a-vestir&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Garrett 77\u003Cbr\u003E1200-203 Lisboa\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 4329&quot;,&quot;email&quot;:&quot;info@parisemlisboa.pt&quot;,&quot;link&quot;:&quot;\/lojas\/paris-em-lisboa&quot;},{&quot;id&quot;:89,&quot;name&quot;:&quot;Past\u00e9is de Bel\u00e9m&quot;,&quot;lat&quot;:38.69745,&quot;lng&quot;:-9.20322,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Ajuda, Alc\u00e2ntara e Bel\u00e9m&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/e6257ab47f1599c8eb6a069895e029db.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Pastelaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua de Bel\u00e9m 84-92\u003Cbr\u003E1300-085 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 363 74 23&quot;,&quot;email&quot;:&quot;pasteisdebelem@pasteisdebelem.pt&quot;,&quot;link&quot;:&quot;\/lojas\/pasteis-de-belem&quot;},{&quot;id&quot;:90,&quot;name&quot;:&quot;Pastelaria Benard&quot;,&quot;lat&quot;:38.7107,&quot;lng&quot;:-9.14181,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/0d8cdae569b46926c5b9dd143b92bef3.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Pastelaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Garrett 104\u003Cbr\u003E1200-205 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 347 3133&quot;,&quot;email&quot;:&quot;benardescritorio@mail.telepac.pt&quot;,&quot;link&quot;:&quot;\/lojas\/pastelaria-benard&quot;},{&quot;id&quot;:91,&quot;name&quot;:&quot;Pastelaria Mexicana&quot;,&quot;lat&quot;:38.73994,&quot;lng&quot;:-9.13639,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Guerra Junqueiro, Londres e Roma&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/5b50d60f70bfed4092f6fd7277780329.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Pastelaria, Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003EAvenida Guerra Junqueiro 30C\u003Cbr\u003E1000-167 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 848 6117&quot;,&quot;email&quot;:&quot;geral@mexicana.pt&quot;,&quot;link&quot;:&quot;\/lojas\/pastelaria-mexicana&quot;},{&quot;id&quot;:92,&quot;name&quot;:&quot;Pastelaria Versailles&quot;,&quot;lat&quot;:38.73546,&quot;lng&quot;:-9.1456,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Avenidas Novas&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/e916052dd0da8a4dfcc55bb7adece34e.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Pastelaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003EAvenida da Rep\u00fablica 15-A\u003Cbr\u003E1050-185 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 354 6340&quot;,&quot;email&quot;:&quot;versailles.lda@sapo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/pastelaria-versailles&quot;},{&quot;id&quot;:93,&quot;name&quot;:&quot;Pavilh\u00e3o Chin\u00eas&quot;,&quot;lat&quot;:38.71578,&quot;lng&quot;:-9.14671,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Pr\u00edncipe Real&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/90b91da9a59529c501b23be9f78ec2c4.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Bar&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Dom Pedro V 89\u003Cbr\u003E1250-093 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 4729&quot;,&quot;email&quot;:&quot;jogti@sapo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/pavilhao-chines&quot;},{&quot;id&quot;:94,&quot;name&quot;:&quot;P\u00e9rola de S\u00e3o Mamede&quot;,&quot;lat&quot;:38.71957,&quot;lng&quot;:-9.15126,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Pr\u00edncipe Real&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/21d2bbff76e6da0919e68d02a29329a8.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Mercearia&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Nova de S\u00e3o Mamede 19-A\u003Cbr\u003E1250-172 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 388 0997&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/perola-de-sao-mamede&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;P\u00e9rola do Chaimite&quot;,&quot;lat&quot;:38.73528,&quot;lng&quot;:-9.14563,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Avenidas Novas&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/860b0cb757274e8975264369ab3885a6.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Ch\u00e1s e Caf\u00e9s&quot;,&quot;address&quot;:&quot;\u003Cp\u003EAvenida Duque de \u00c1vila 38-38A,\u003Cbr\u003E\u003Cp\u003E1050-083 Lisboa\u003C\/p\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 314 03 61&quot;,&quot;email&quot;:&quot;perola.chaimite@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/perola-do-chaimite&quot;},{&quot;id&quot;:95,&quot;name&quot;:&quot;P\u00e9rola do Rossio&quot;,&quot;lat&quot;:38.7136,&quot;lng&quot;:-9.13871,&quot;icon&quot;:&quot;icon-comidas-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/063e0fd684f4818dd63f9b081f985dae.jpg&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;activity&quot;:&quot;Ch\u00e1s e Caf\u00e9s&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPra\u00e7a Dom Pedro IV 105\u003Cbr\u003E1100-202 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 0744&quot;,&quot;email&quot;:&quot;geral@peroladorossio.pt&quot;,&quot;link&quot;:&quot;\/lojas\/perola-do-rossio&quot;},{&quot;id&quot;:96,&quot;name&quot;:&quot;Primeira Casa das Bandeiras&quot;,&quot;lat&quot;:38.71185,&quot;lng&quot;:-9.13776,&quot;icon&quot;:&quot;icon-diversos-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/5f217c32e4fd829e1eba7178815477e4.jpg&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;activity&quot;:&quot;Bandeiras&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua dos Correeiros 149-151\u003Cbr\u003E1100-164 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 7482&quot;,&quot;email&quot;:&quot;geral@primeiracasadasbandeiras.pt&quot;,&quot;link&quot;:&quot;\/lojas\/primeira-casa-das-bandeiras&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Pr\u00edncipe Real Enxovais&quot;,&quot;lat&quot;:38.71724,&quot;lng&quot;:-9.14941,&quot;icon&quot;:&quot;icon-lar-marker&quot;,&quot;location&quot;:&quot;Pr\u00edncipe Real&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/6d46f52910347ece0a832e1a67715727.jpg&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Enxovais, Roupa do Lar&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua da Escola Polit\u00e9cnica 12-14\u003Cbr\u003E1250-102 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 346 59 45&quot;,&quot;email&quot;:&quot;royalprince@sapo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/principe-real-enxovais&quot;},{&quot;id&quot;:97,&quot;name&quot;:&quot;Quiosque Tivoli&quot;,&quot;lat&quot;:38.71134,&quot;lng&quot;:-9.13719,&quot;icon&quot;:&quot;icon-cultura-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/e97f5035e7438ca44da47315211f245f.jpg&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;activity&quot;:&quot;Casa de Jogo, Tabacaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua da Prata 171\u003Cbr\u003E1100-416 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 0591&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/quiosque-tivoli&quot;},{&quot;id&quot;:98,&quot;name&quot;:&quot;Restaurante Estrela da S\u00e9&quot;,&quot;lat&quot;:38.70996,&quot;lng&quot;:-9.13422,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Alfama Castelo e Gra\u00e7a&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/a8074d33cc0357f21cb519b07aeb2371.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003ELargo de Santo Ant\u00f3nio da S\u00e9 4\u003Cbr\u003E1100-499 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 887 0455&quot;,&quot;email&quot;:&quot;estreladase@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/restaurante-estrela-da-se&quot;},{&quot;id&quot;:99,&quot;name&quot;:&quot;Restaurante Faz Frio&quot;,&quot;lat&quot;:38.71598,&quot;lng&quot;:-9.14692,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Pr\u00edncipe Real&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/5940e8b33d2845c9a5b382e30e08cdf2.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua D. Pedro V 96, \u003Cbr\u003E1250-094 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 346 1860&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/restaurante-faz-frio&quot;},{&quot;id&quot;:100,&quot;name&quot;:&quot;Restaurante Jo\u00e3o do Gr\u00e3o&quot;,&quot;lat&quot;:38.71288,&quot;lng&quot;:-9.13806,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/d5306dddc0250531025c19cecaba56e1.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua dos Correeiros 222\u003Cbr\u003E1100-170 Lisboa\u00a0\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 4757&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/restaurante-joao-do-grao&quot;},{&quot;id&quot;:101,&quot;name&quot;:&quot;Restaurante Tavares&quot;,&quot;lat&quot;:38.71133,&quot;lng&quot;:-9.14301,&quot;icon&quot;:&quot;icon-restauracao-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/74f496536eb2252590c4f90e342df364.jpg&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;activity&quot;:&quot;Restaurante&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua da Miseric\u00f3rdia 37 R\/C\u003Cbr\u003E1200-270 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 1112&quot;,&quot;email&quot;:&quot;geral@restaurantetavares.net&quot;,&quot;link&quot;:&quot;\/lojas\/restaurante-tavares&quot;},{&quot;id&quot;:102,&quot;name&quot;:&quot;Retrosaria Bijou&quot;,&quot;lat&quot;:38.70956,&quot;lng&quot;:-9.13701,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/c7e9a8e442a0afae169f38133e5980da.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Retrosaria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua da Concei\u00e7\u00e3o 91\u003Cbr\u003E1100-152 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 5049&quot;,&quot;email&quot;:&quot;retrosariabijou@mail.telepac.pt&quot;,&quot;link&quot;:&quot;\/lojas\/retrosaria-bijou&quot;},{&quot;id&quot;:103,&quot;name&quot;:&quot;Sapataria do Carmo&quot;,&quot;lat&quot;:38.71222,&quot;lng&quot;:-9.14095,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Chiado&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/facae7335890ea737a3c58d52fc5c5fb.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Sapataria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ELargo do Carmo 26\u003Cbr\u003E1200-092 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 342 3386&quot;,&quot;email&quot;:&quot;geral@sapatariadocarmo.com&quot;,&quot;link&quot;:&quot;\/lojas\/sapataria-do-carmo&quot;},{&quot;id&quot;:104,&quot;name&quot;:&quot;Sapataria Lord&quot;,&quot;lat&quot;:38.71157,&quot;lng&quot;:-9.13816,&quot;icon&quot;:&quot;icon-vestuario-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/d08051accb6ab9ada2eeaff4adfed94e.jpg&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;activity&quot;:&quot;Sapataria&quot;,&quot;address&quot;:&quot;\u003Cp\u003ERua Augusta 199-203\u003Cbr\u003E1100-050 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 346 2009&quot;,&quot;email&quot;:&quot;geral@godiva.pt&quot;,&quot;link&quot;:&quot;\/lojas\/sapataria-lord&quot;},{&quot;id&quot;:105,&quot;name&quot;:&quot;Soares &amp; Rebelo&quot;,&quot;lat&quot;:38.71402,&quot;lng&quot;:-9.13866,&quot;icon&quot;:&quot;icon-diversos-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/5c74caba22ae98fd0ef0f88cdcb07a60.jpg&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;activity&quot;:&quot;Sementes&quot;,&quot;address&quot;:&quot;\u003Cp\u003ER. do Amparo 2\u003Cbr\u003E1100-240 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 347 0514&quot;,&quot;email&quot;:&quot;geral@soaresrebelo.pt&quot;,&quot;link&quot;:&quot;\/lojas\/soares-rebelo&quot;},{&quot;id&quot;:106,&quot;name&quot;:&quot;Tabacaria Martins&quot;,&quot;lat&quot;:38.71069,&quot;lng&quot;:-9.14547,&quot;icon&quot;:&quot;icon-cultura-marker&quot;,&quot;location&quot;:&quot;Bairro Alto&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/ff7502d0feb786a25644944f05f7b42a.jpg&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;activity&quot;:&quot;Tabacaria, Quiosque&quot;,&quot;address&quot;:&quot;\u003Cp\u003ELargo do Calhariz 4\u003Cbr\u003E1200-086 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 91 970 8122&quot;,&quot;email&quot;:&quot;tabacariamartins@gmail.com&quot;,&quot;link&quot;:&quot;\/lojas\/tabacaria-martins&quot;},{&quot;id&quot;:107,&quot;name&quot;:&quot;Tabacaria M\u00f3naco&quot;,&quot;lat&quot;:38.71311,&quot;lng&quot;:-9.13965,&quot;icon&quot;:&quot;icon-cultura-marker&quot;,&quot;location&quot;:&quot;Baixa&quot;,&quot;image&quot;:&quot;\/small\/uploads\/images\/08deccef326a995eede7c9021591a0e3.jpg&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;activity&quot;:&quot;Tabacaria, Quiosque&quot;,&quot;address&quot;:&quot;\u003Cp\u003EPra\u00e7a Dom Pedro IV 21\u003Cbr\u003E1100-200 Lisboa\u003Cbr\u003E\u003C\/p\u003E&quot;,&quot;telefone&quot;:&quot;(+351) 21 346 8191&quot;,&quot;email&quot;:null,&quot;link&quot;:&quot;\/lojas\/tabacaria-monaco&quot;}]" />
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CATEGORIES SEARCH SUGGESTIONS -->
+<ul class="ui-menu categories">
+    <p class="label grey">Categorias</p>
+            <li class="ui-menu-item">
+            <a href="/lojas?category=restauracao" class="restauracao site-link" data-map-filter="restauracao">Restauração</a>
+        </li>
+            <li class="ui-menu-item">
+            <a href="/lojas?category=saude-bem-estar" class="saude site-link" data-map-filter="saude">Saúde &amp; Bem-estar</a>
+        </li>
+            <li class="ui-menu-item">
+            <a href="/lojas?category=diversos" class="diversos site-link" data-map-filter="diversos">Diversos</a>
+        </li>
+            <li class="ui-menu-item">
+            <a href="/lojas?category=servicos-reparacoes" class="servicos site-link" data-map-filter="servicos">Serviços &amp; Reparações</a>
+        </li>
+            <li class="ui-menu-item">
+            <a href="/lojas?category=comidas-bebidas" class="comidas site-link" data-map-filter="comidas">Comidas &amp; Bebidas</a>
+        </li>
+            <li class="ui-menu-item">
+            <a href="/lojas?category=vestuario-acessorios" class="vestuario site-link" data-map-filter="vestuario">Vestuário &amp; Acessórios</a>
+        </li>
+            <li class="ui-menu-item">
+            <a href="/lojas?category=lar-decoracao" class="lar site-link" data-map-filter="lar">Lar &amp; Decoração</a>
+        </li>
+            <li class="ui-menu-item">
+            <a href="/lojas?category=cultura-lazer" class="cultura site-link" data-map-filter="cultura">Cultura &amp; Lazer</a>
+        </li>
+        <input type="hidden" id="store-names" value="[{&quot;id&quot;:107,&quot;label&quot;:&quot;Tabacaria M\u00f3naco&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;link&quot;:&quot;\/lojas\/tabacaria-monaco&quot;},{&quot;id&quot;:42,&quot;label&quot;:&quot;A Veneziana&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/a-veneziana&quot;},{&quot;id&quot;:73,&quot;label&quot;:&quot;Ginjinha Rubi&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/ginjinha-rubi&quot;},{&quot;id&quot;:5,&quot;label&quot;:&quot;Pr\u00edncipe Real Enxovais&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/principe-real-enxovais&quot;},{&quot;id&quot;:53,&quot;label&quot;:&quot;Casa Mac\u00e1rio&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/casa-macario&quot;},{&quot;id&quot;:33,&quot;label&quot;:&quot;A Ginjinha Sem Rival&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/a-ginjinha-sem-rival&quot;},{&quot;id&quot;:99,&quot;label&quot;:&quot;Restaurante Faz Frio&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/restaurante-faz-frio&quot;},{&quot;id&quot;:96,&quot;label&quot;:&quot;Primeira Casa das Bandeiras&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;link&quot;:&quot;\/lojas\/primeira-casa-das-bandeiras&quot;},{&quot;id&quot;:92,&quot;label&quot;:&quot;Pastelaria Versailles&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/pastelaria-versailles&quot;},{&quot;id&quot;:37,&quot;label&quot;:&quot;An\u00edbal Gravador&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;link&quot;:&quot;\/lojas\/anibal-gravador&quot;},{&quot;id&quot;:3,&quot;label&quot;:&quot;Casa Pereira da Concei\u00e7\u00e3o&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/casa-pereira-da-conceicao&quot;},{&quot;id&quot;:59,&quot;label&quot;:&quot;Conserveira de Lisboa&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/conserveira-de-lisboa&quot;},{&quot;id&quot;:77,&quot;label&quot;:&quot;Leit\u00e3o &amp; Irm\u00e3o&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/leitao-irmao&quot;},{&quot;id&quot;:94,&quot;label&quot;:&quot;P\u00e9rola de S\u00e3o Mamede&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/perola-de-sao-mamede&quot;},{&quot;id&quot;:54,&quot;label&quot;:&quot;Casanostra&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/casanostra&quot;},{&quot;id&quot;:105,&quot;label&quot;:&quot;Soares &amp; Rebelo&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;link&quot;:&quot;\/lojas\/soares-rebelo&quot;},{&quot;id&quot;:78,&quot;label&quot;:&quot;Leitaria \&quot;A Camponeza\&quot;&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/leitaria-a-camponeza&quot;},{&quot;id&quot;:35,&quot;label&quot;:&quot;A Minhota&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/a-minhota&quot;},{&quot;id&quot;:100,&quot;label&quot;:&quot;Restaurante Jo\u00e3o do Gr\u00e3o&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/restaurante-joao-do-grao&quot;},{&quot;id&quot;:48,&quot;label&quot;:&quot;Arqui Chique&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/arqui-chique&quot;},{&quot;id&quot;:85,&quot;label&quot;:&quot;Ourivesaria Barreto &amp; Gon\u00e7alves&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/ourivesaria-barreto-goncalves&quot;},{&quot;id&quot;:49,&quot;label&quot;:&quot;Casa Buttuller&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;link&quot;:&quot;\/lojas\/casa-buttuller&quot;},{&quot;id&quot;:18,&quot;label&quot;:&quot;Caza das Vellas Loreto&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/caza-das-vellas-loreto&quot;},{&quot;id&quot;:65,&quot;label&quot;:&quot;Farm\u00e1cia Mor\u00e3o&quot;,&quot;category&quot;:&quot;Sa\u00fade &amp; Bem-estar&quot;,&quot;link&quot;:&quot;\/lojas\/farmacia-morao&quot;},{&quot;id&quot;:58,&quot;label&quot;:&quot;Confeitaria Nacional&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/confeitaria-nacional&quot;},{&quot;id&quot;:67,&quot;label&quot;:&quot;Ferragens Guedes&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;link&quot;:&quot;\/lojas\/ferragens-guedes&quot;},{&quot;id&quot;:31,&quot;label&quot;:&quot;A Carioca&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/a-carioca&quot;},{&quot;id&quot;:75,&quot;label&quot;:&quot;Joalharia Ferreira Marques&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/joalharia-ferreira-marques&quot;},{&quot;id&quot;:84,&quot;label&quot;:&quot;Manuel Tavares&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/manuel-tavares&quot;},{&quot;id&quot;:87,&quot;label&quot;:&quot;Panifica\u00e7\u00e3o Mec\u00e2nica&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/panificacao-mecanica&quot;},{&quot;id&quot;:93,&quot;label&quot;:&quot;Pavilh\u00e3o Chin\u00eas&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/pavilhao-chines&quot;},{&quot;id&quot;:101,&quot;label&quot;:&quot;Restaurante Tavares&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/restaurante-tavares&quot;},{&quot;id&quot;:60,&quot;label&quot;:&quot;Drogaria de S\u00e3o Domingos&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;link&quot;:&quot;\/lojas\/drogaria-de-sao-domingos&quot;},{&quot;id&quot;:41,&quot;label&quot;:&quot;Bar Americano&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/bar-americano&quot;},{&quot;id&quot;:68,&quot;label&quot;:&quot;Florista Pequeno Jardim&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/florista-pequeno-jardim&quot;},{&quot;id&quot;:2,&quot;label&quot;:&quot;P\u00e9rola do Chaimite&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/perola-do-chaimite&quot;},{&quot;id&quot;:97,&quot;label&quot;:&quot;Quiosque Tivoli&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;link&quot;:&quot;\/lojas\/quiosque-tivoli&quot;},{&quot;id&quot;:76,&quot;label&quot;:&quot;Le\u00e3o d\u2019Ouro&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/leao-douro&quot;},{&quot;id&quot;:82,&quot;label&quot;:&quot;Luvaria Ulisses&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/luvaria-ulisses&quot;},{&quot;id&quot;:102,&quot;label&quot;:&quot;Retrosaria Bijou&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/retrosaria-bijou&quot;},{&quot;id&quot;:47,&quot;label&quot;:&quot;Camisaria Pitta&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/camisaria-pitta&quot;},{&quot;id&quot;:32,&quot;label&quot;:&quot;A Ginjinha&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/a-ginjinha&quot;},{&quot;id&quot;:36,&quot;label&quot;:&quot;Andr\u00e9 \u00d3pticas (\u00d3ptica do Chiado)&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/andre-opticas-optica-do-chiado&quot;},{&quot;id&quot;:43,&quot;label&quot;:&quot;Barbearia Campos&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;link&quot;:&quot;\/lojas\/barbearia-campos&quot;},{&quot;id&quot;:45,&quot;label&quot;:&quot;Caf\u00e9 Nicola&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/cafe-nicola&quot;},{&quot;id&quot;:46,&quot;label&quot;:&quot;Caf\u00e9 Restaurante Martinho da Arcada&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/cafe-restaurante-martinho-da-arcada&quot;},{&quot;id&quot;:55,&quot;label&quot;:&quot;Casa Pereira&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/casa-pereira&quot;},{&quot;id&quot;:51,&quot;label&quot;:&quot;Casa Fraz\u00e3o&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/casa-frazao&quot;},{&quot;id&quot;:66,&quot;label&quot;:&quot;Farm\u00e1cia Normal&quot;,&quot;category&quot;:&quot;Sa\u00fade &amp; Bem-estar&quot;,&quot;link&quot;:&quot;\/lojas\/farmacia-normal&quot;},{&quot;id&quot;:91,&quot;label&quot;:&quot;Pastelaria Mexicana&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/pastelaria-mexicana&quot;},{&quot;id&quot;:63,&quot;label&quot;:&quot;Farm\u00e1cia Andrade&quot;,&quot;category&quot;:&quot;Sa\u00fade &amp; Bem-estar&quot;,&quot;link&quot;:&quot;\/lojas\/farmacia-andrade&quot;},{&quot;id&quot;:95,&quot;label&quot;:&quot;P\u00e9rola do Rossio&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/perola-do-rossio&quot;},{&quot;id&quot;:57,&quot;label&quot;:&quot;Chapelaria Azevedo Rua&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/chapelaria-azevedo-rua&quot;},{&quot;id&quot;:104,&quot;label&quot;:&quot;Sapataria Lord&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/sapataria-lord&quot;},{&quot;id&quot;:50,&quot;label&quot;:&quot;Casa Forra&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;link&quot;:&quot;\/lojas\/casa-forra&quot;},{&quot;id&quot;:6,&quot;label&quot;:&quot;Hospital das Bonecas&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;link&quot;:&quot;\/lojas\/hospital-das-bonecas&quot;},{&quot;id&quot;:86,&quot;label&quot;:&quot;Ourivesaria Sarmento&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/ourivesaria-sarmento&quot;},{&quot;id&quot;:80,&quot;label&quot;:&quot;Livraria Ferin&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;link&quot;:&quot;\/lojas\/livraria-ferin&quot;},{&quot;id&quot;:90,&quot;label&quot;:&quot;Pastelaria Benard&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/pastelaria-benard&quot;},{&quot;id&quot;:98,&quot;label&quot;:&quot;Restaurante Estrela da S\u00e9&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/restaurante-estrela-da-se&quot;},{&quot;id&quot;:103,&quot;label&quot;:&quot;Sapataria do Carmo&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/sapataria-do-carmo&quot;},{&quot;id&quot;:4,&quot;label&quot;:&quot;British Bar&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/british-bar&quot;},{&quot;id&quot;:44,&quot;label&quot;:&quot;A Brasileira&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/a-brasileira&quot;},{&quot;id&quot;:7,&quot;label&quot;:&quot;Casa Achilles&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;link&quot;:&quot;\/lojas\/casa-achilles&quot;},{&quot;id&quot;:71,&quot;label&quot;:&quot;Franco Gravador&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;link&quot;:&quot;\/lojas\/franco-gravador&quot;},{&quot;id&quot;:88,&quot;label&quot;:&quot;Paris em Lisboa&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/paris-em-lisboa&quot;},{&quot;id&quot;:89,&quot;label&quot;:&quot;Past\u00e9is de Bel\u00e9m&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/pasteis-de-belem&quot;},{&quot;id&quot;:52,&quot;label&quot;:&quot;Casa Havaneza&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;link&quot;:&quot;\/lojas\/casa-havaneza&quot;},{&quot;id&quot;:61,&quot;label&quot;:&quot;Espingardaria Central A. Montez&quot;,&quot;category&quot;:&quot;Diversos&quot;,&quot;link&quot;:&quot;\/lojas\/espingardaria-central-a-montez&quot;},{&quot;id&quot;:64,&quot;label&quot;:&quot;Farm\u00e1cia Barreto&quot;,&quot;category&quot;:&quot;Sa\u00fade &amp; Bem-estar&quot;,&quot;link&quot;:&quot;\/lojas\/farmacia-barreto&quot;},{&quot;id&quot;:70,&quot;label&quot;:&quot;Francisco Soares da Silva&quot;,&quot;category&quot;:&quot;Lar &amp; Decora\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/francisco-soares-da-silva&quot;},{&quot;id&quot;:9,&quot;label&quot;:&quot;\u00d3ptica Jomil&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/optica-jomil&quot;},{&quot;id&quot;:26,&quot;label&quot;:&quot;Manteigaria Silva&quot;,&quot;category&quot;:&quot;Comidas &amp; Bebidas&quot;,&quot;link&quot;:&quot;\/lojas\/manteigaria-silva&quot;},{&quot;id&quot;:81,&quot;label&quot;:&quot;Londres Sal\u00e3o&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/londres-salao&quot;},{&quot;id&quot;:69,&quot;label&quot;:&quot;Fotografia Triunfo&quot;,&quot;category&quot;:&quot;Servi\u00e7os &amp; Repara\u00e7\u00f5es&quot;,&quot;link&quot;:&quot;\/lojas\/fotografia-triunfo&quot;},{&quot;id&quot;:106,&quot;label&quot;:&quot;Tabacaria Martins&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;link&quot;:&quot;\/lojas\/tabacaria-martins&quot;},{&quot;id&quot;:72,&quot;label&quot;:&quot;Galeto&quot;,&quot;category&quot;:&quot;Restaura\u00e7\u00e3o&quot;,&quot;link&quot;:&quot;\/lojas\/galeto&quot;},{&quot;id&quot;:1,&quot;label&quot;:&quot;Au Petit Peintre&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;link&quot;:&quot;\/lojas\/au-petit-peintre&quot;},{&quot;id&quot;:79,&quot;label&quot;:&quot;Livraria Aillaud &amp; Lellos&quot;,&quot;category&quot;:&quot;Cultura &amp; Lazer&quot;,&quot;link&quot;:&quot;\/lojas\/livraria-aillaud-lellos&quot;},{&quot;id&quot;:74,&quot;label&quot;:&quot;Joalharia do Carmo&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/joalharia-do-carmo&quot;},{&quot;id&quot;:56,&quot;label&quot;:&quot;Casa Xangai&quot;,&quot;category&quot;:&quot;Vestu\u00e1rio &amp; Acess\u00f3rios&quot;,&quot;link&quot;:&quot;\/lojas\/casa-xangai&quot;}]"/>
+    <input type="hidden" id="areas-names" value="[{&quot;id&quot;:&quot;alcantara-belem&quot;,&quot;label&quot;:&quot;Ajuda, Alc\u00e2ntara e Bel\u00e9m&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=alcantara-belem&quot;},{&quot;id&quot;:&quot;alfama-castelo-graca&quot;,&quot;label&quot;:&quot;Alfama Castelo e Gra\u00e7a&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=alfama-castelo-graca&quot;},{&quot;id&quot;:&quot;alvalade&quot;,&quot;label&quot;:&quot;Alvalade&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=alvalade&quot;},{&quot;id&quot;:&quot;avenidas-novas&quot;,&quot;label&quot;:&quot;Avenidas Novas&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=avenidas-novas&quot;},{&quot;id&quot;:&quot;bairro-alto&quot;,&quot;label&quot;:&quot;Bairro Alto&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=bairro-alto&quot;},{&quot;id&quot;:&quot;baixa&quot;,&quot;label&quot;:&quot;Baixa&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=baixa&quot;},{&quot;id&quot;:&quot;campo-de-ourique&quot;,&quot;label&quot;:&quot;Campo de Ourique&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=campo-de-ourique&quot;},{&quot;id&quot;:&quot;castilho&quot;,&quot;quot;label&quot;:&quot;Castilho&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=castilho&quot;},{&quot;id&quot;:&quot;chiado&quot;,&quot;label&quot;:&quot;Chiado&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=chiado&quot;},{&quot;id&quot;:&quot;estrela-amoreiras&quot;,&quot;label&quot;:&quot;Estrela e Amoreiras&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=estrela-amoreiras&quot;},{&quot;id&quot;:&quot;guerra-junqueiro-londres-roma&quot;,&quot;label&quot;:&quot;Guerra Junqueiro, Londres e Roma&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=guerra-junqueiro-londres-roma&quot;},{&quot;id&quot;:&quot;liberdade&quot;,&quot;label&quot;:&quot;Liberdade&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=liberdade&quot;},{&quot;id&quot;:&quot;martim-moniz-intendente-mouraria&quot;,&quot;label&quot;:&quot;Martim Moniz, Intendente e Mouraria&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=martim-moniz-intendente-mouraria&quot;},{&quot;id&quot;:&quot;parque-das-nacoes-olivais&quot;,&quot;label&quot;:&quot;Parque das Na\u00e7\u00f5es e Olivais&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=parque-das-nacoes-olivais&quot;},{&quot;id&quot;:&quot;principe-real&quot;,&quot;label&quot;:&quot;Pr\u00edncipe Real&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=principe-real&quot;},{&quot;id&quot;:&quot;santos-cais-do-sodre&quot;,&quot;label&quot;:&quot;Santos e Cais do Sodr\u00e9&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=santos-cais-do-sodre&quot;},{&quot;id&quot;:&quot;sao-bento&quot;,&quot;label&quot;:&quot;S\u00e3o Bento&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=sao-bento&quot;},{&quot;id&quot;:&quot;sete-rios-benfica&quot;,&quot;label&quot;:&quot;Sete Rios e Benfica&quot;,&quot;category&quot;:&quot;Local&quot;,&quot;link&quot;:&quot;\/lojas?zone=sete-rios-benfica&quot;}]"/>
+</ul>
+    <div class="mobile-toggle-wrapper">
+        <button class="btn red side-padding toggle">Mapa</button>
+    </div>
+
+        </div>
+        <div class="background-container  map-active sidebar-offset ">
+            <div class="map-container  map-active sidebar-offset ">
+                <div id="map-canvas"></div>
+                <div class="controls">
+                    <button class="plus"></button>
+                    <button class="minus"></button>
+                </div>
+            </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAtpwRf13tVwGZ79pi13LZbooEYPvHkizc"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    
+
+
+
+var map;
+var markers = new Array();
+var markerCluster;
+var showPlaces;
+var removePlaces;
+var isIE;
+var ajaxExplore;
+var smoothState;
+var scrollVal = 0;
+var mapStyles=new google.maps.StyledMapType([{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#6c7c8b"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#14283b"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#FCFCFB"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.station","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#040d19"},{"visibility":"on"}]}],{name:"styles"});
+var mapStylesRoads=new google.maps.StyledMapType([{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#6c7c8b"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#14283b"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#FCFCFB"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.station","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#040d19"},{"visibility":"on"}]}],{name:"styles"});
+
+
+function googleAnalytics() {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    //PRODUÃ‡ÃƒO
+    ga('create', 'UA-9209445-28', 'auto');
+    
+    ga('set', 'page', window.location.pathname);
+
+    ga('send', 'pageview');
+}
+
+$(document).ready(function() {
+    googleAnalytics();
+
+    //SMOOTHSTATE
+    $(function(){
+        'use strict';
+
+        var triggeredElement;
+        var page = $('#main');
+        var options = {
+            debug: false,
+            prefetch: false,
+            cacheLength: 0,
+            anchors: '.site-link',
+            forms: '.search-form',
+
+            onBefore: function(target, container) {
+                triggeredElement = target; //element that triggered the transition
+
+                if(!triggeredElement.attr('data-map-filter')) {
+                    $('.map-container').addClass('no-transition');
+                    $('.background-container').removeClass('map-active');
+                    $('.map-container').removeClass('map-active sidebar-offset');
+
+                    map.setMapTypeId('mapStyles'); 
+                    google.maps.event.trigger(map, 'resize');
+                    $('.map-container').removeClass('no-transition');
+                }
+
+                //if the element that triggered the transition is not a explore page result, clean hidden filters values
+                if(!triggeredElement.parent('.result').length) {
+                    $('.hidden-category-filter, .hidden-location-filter').removeAttr('value');
+                }
+            },
+
+            onStart: {
+                duration: 800, // duration of our CSS transition
+                render: function (container) {
+                    removePlaces();
+
+                    setTimeout(function() {
+                        container.addClass('exit');
+                        smoothState.restartCSSAnimations();
+                    }, 500);    
+                }
+            },
+
+            onReady: {
+                duration: 0,
+                render: function (container, newContent) {
+                    container.html(newContent);
+                    initSiteScripts();
+
+                    //DEFINE MAP FILTER 
+                    if(triggeredElement && $('.explore-page').length > 0) {
+                        var mapFilter = triggeredElement.attr('data-map-filter');
+
+                        if(triggeredElement.hasClass('search-form')) { 
+                            mapFilter = triggeredElement.find('.search-input').val();
+                        }
+                    }   
+                    
+                    else {
+                        var mapfilter = 'all';
+                    }       
+
+                    //AFTER MAPFILTER IS DEFINED
+                    if(!mapFilter) { //if it was not defined, it means the triggered element doesn't lead to explore page
+                        removePlaces();
+
+                        $('.map-container').addClass('no-transition');
+                        $('.background-container').removeClass('map-active');
+                        $('.map-container').removeClass('map-active sidebar-offset');
+
+                        map.setMapTypeId('mapStyles'); 
+                        google.maps.event.trigger(map, 'resize')
+
+                        $('.map-container').removeClass('no-transition');
+                    }
+                    
+                    //if mapfilter is defined, means we're on the explore page: show places and fitbounds
+                    if(mapFilter || $("#stores-json").val()) {
+                        setTimeout(function() {
+                            $('.map-container').addClass('no-transition');
+                            $('.background-container').addClass('map-active');
+                            $('.map-container').addClass('map-active sidebar-offset');
+
+                            var zoomLevel = map.getZoom();
+                            if(zoomLevel > 14) {
+                                map.setMapTypeId('mapStylesRoads');
+                            }
+
+                            google.maps.event.trigger(map, 'resize')
+
+                            $('.map-container').removeClass('no-transition');
+
+                            if($('.explore-page').length > 0) {
+                                if($('.hidden-category-filter').val() != false || $('.hidden-location-filter').val() != false) {
+                                    ajaxExplore();
+                                }
+
+                                else {
+                                    showPlaces();
+                                }
+                            }
+                        }, 300);
+                    }
+
+                    container.removeClass('exit');
+                    smoothState.restartCSSAnimations();
+                }
+            },
+
+            onAfter: function($container, $newContent) {
+                googleAnalytics();
+            }
+        }
+
+        smoothState = page.smoothState(options).data('smoothState');
+    });
+
+    //MAP PARALLAX
+    var bg = $('#map-canvas');
+    parallax();
+    function parallax(){
+        var windowWidth = window.innerWidth / 2;
+        var windowHeight = window.innerHeight / 2 ;
+
+        $(window).bind('mousemove', function(e) {
+            if(!$('.map-container').hasClass('map-active')){
+              var mouseX = (e.clientX / windowWidth) * 0.5;
+              var mouseY = (e.clientY / windowHeight) * 0.5;
+                setTimeout(function(){
+                    bg.css("transform","translate(-" + mouseX + "%, -" + mouseY + "%)");
+                }, 100);
+            }
+
+        });
+    }   
+
+    //MAP SCRIPTS
+    //prevent google maps from loading roboto
+    var head = document.getElementsByTagName('head')[0];
+    var insertBefore = head.insertBefore;
+
+    head.insertBefore = function (newElement, referenceElement) {
+
+        if (newElement.href && newElement.href.indexOf('https://fonts.googleapis.com/css?family=Roboto') === 0) {
+
+            // console.info('Prevented Roboto from loading!');
+            return;
+        }
+
+        insertBefore.call(head, newElement, referenceElement);
+    };
+
+    var lisbon = new google.maps.LatLng(38.711005, -9.137470);
+    var bounds = new google.maps.LatLngBounds();
+    var infowindow = new google.maps.InfoWindow();
+
+    function initMap() {
+        var mapOptions = {
+            zoom: 14,
+            backgroundColor: '#061324',
+            disableDefaultUI: true,
+            center: lisbon,
+            zoomControl: true,
+            scaleControl: true,
+            scrollwheel: true,
+            disableDoubleClickZoom: false,
+            draggable: true,
+            scrollwheel: true,
+            panControl: true,
+            minZoom: 7,
+            styles: mapStyles,
+            zoomControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            streetViewControl: false,
+            rotateControl: false,
+            fullscreenControl: false
+        };
+
+        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        map.mapTypes.set('mapStyles', mapStyles);
+        map.mapTypes.set('mapStylesRoads', mapStylesRoads);
+
+        map.setMapTypeId('mapStyles');
+
+        google.maps.event.addListener(map, 'zoom_changed', function() { 
+            var zoomLevel = map.getZoom();
+
+            if(zoomLevel > 14) {
+                map.setMapTypeId('mapStylesRoads');
+            }
+            else {
+                map.setMapTypeId('mapStyles'); 
+            }
+        });
+    } // end map init
+
+    showPlaces = function() {
+        removePlaces();
+        var shops = JSON.parse($("#stores-json").val());
+        bounds = new google.maps.LatLngBounds();
+
+        if(shops.length == 0) {
+            bounds.extend(lisbon);
+            //bounds = '';
+            google.maps.event.trigger(map, 'resize')
+            map.fitBounds(bounds);
+
+            setTimeout(function() {
+                map.setCenter(lisbon)
+                map.setZoom(14)
+            }, 1000);   
+        }
+
+        else {
+
+            for (var i = 1; i <= shops.length; i++) {
+                bounds.extend({lat: shops[i - 1].lat, lng: shops[i - 1].lng});
+                dropMarker(shops[i - 1], i - 1); //this function also adds markers to the array
+
+                if(i == shops.length) { //if last marker, set clusters
+                    /*setClusters();*/
+
+                    google.maps.event.trigger(map, 'resize');
+                    map.fitBounds(bounds);
+                }
+            }
+        }
+    }
+
+    removePlaces = function() {
+        for (var i = 0; i < markers.length; i++) {
+          markers[i].setMap(null);
+          markers[i] == null;
+        }
+
+        markers = [];
+
+        if(markerCluster) {
+            markerCluster.clearMarkers();
+        }
+    } 
+
+    function dropMarker(shop, i) {
+        if(isIE == false) {
+            var markerExtension = '.svg';
+        }
+        else {
+            var markerExtension = '.png';
+        }
+
+        var marker = new google.maps.Marker({
+            map: map,
+            icon: '/images/map_markers/' + shop.icon + '-1' + markerExtension,
+            position: {lat: shop.lat, lng: shop.lng}
+        });
+        var store_thumbs = $("article.result");
+
+        var IWcontent = "<div class='infowindow-content' style='width: 260px;'>" +
+                            "<a href='#' class='close-infowindow'></a>" +
+                            "<a href='" + shop.link + "'><img src='"+ shop.image +"' style='width: 100%;'/></a>" +
+                            "<div class='info'>" +
+                                "<h4><a href='" + shop.link + "' class='site-link'>" + shop.name + "</a></h4>" +
+                                "<p class='label brown'>" + shop.activity + "</p>" +
+                                "<p class='label grey location'>" + shop.location + "</p>"
+                            "</div>" +
+                        '</div>';
+
+        marker.addListener('click', function() {
+            infowindow.setContent(IWcontent);
+            infowindow.open(map, marker);
+            $('.gm-style-iw').parent().addClass('custom-infowindow');
+
+            if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+                highlight_thumb();
+            }
+            map.panTo(marker.getPosition());
+            map.panBy(25, -150)
+
+
+
+            $('.infowindow-content a:not(.close-infowindow)').on('click', function() {
+                var href = $(this).attr('href');
+
+                $('.explore-page').find(".site-link[href='" + href + "']").click();
+                $('.custom-infowindow').fadeOut();
+                return false;
+            });
+
+            $('.infowindow-content .close-infowindow').on('click touchstart', function() {
+                $('.custom-infowindow').fadeOut(200, function() {
+                    infowindow.close();
+
+                    return false;
+                });
+            });
+        })
+
+        //if not touch device
+        if( !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ) {
+            // Highlight Marker on thumb hover
+            $("article.result").hover( function(){
+                $(".explore-page .container").addClass("hovered");
+                var ix = $(this).parent().index();
+                //map.panTo( markers[ix].getPosition());
+                google.maps.event.trigger( markers[ix], 'mouseover' );
+            }, function(){
+                $(".explore-page .container").removeClass("hovered");
+                var ix = $(this).parent().index();
+                google.maps.event.trigger( markers[ix], 'mouseout' );
+
+            });
+
+            // highlight active store
+            var hoverTimer;
+            function highlight_thumb(){
+                marker.setIcon('/images/map_markers/' + shop.icon + '-2' + markerExtension);
+
+                var selected_thumb = $("article.result[data-id='store-id-"+shop.id+"']");
+                store_thumbs.css("opacity","0.5");
+                selected_thumb.css("opacity","1");
+
+                if( !$(".explore-page .container").hasClass("hovered") ){
+
+                    hoverTimer = setTimeout(function() {
+                        $('.explore-page').stop().animate({
+                            scrollTop: selected_thumb.offset().top - $(".explore-page .container").offset().top - 50
+                        }, 200);
+                    }, 200);
+
+                }                       
+            }
+
+            marker.addListener('mouseover', function() {
+                highlight_thumb();
+                this.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+            });
+            marker.addListener('mouseout', function() {
+                // remove highlight active store
+                clearTimeout(hoverTimer);
+                marker.setIcon('/images/map_markers/' + shop.icon + '-1' + markerExtension);
+                store_thumbs.css("opacity","");
+            });
+        }
+
+        markers.push(marker);
+
+        // close infowindows when user clicks on map
+        google.maps.event.addListener(map, "click", function(event) {
+            $(".custom-infowindow>div:last-of-type").trigger("click");
+            store_thumbs.css("opacity","");
+        });
+    }
+
+    function setClusters() {
+        var cluster_styles = [{
+                width: 60,
+                height: 60,
+                url: '/images/icon-cluster.svg',
+                textColor: 'white',
+                textSize: 18
+            }]
+
+        markerCluster = new MarkerClusterer(map, markers, {styles: cluster_styles, maxZoom: 19, zoomOnClick: true});
+    }
+
+    
+    initMap();
+    initSiteScripts();
+
+    //if explore page
+    if($('.map-container').hasClass('map-active')) {
+        showPlaces();
+    }
+
+    //map controls
+    $('.map-container .controls .plus').click(function() {
+        map.setZoom(map.getZoom() + 1);
+        return false;
+    });
+
+    $('.map-container .controls .minus').click(function() {
+        map.setZoom(map.getZoom() - 1);
+        return false;
+    });
+});
+
+function initSiteScripts() {
+    msieversion();
+    function msieversion() {
+        if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1)) {
+          isIE = true;
+        }
+        else {
+          isIE = false;
+        }
+    }
+
+    //HOMEPAGE PARALLAX
+    showStartContent()
+
+    $(window).scroll(function() {
+        showStartContent();
+
+        scrollVal = $(window).scrollTop();
+    });
+
+    function showStartContent() {
+        if($(".homepage#start").length) {
+            var startOffset = $(".homepage#start").offset();
+
+            if(scrollVal <= 200){
+                $(".homepage#start").addClass('invisible');
+            }
+
+            else if(scrollVal > 200) {
+                $(".homepage#start").removeClass('invisible');
+            }
+        }
+    }
+
+    //HERO VIMEO VIDEO
+    if($('#hero-video').length) {
+        var heroiframe = document.getElementById('hero-video');
+        var heroVideo = new Vimeo.Player(heroiframe);
+
+        heroVideo.play();
+
+        heroVideo.on('progress', function(e) {
+            console.log(e);
+
+            if($('.hero .video-wrapper').hasClass('has-poster')) {
+                setTimeout(function() {
+                    $('.hero .video-wrapper img').remove();
+                    $('.hero .video-wrapper').removeClass('has-poster');
+                }, 400);
+            }
+
+            // var videotimer = setInterval(function() {
+            //  heroVideo.getCurrentTime().then(function(seconds) {
+            //      if(seconds > 0) {
+            //          console.log('yes');
+            //          $('.hero .video-wrapper').removeClass('has-poster');
+            //          clearInterval(videotimer);
+            //      }
+            //  });
+            // }, 100)
+            
+        })
+    }
+    
+    // if($('#hero-video').length) {
+    //     var heroVideo = new Vimeo.Player(heroiframe);
+    //     heroVideo.setLoop(true);
+    //     var videoStarted = false;
+
+    //     heroVideo.on('play', function() {
+    //      var videotimer = setInterval(function() {
+    //          if($('#hero-video').length) {
+    //              heroVideo.getCurrentTime().then(function(seconds) {
+    //                  if(seconds > 0 && videoStarted == false) {
+    //                      //heroVideo.setCurrentTime(.1)
+
+    //                      $('.hero .video-wrapper').removeClass('has-poster');
+
+    //                      videoStarted = true;
+
+    //                      clearInterval(videotimer);
+    //                  }
+    //              });
+    //          }
+    //      }, 100);
+    //     });
+    // }
+
+    //HEADER ANIMATION
+    var currentScroll = $(window).scrollTop();
+    setHompageHeader(currentScroll);
+
+    $(window).scroll(function() {
+        currentScroll = $(this).scrollTop();
+        setHompageHeader(currentScroll);
+
+        var exploreMapOffset = $('.explore-map-cta').offset();
+        if(exploreMapOffset) {
+            if(currentScroll > exploreMapOffset.top - 300) {
+                $('.explore-map-cta').addClass('showing');
+            }
+        }
+    });
+
+    if($('.explore-map-cta').length > 0 && $(window).scrollTop() > ($('.explore-map-cta').offset()).top - 300) {
+        $('.explore-map-cta').addClass('showing');  
+    }
+
+    $(window).resize(function() {
+        setTimeout(function() {
+            google.maps.event.trigger(map, 'resize');
+        }, 100);
+    });
+
+    //SHOW/HIDE HEADER SEARCH
+    $("header nav .search").mouseenter(function() { toggleHeaderSearch(true); });
+    $("header nav .search").mouseleave(function() { toggleHeaderSearch(false); });
+
+    $(".ui-menu.header *").mousemove(function() { toggleHeaderSearch(true); });
+
+    var hideHeaderSearch = '';
+    function toggleHeaderSearch(e) {
+        if($(window).width() > 767) { //only in larger viewports
+            clearTimeout(hideHeaderSearch);
+            if(e == true) {
+                $('header nav ul').addClass('search-open');
+                $('header nav .search').addClass('expanded');
+            }
+
+            else {
+                hideHeaderSearch = setTimeout(function() {
+                    $('header nav ul').removeClass('search-open');
+                    $('header nav .search').removeClass('expanded');
+                    $("header nav .search input[type='text']").blur();
+                    $('.ui-menu.header').hide();
+                }, 280);
+            }
+        }
+    }
+
+    $('header .search .search-submit').click(function() {
+        if(!$(this).siblings('.search-input').val()) {
+            $(this).siblings('.search-input').focus();
+            return false;
+        }
+    });
+
+    //HAMBURGER / toggle mobile nav
+    $('.hamburger').click(function() {
+        var header = $('#main > header');
+
+        if(header.hasClass('open')) {
+                header.removeClass('open');
+                $('.hamburger').removeClass('open');
+
+                setTimeout(function() {
+                    $('html, body').removeClass('overflowHidden');
+                }, 400);
+        }
+
+        else {
+            $('html, body').addClass('overflowHidden');
+            
+            header.addClass('open');
+            $('.hamburger').addClass('open');
+        }
+
+        return false;
+    });
+
+    $('header nav a').click(function() {
+        $('html, body').removeClass('overflowHidden');
+    });
+
+    //SEARCH AUTO COMPLETE
+    $(".search-input").focus(function() {
+        var searchInput = $(this);
+
+        toggleCategorySuggestions(true, $(this));
+
+        if($(this).parents('header').length == 0) { //if not headersearch, do scroll animation
+            $('.ui-menu.categories').removeClass('header');
+            toggleCategorySuggestions(true, searchInput);
+
+            $('html, body').animate({
+                scrollTop: searchInput.offset().top - 100
+            }, 400);
+        }
+    });
+
+    $(document).click(function(e) {
+        var elemClicked = $(e.target);
+
+        if(elemClicked.hasClass('search-input') || elemClicked.hasClass('.ui-menu') || elemClicked.parents('.ui-menu') > 0) {
+
+        }
+        else { //if click outside search or search suggestions
+            toggleCategorySuggestions(false);
+        }
+    });
+
+    $(".search-input").keyup(function() {
+        if($(this).val() == false) {
+            toggleCategorySuggestions(true, $(this));
+            $('.ui-menu:not(.categories)').hide();
+        }
+    });
+
+    function toggleCategorySuggestions(e, elem) {
+        if(e == true) {
+            currentCategorySelected = 0;
+            var width = elem.outerWidth();
+            var offset = elem.offset();
+
+            $('.ui-menu.categories').css({
+                'display': 'block',
+                'width': width + 'px'
+            });
+
+            $('.ui-menu.categories').position({
+                my: "left top",
+                at: "left bottom",
+                of: elem,
+                collision: "none"
+            })
+
+            if (elem.parents('header').length) {
+                $('.ui-menu.categories').addClass('header');
+                $('.ui-menu.categories').css({'left': 'auto', 'right': '0px'});
+                $('.ui-menu.categories.header').mouseenter(function() { toggleHeaderSearch(true); });
+                $('.ui-menu.categories.header').mouseleave(function() { toggleHeaderSearch(false); });
+            }
+            else {
+                $('.ui-menu.categories').unbind('mouseenter');
+                $('.ui-menu.categories').unbind('mouseleave');
+            }
+        }
+
+        else {
+            $('.ui-menu.categories').hide();
+            $('.ui-menu.categories').removeClass('header');
+        }
+    }
+
+    //CATEGORIES SUGGESTIONS ARROW KEYS CONTROL
+    var currentCategorySelected = 0;
+    $('.search-input').keyup(function(e) {
+        var searchInput = $(this);
+        $('.ui-menu.categories li a.active').removeClass('active');
+
+        if(e.keyCode == 40 && $('.ui-menu.categories').is(':visible')) { //down
+            currentCategorySelected++;
+
+            if(currentCategorySelected > $('.ui-menu.categories li').length) {
+                currentCategorySelected = $('.ui-menu.categories li').length;
+            }
+
+            var elemActive = $('.ui-menu.categories li').eq(currentCategorySelected - 1);
+
+            elemActive.find('a').addClass('active');
+
+            searchInput.val(elemActive.find('a').text());
+        }
+
+        else if(e.keyCode == 38 && $('.ui-menu.categories').is(':visible')) { //up
+            currentCategorySelected--;
+
+            if(currentCategorySelected < 1) {
+                currentCategorySelected = 1;
+            }
+
+            var elemActive = $('.ui-menu.categories li').eq(currentCategorySelected - 1);
+
+            elemActive.find('a').addClass('active');
+
+            searchInput.val(elemActive.find('a').text());
+        }
+
+        if(e.keyCode == 27) {
+            toggleCategorySuggestions(false);
+        }
+    })
+
+    var accentMap = {
+        "Ã¡": "a",
+        "Ã£": "a",
+        "Ã ": "a",
+        "Ã©": "e",
+        "Ã­": "i",
+        "Ã³": "o",
+        "Ãµ": "o",
+        "Ãº": "u",
+        "Ã": "A",
+        "Ãƒ": "A",
+        "Ã€": "A",
+        "Ã‰": "E",
+        "Ã": "I",
+        "Ã“": "O",
+        "Ãš": "U"
+    };
+    var normalize = function( term ) {
+        var ret = "";
+        for ( var i = 0; i < term.length; i++ ) {
+            ret += accentMap[ term.charAt(i) ] || term.charAt(i);
+        }
+        return ret;
+    };
+
+
+    //PUT JSON INFORMATION IN ARRAY FOR AUTOCOMPLETE TO READ
+    var autocompleTerms = JSON.parse($("#store-names").val());
+    var areasList = JSON.parse($("#areas-names").val());
+
+    for(var i = 0; i <= areasList.length - 1; i++) {
+        autocompleTerms.unshift(areasList[i]);
+    }
+
+    //AUTOCOMPLETE
+    $(".search-input").each(function() {
+        var inputElement = $(this);
+
+        inputElement.autocomplete({
+            //source: autocompleTerms,
+            source:function( request, response ) {
+                var matcher = new RegExp( $.ui.autocomplete.escapeRegex( request.term ), "i" );
+                response( $.grep( autocompleTerms, function( value ) {
+                    value = value.label || value.value || value;
+                    return matcher.test( value ) || matcher.test( normalize( value ) );
+                }) );
+            },
+            open: function( event, ui ) {
+                $('.ui-menu.categories').css('display', 'none');
+            },
+            response: function( event, ui ) {
+                if(ui.content.length == 0) {
+                    $('.ui-menu.categories').css('display', 'block');
+                }
+            },
+            select: function (event, ui) {
+                window.location = ui.item.link;
+            }
+
+        });
+
+        if (inputElement.parents('header').length) {
+            inputElement.autocomplete( "widget" ).addClass('header');
+            inputElement.autocomplete( "widget" ).bind('mouseenter', function() { toggleHeaderSearch(true); });
+            inputElement.autocomplete( "widget" ).bind('mouseleave', function() { toggleHeaderSearch(false); });
+        }
+
+        inputElement.autocomplete( "instance" )._renderItem = function( ul, item ) {
+          return $( "<li>" )
+            .append( "<div><p class='title'>" + item.label + "</p><p class='category'>" + item.category + "</p></div>" )
+            .appendTo( ul );
+        };
+    });
+
+    //
+    $('.search-form').submit(function() {
+        $('html, body').removeClass('overflowHidden');
+    });
+
+    function setHompageHeader(scrollValue) {
+        if(scrollValue > $(window).height() - 55) {
+            $('header.homepage-header').removeClass('transparent');
+        }
+        else {
+            $('header.homepage-header').addClass('transparent');
+        }
+    }
+
+    //CUSTOM DROPDOWNS
+    $('select').each(function() {
+        var select = $(this);
+        select.easyDropDown({
+            cutOff: 10
+        });
+
+        if(select.hasClass('category')) {
+            var parent = select.parents('.dropdown');
+            parent.addClass('category');
+
+            select.children('option').each(function(index, elem) {
+                var value = $(this).attr('data-icon');
+                parent.find('div ul li').eq(index).addClass(value);
+            });
+        }
+
+        if(select.hasClass('location')) {
+            var parent = select.parents('.dropdown');
+            parent.addClass('location');
+        }
+    });
+
+    ajaxExplore = function() {
+        var category, zone;
+
+        //if category hidden field filter has value
+        if($('.hidden-category-filter').val() != false) {
+            category = $('.hidden-category-filter').val();
+
+            var categoryOption = $("select.category option[value='" + category + "']");
+            categoryOption.prop('selected',true);
+
+            var optindex = categoryOption.index();
+            var opttext = categoryOption.text();
+
+            var categoryOptionsListOptions = $('.dropdown.category ul li');
+            var categoryOptionsListSelected = $('.dropdown.category .selected');
+
+            categoryOptionsListOptions.removeClass('active');
+            categoryOptionsListOptions.eq(optindex).addClass('active');
+            
+            categoryOptionsListSelected.text(opttext);
+        }
+
+        else {
+            category = $("select.category").val();
+        }
+
+        //if location hidden field filter has value
+        if($('.hidden-location-filter').val() != false) {
+            zone = $('.hidden-location-filter').val();
+
+            var locationOption = $("select.location option[value='" + zone + "']");
+            locationOption.prop('selected',true);
+
+            var optindex = locationOption.index();
+            var opttext = locationOption.text();
+
+            var locationOptionsListOptions = $('.dropdown.location ul li');
+            var locationOptionsListSelected = $('.dropdown.location .selected');
+
+            locationOptionsListOptions.removeClass('active');
+            locationOptionsListOptions.eq(optindex).addClass('active');
+            
+            locationOptionsListSelected.text(opttext);
+        }
+
+        else {
+            zone = $("select.location").val();
+        }
+
+        $('.results-wrapper').addClass('loading');
+
+        $.get( '/ajax/explore', { category: category, zone: zone } )
+            .done(function( data ) {
+                $("#ajax-explore-results").html(data);
+                $('.results-wrapper').removeClass('loading');
+                
+                showPlaces();
+
+                if($(window).width() > 991) {
+                    var scrollAppend = $('.explore-page');
+                }
+                else {
+                    var scrollAppend = $(window);
+                }
+                
+                $("img.lazy").Lazy({
+                    appendScroll: scrollAppend,
+                    scrollDirection: 'vertical',
+                    effect: 'show',
+                    threshold: 3000
+                });
+                
+            }).fail(function(data) {
+            $('.results-wrapper').removeClass('loading');
+        });
+    }
+
+    $('select.category').change(function() {
+        var val = $(this).val();
+        $('.hidden-category-filter').val(val);
+
+        ajaxExplore();
+    });
+
+    $('select.location').change(function() {
+        var val = $(this).val();
+        $('.hidden-location-filter').val(val);
+
+        ajaxExplore();
+    });
+
+    //SWIPERS
+    $('.swiper-container').each(function() {
+        var swiperContainer = $(this);
+
+        if(swiperContainer.hasClass('shops') || swiperContainer.hasClass('articles')) {
+            var swiper = new Swiper(swiperContainer, {
+                spaceBetween: 30,
+                autoplay: 6000,
+                speed: 800,
+                roundLengths: true,
+                direction: 'horizontal',
+                slidesPerView: 3,
+                nextButton: '.shops .swiper-next, .articles .swiper-next',
+                prevButton: '.shops .swiper-prev, .articles .swiper-prev',
+                breakpoints: {
+                    991: {
+                        slidesPerView: 3
+                    },
+                    768: {
+                        slidesPerView: 2
+                    },
+                    480: {
+                        slidesPerView: 1,
+                        speed: 350,
+                    }
+                },
+                // simulateTouch: false
+            });
+        }
+
+        else if(swiperContainer.hasClass('featured')) {
+            var swiper = new Swiper(swiperContainer, {
+                spaceBetween: 80,
+                autoplay: 7000,
+                roundLengths: true,
+                speed: 900,
+                direction: 'horizontal',
+                autoHeight: true,
+                slidesPerView: 2,
+                nextButton: '.featured .swiper-next',
+                prevButton: '.featured .swiper-prev',
+                breakpoints: {
+                    768: {
+                        slidesPerView: 1
+                    },
+                    480: {
+                        speed: 350,
+                        slidesPerView: 1
+                    }
+                },
+
+            });
+        }
+
+        else if(swiperContainer.hasClass('gallery')) {
+            var swiper = new Swiper(swiperContainer, {
+                autoplay: 6000,
+                speed: 800,
+                initialSlide: 0,
+                // loop: true,
+                loopedSlides: 2,
+                roundLengths: true,
+                preloadImages: true,
+                updateOnImagesReady: true,
+                direction: 'horizontal',
+                slidesPerView: 'auto',
+                centeredSlides: true,
+                nextButton: '.gallery .swiper-next',
+                prevButton: '.gallery .swiper-prev',
+                breakpoints: {
+                    767: {
+                        spaceBetween: 10,
+                    },
+                    480: {
+                        spaceBetween: 10,
+                        speed: 350,
+                        slidesPerView: 1
+                    }
+                },
+                onImagesReady: function(swiper) {
+                    swiper.update();
+                    swiper.slideTo(0, 0, '');
+                }
+            });
+
+            $('.shop-page').imagesLoaded( function() {
+                swiper.update(true);
+                swiper.slideTo(0, 0, '');
+                $(window).trigger('resize');
+            });
+
+            swiper.update(true);
+
+            $(document).keyup(function(e) {
+                if(e.keyCode == 37) { //left arrow
+                    swiper.slidePrev();
+                }
+
+                else if(e.keyCode == 39) { //right arrow
+                    swiper.slideNext();
+                }
+            });
+        }
+
+        if(swiperContainer.hasClass('docs')) {
+            var swiper = new Swiper(swiperContainer, {
+                spaceBetween: 60,
+                speed: 800,
+                roundLengths: true,
+                direction: 'horizontal',
+                slidesPerView: 3,
+                calculateHeight: true,
+                nextButton: '.docs .swiper-next',
+                prevButton: '.docs .swiper-prev',
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 2
+                    },
+                    670: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    480: {
+                        slidesPerView: 1,
+                        autoHeight: true,
+                        speed: 350,
+                    }
+                },
+                // simulateTouch: false
+            });
+        }
+    });
+
+    //SEPARATE POST CONTENT
+    setArticleContent();
+    function setArticleContent() {
+        var container = $('#shop');
+
+        if(container.find('hr').length) {
+            var       title = container.find('h2');
+            var   firstText = container.find('hr:first').prevAll(); 
+            var  secondText = container.find('hr:first').nextUntil('hr:eq(1)', 'p');
+            var  firstImage = container.find('figure:first'); 
+            var secondImage = container.find('figure:last');
+
+            firstText  = firstText.wrapAll("<div class='col-sm-12 col-md-5 first-row-col'></div>"); //wrap text and images inside cols
+            firstImage = firstImage.wrap("<div class='col-sm-12 col-md-7 first-row-col'></div>");   //with class x-row-col
+
+            secondText  = secondText.wrapAll("<div class='col-sm-12 col-md-5 second-row-col'></div>");
+            secondImage = secondImage.wrap("<div class='col-sm-12 col-md-7 second-row-col'></div>");
+
+            $('.first-row-col').wrapAll("<div class='row first-row'></div>"); //wrap x-row-col inside rows with class x-row
+            $('.second-row-col').wrapAll("<div class='row second-row'></div>");
+
+            if(container.hasClass('layout-a')) {
+                $('.first-row-col, .second-row').each(function() { //reverse elements order inside col
+                    var parent = $(this);
+                    parent.children().each(function(i,elem){parent.prepend(elem)})
+                });
+            }
+
+            else if(container.hasClass('layout-b')) {
+                $('.first-row-col, .first-row').each(function() { //reverse elements order inside col
+                    var parent = $(this);
+                    parent.children().each(function(i,elem){parent.prepend(elem)})
+                });
+            }
+
+            container.find('hr').remove();
+        }
+
+        else {
+            var title = container.find('h2');
+            var text = container.find('p');
+            var images = container.find('figure');
+
+            title.wrapAll("<div class='col-sm-12 col-md-12 first-row-col'></div>");
+            images.wrapAll("<div class='col-sm-12 col-md-5 second-row-col'></div>");
+            text.wrapAll("<div class='col-sm-12 col-md-7 second-row-col'></div>");
+
+            $('.first-row-col').wrapAll("<div class='row'></div>");
+            $('.second-row-col').wrapAll("<div class='row'></div>");
+        }
+    }
+
+    //EXPLORE SIDEBAR
+    if($(window).width() > 991) {
+        $('.expand-map').click(function() {
+            if($('.map-container').hasClass('sidebar-offset')) {
+                $('.map-container').addClass('no-transition');
+                $('.map-container').removeClass('sidebar-offset');
+
+                google.maps.event.trigger(map, 'resize');
+
+                setTimeout(function() {
+                    $('.expand-map').addClass('expanded');
+                    $('.explore-page').addClass('collapsed');
+                    $('.map-container').removeClass('no-transition');
+                }, 100);
+            }
+
+            else {
+                $('.expand-map').removeClass('expanded');
+                $('.explore-page').removeClass('collapsed');
+
+                setTimeout(function() {
+                    $('.map-container').addClass('no-transition');
+                    $('.map-container').addClass('sidebar-offset');
+                    google.maps.event.trigger(map, 'resize');
+                    $('.map-container').removeClass('no-transition');
+                }, 300);
+            }
+
+            return false;
+        });
+    }
+
+    //TOGGLE SIDEBAR MOBILE
+    $('.mobile-toggle-wrapper .toggle').click(function() {
+        var toggle = $(this);
+
+        if($('.explore-page').hasClass('mobile-invisible')) {
+            toggle.text('Mapa');
+            $('.explore-page').removeClass('mobile-invisible');
+
+            $(window).scrollTop($('body').attr('data-last-scroll'));
+        }
+
+        else {
+            $('body').attr('data-last-scroll', scrollVal);
+
+            toggle.text('Lista de Lojas');
+            $('.explore-page').addClass('mobile-invisible'); 
+        }
+
+        return false;
+    });
+
+    //ANCHOR LINKS
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+            var compensate = 0;
+            if($(this).hasClass('start-link')) {
+                if($('#start').hasClass('invisible')) {
+                    compensate = 150;
+                }
+            }
+
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 100 - compensate
+                }, 800);
+
+                return false;
+            }
+        }
+    });
+
+    //FAQ â€” EXPAND QUESTIONS
+    $('.expand-question').click(function() {
+        var question = $(this);
+        if(question.hasClass('expanded')) {
+            question.removeClass('expanded');
+        }
+        else {
+            question.addClass('expanded');
+        }
+
+        return false;
+    });
+
+    $("#load-more-collections").click(function (event) {
+        event.preventDefault();
+        $.get('/ajax/more_collections').done(function (data) {
+            $("#load-more-collections-button").remove();
+            var old_items = $("#collections-area").children().slice(0, 6);
+            $("#collections-area").append(old_items);
+            $("#collections-area").append(data);
+        });
+    });
+
+    $("#load-more-articles").click(function (event) {
+        event.preventDefault();
+        $.get('/ajax/more_articles').done(function (data) {
+            $("#load-more-articles").remove();
+            var old_items = $("#articles-area").children().slice(0, 6);
+            $("#articles-area").append(old_items);
+            $("#articles-area").append(data);
+        });
+    });
+
+
+
+    //OPEN LIGHTBOX
+    $('.open-lightbox').click(function() {
+        var lightbox = $(this).attr('data-lightbox');
+        var lightboxElement = $(".lightbox[data-lightbox='" + lightbox + "']");
+
+        lightboxElement.addClass('open');
+        $('html, body').addClass('overflowHidden');
+
+        //vimeo
+        if(lightboxElement.find('iframe').length) {
+            var iframeId = lightboxElement.find('iframe').attr('id');
+            var iframe = document.getElementById(iframeId);
+            var mainPlayer = new Vimeo.Player(iframe);
+            mainPlayer.play();
+        }
+
+        return false;
+    });
+
+    $('.lightbox .close').click(function() {
+        var lightboxElement = $(this).parents('.lightbox');
+        lightboxElement.removeClass('open');
+        $('html, body').removeClass('overflowHidden');
+
+        //vimeo
+        if(lightboxElement.find('iframe').length) {
+            var iframeId = lightboxElement.find('iframe').attr('id');
+            var iframe = document.getElementById(iframeId);
+            var mainPlayer = new Vimeo.Player(iframe);
+            mainPlayer.unload();
+        }
+
+        return false;
+    });
+
+    $(document).keyup(function(e) {
+        if(e.keyCode == 27) {
+            var lightboxElement = $('.lightbox.open');
+
+            //vimeo
+            if(lightboxElement.find('iframe').length) {
+                var iframeId = lightboxElement.find('iframe').attr('id');
+                var iframe = document.getElementById(iframeId);
+                var mainPlayer = new Vimeo.Player(iframe);
+                mainPlayer.unload();
+            }
+
+            $('.lightbox').removeClass('open');
+            $('html, body').removeClass('overflowHidden');
+
+            return false;
+        }
+    });
+
+    //LAZY LOADING
+    if($('.explore-page').length > 0) {
+        if($(window).width() > 991) {
+            var scrollAppend = $('.explore-page');
+        }
+        else {
+            var scrollAppend = $(window);
+        }
+
+        $("img.lazy").Lazy({
+            appendScroll: scrollAppend,
+            scrollDirection: 'vertical',
+            effect: 'show',
+            threshold: 2000
+        });
+    }
+
+    else {
+        $("img.lazy").Lazy({
+            scrollDirection: 'vertical',
+            effect: 'show',
+            threshold: 2000
+        });
+    }
+
+    //REMOVE HOVER STATES ON TOUCH DEVICES
+    var touch = 'ontouchstart' in document.documentElement || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+
+    if (touch) { // remove all :hover stylesheets
+        try { // prevent exception on browsers not supporting DOM styleSheets properly
+            for (var si in document.styleSheets) {
+                var styleSheet = document.styleSheets[si];
+                if (!styleSheet.rules) continue;
+
+                for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                    if (!styleSheet.rules[ri].selectorText) continue;
+
+                    if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                        styleSheet.deleteRule(ri);
+                    }
+                }
+            }
+        } catch (ex) {}
+    }
+
+    //stores back-button
+    $('.back-button').click(function() {
+        if($('.hidden-category-filter').val() || $('.hidden-location-filter').val()) {
+            window.history.back();
+        }
+        else {
+            var exploreLink = $('.explore-link').attr('href');
+            smoothState.load(exploreLink);
+        }
+
+        return false;
+    });
+
+    //DOCS PAGE
+    keepDocVideoRatio();
+
+    $(window).resize(function() {
+        keepDocVideoRatio();
+    });
+
+    function keepDocVideoRatio() {
+        var video = $('.doc-page-video');
+
+        if(video.length) {
+            var parent = video.parent('.video-wrapper');
+            var maxHeight = parseInt(parent.css('max-height'));
+            var originalW = 16;
+            var originalH = 9;
+
+            var newHeight = (originalH*parent.width())/originalW;
+
+            if(newHeight < maxHeight) {
+                var newWidth = parent.width();
+            }
+            else {
+                newHeight = maxHeight;
+                var newWidth = (originalW*newHeight)/originalH;
+            }
+
+            video.attr('width', newWidth + 'px');
+            video.attr('height', newHeight + 'px');
+        }
+    }
+
+    var currentVideoID = $('#doc-iframe').attr('data-video-id');
+    $(".swiper-container.docs article a[data-video-id='" + currentVideoID + "']").parent('article').addClass('playing');
+
+    $('.swiper-container.docs article a').click(function() {
+        var docIframe = $('#doc-iframe');
+        var elem = $(this);
+
+        $('.swiper-container.docs article').removeClass('playing');
+        elem.parent('article').addClass('playing');
+
+        docIframe.animate({'opacity': 0}, 200, function() {
+            var videoID = elem.attr('data-video-id');
+            docIframe.attr('src', 'https://player.vimeo.com/video/' + videoID + '/?title=0&byline=0&portrait=0&autoplay=1');
+
+            docIframe.delay(500).animate({'opacity': 1}, 200);
+
+            var videoOffset = $('#doc-video').offset();
+
+
+            $('body').animate({scrollTop: videoOffset.top - 95}, 'slow');
+        })      
+        
+        return false;
+    });
+
+    // if($('.doc-page-video').length) {
+    //  var docIframe = document.getElementById('doc-iframe');
+    //     var docPlayer = new Vimeo.Player(docIframe);
+
+    //     $('.video-wrapper .controls .play').click(function() {
+    //      $(this).fadeOut();
+    //      docPlayer.play();
+
+    //      return false;
+    //     });
+
+    //     $('.video-wrapper .controls').click(function() {
+    //      $('.video-wrapper .controls .play').fadeIn();
+    //      docPlayer.pause();
+    //     });
+    // }
+
+    $('.expand-about-text').click(function() {
+        $(this).remove();
+        $('.about-content .body-text').removeClass('collapsed');
+
+        return false;
+    });
+
+    //share links
+    $('.share-fb').click(function(e) {
+        e.preventDefault();
+        window.open($(this).attr('href'), 'FacebookShare', 'height=350, width=554, top=50, left=' + ($(window).width() / 2 - 277) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        return false;
+    })
+
+    $('.share-twitter').click(function(e) {
+        e.preventDefault();
+        window.open($(this).attr('href'), 'Twitter', 'height=442, width=500, top=100, left=' + ($(window).width() / 2 - 250) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        return false;
+    })
+
+    $('.share-pinterest').click(function(e) {
+        e.preventDefault();
+        window.open($(this).attr('href'), 'Pinterest', 'height=650, width=750, top=50, left=' + ($(window).width() / 2 - 375) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        return false;
+    })
+
+
+
+
+}
+
+</script>
+
+                
+    </body>
+</html>

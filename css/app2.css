@@ -1,0 +1,115 @@
+* {	margin:0;
+	padding:0}
+
+html, body {
+	font-size:16px;
+	line-height:1.4;
+	height:100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*menu*/
+.container {
+	margin:0;
+	overflow:hidden;
+}
+
+.header {
+	left:0;
+	right:0;
+	height:66px;
+	color:#333;
+	background-color:#FFF
+}
+
+.site-pusher, .site-container {
+height:100%
+}
+.site-container {
+overflow:hidden
+}
+.site-pusher {
+-moz-transition-duration:0.3s;
+-o-transition-duration:0.3s;
+-webkit-transition-duration:0.3s;
+transition-duration:0.3s;
+-moz-transform:translateX(0px);
+-ms-transform:translateX(0px);
+-webkit-transform:translateX(0px);
+transform:translateX(0px)
+}
+.site-content {
+position:absolute;
+top:66px;
+right:0;
+left:0;
+bottom:0;
+padding-top:0;
+overflow-y:scroll;
+-webkit-overflow-scrolling:touch
+}
+.header {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+header img{
+	padding-top: 10px;
+}
+.header__icon {
+	position:relative;
+	display:block;
+	float:left;
+	width:50px;
+	height:66px;
+	cursor:pointer
+}
+.header__icon:after {
+content:'';
+position:absolute;
+display:block;
+width:1rem;
+height:0;
+top:16px;
+left:15px;
+-moz-box-shadow:0 10px 0 1px #000, 0 16px 0 1px #000, 0 22px 0 1px #000;
+-webkit-box-shadow:0 10px 0 1px #000, 0 16px 0 1px #000, 0 22px 0 1px #000;
+box-shadow:0 10px 0 1px #000, 0 16px 0 1px #000, 0 22px 0 1px #000
+}
+.menu {
+	position:absolute;
+	left:0;
+	top:0;
+	bottom:0;
+	overflow-y:scroll;
+	-webkit-overflow-scrolling:touch;
+	background-color:#333;
+	width:250px;
+	-moz-transform:translateX(-250px);
+	-ms-transform:translateX(-250px);
+	-webkit-transform:translateX(-250px);
+	transform:translateX(-250px);
+	color: #999;
+}
+.menu a {
+	display:block;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	color: #999;
+}
+.with--sidebar .site-pusher {
+-moz-transform:translateX(250px);
+-ms-transform:translateX(250px);
+-webkit-transform:translateX(250px);
+transform:translateX(250px)
+}
+.with--sidebar .site-cache {
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background-color:rgba(0, 0, 0, 0.6)
+}
