@@ -1,6 +1,9 @@
 <?php
-header('Access-Control-Allow-Origin: *');
-header('Content-Type: application/json; charset=utf-8');
+header("Access-Control-Allow-Origin: *");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
+header("Access-Control-Max-Age: 3600");
+header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 use \guia\Autoloader;
 use \guia\Mobile_Detect;
 use \guia\Divers;
@@ -40,14 +43,17 @@ $total = $pages->total ($hastag,$refer);
 
 $nbPages= $pages->nb_Pages($total,$perPage);
 //// pages
-$Cpage =$pages->page_page($p,$nbPages);
-$array= $pages->articles($perPage,$Cpage,$hastag,$refer)->fetchAll(PDO::FETCH_ASSOC);
-if($p >= $nbPages){
-	// http_response_code(404);
-	 echo json_encode(["status" => "404"]);
-}else{
 
-	echo json_encode($array);
+$Cpage =$pages->page_page($p,$nbPages);
+$posts= $pages->articles($perPage,$Cpage=$Cpage,$hastag,$refer)->fetchAll(PDO::FETCH_ASSOC);
+
+if($p <= $nbPages){
+  	echo json_encode(["posts" => $posts, 'pages'=>$nbPages]);
+
+}else{ 
+  	// http_response_code(404);
+ echo json_encode(["status" => '404']);
+
 }
 
 
@@ -65,4 +71,3 @@ echo json_encode($article);
     // tell the user product does not exist
     echo json_encode(array("message" => "Product does not exist."));
     */
-?>

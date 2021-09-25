@@ -23,7 +23,7 @@ if (isset($_GET['p'])  && $_GET['p']>0 && $_GET['p']<=$nbPages ) {
 	 $Cpage= $_GET['p'];
 	}else {$Cpage = 1;}
 	  
-$r= $pages->articles ($db,$perPage,$Cpage,$public);
+$r= $pages->articles ($db,$perPage,$Cpage,$public) ;
 
 //////include header // INDEX PUBLIC 
 include 'inc/header.php'
@@ -40,7 +40,7 @@ echo " <h3>Nº de fotos publicadas-$total ; </h3>";?>
 
 <hr>
  <ol id="dados" class="list-unstyled">
-<?php  while( $req = $r->fetch(PDO::FETCH_OBJ) ) : ?>
+<?php  while( $req= $r->fetch() ) : ?>
 <?php  $m=  $my_save_dir.'pequena'.$req->id.'.jpg';
  $mini= file_exists($m) ? '<img class="media-object" src='.$m.'>': '<img class="media-object"  src="default.jpg">';?>
  <li class="media" id="<?=$req->id;?>" >

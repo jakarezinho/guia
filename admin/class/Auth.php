@@ -44,7 +44,7 @@ class Auth{
 		$url = $_SERVER['REQUEST_URI'];
         if(!$this->session->read('auth')){
             $this->session->setFlash('danger', $this->options['restriction_msg']);
-				if (strpos($url, "/guia/") !== false) {
+				if (strpos($url, "/") !== false) {
             header('Location: ../login.php');;
                  }else {  header('Location: login.php');}
            

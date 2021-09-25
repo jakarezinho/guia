@@ -69,7 +69,7 @@ class Image
           return [$lat, $lng, $local_id];
         }
         //insert 
-      } //LAT
+      } //LATgit 
 
     } //exif
   }

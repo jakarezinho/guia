@@ -1,6 +1,6 @@
   <!--///header///-->
   <header class="header">
-    <span id="logo"><a href="index.php"> <img src="images/dog.png" width="32" height="32" border="0" alt="Pequeno-eu picture guide"></a> </span>
+    <span id="logo"><a href="index.php"><img src="images/dog.png" width="32" height="32" border="0" alt="Pequeno-eu picture guide"></a> </span>
     <!--//favoritos//-->
     <div id="my_fav"><i class="material-icons">favorite_border</i> <span id="cont_fav"> 2</span></div>
 
