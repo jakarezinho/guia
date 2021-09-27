@@ -180,6 +180,7 @@
                   acao: 'removeAnexo',
                   id: id
               }, function(data) {
+                  console.log(data)
                   if (data == 1) {
                       $(toto).parent("li").toggle("slow");
                   }

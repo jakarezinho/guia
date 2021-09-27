@@ -8,7 +8,6 @@ use \Login\Guia\Hastag;
 require 'inc/bootstrap.php';
 Autoloader::register();
 $auth = App::getAuth();
-$db = App::getDatabase();
 //////////////////
 $imp = new Image();
 $hast = new Hastag();
@@ -19,7 +18,7 @@ if (isset($_POST['photo'])) {
 	$foto = $_FILES['photoimg']['tmp_name'];
 	if(!empty( $_FILES['photoimg']['tmp_name'])){
 
-		$insert_photo= $imp->exif_foto($db,$foto,'../images_guia/');
+		$insert_photo= $imp->exif_foto($foto,'../images_guia/');
 	     if ($insert_photo){
 	     	$infos['foto']= "Insertion foto pequena e grande  OK";
 	     	$local_id =$insert_photo[2];
@@ -32,7 +31,7 @@ if (isset($_POST['photo'])) {
 ///INFO//
 	if (isset($_POST['infos']) && !empty( $_POST['infos'])) {
 		$hastag= $hast->gethashtags($_POST['texte']);
-     	$insert_infos =$imp->insert_infos($db,$_POST['title'],$_POST['texte'],$hastag,$_POST['lat'],$_POST['lng'],$_POST['infos']);
+     	$insert_infos =$imp->insert_infos($_POST['title'],$_POST['texte'],$hastag,$_POST['lat'],$_POST['lng'],$_POST['infos']);
      	if ($insert_infos){
      		$infos['foto']= "Insertion infos  OK";}else{ $errors['foto']= "ERRO AO INSERIR FOTO ";}
 

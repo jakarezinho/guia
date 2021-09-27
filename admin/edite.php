@@ -2,7 +2,6 @@
 
 use \Login\Autoloader;
 use \Login\App;
-use \Login\Session;
 use \Login\Guia\Divers;
 use \Login\Guia\Image;
 use \Login\Guia\Hastag;
@@ -21,7 +20,7 @@ $pages = new Divers();
 ///
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
-  $items = $pages->select_id($db, $id)->fetch(PDO::FETCH_OBJ);
+  $items = $pages->select_id($id)->fetch(PDO::FETCH_OBJ);
 
 
   if ($items == false) {
@@ -33,14 +32,12 @@ if (isset($_GET['id'])) {
 $infos = [];
 $errors = [];
 
-//////////////POST INFO /////
+//////////////POST  UPDATE INFO /////
 if (!empty($_POST['lat']) && !empty($_POST['lng'])) {
 
-
   $hastag = $hast->gethashtags($_POST['texte']);
-
+///// UPDATE PHOTO INFOS
   $insert = $imp->update_infos(
-    $db,
     $_POST["title"],
     $_POST['texte'],
     $hastag,
@@ -57,12 +54,12 @@ if (!empty($_POST['lat']) && !empty($_POST['lng'])) {
   }
 }
 
-//// IMAGE ////
+//// IMAGE SEM GPS  ////
 if (isset($_POST['infos']) && !empty($_POST['infos'])) {
   if (!empty($_FILES['photoimg']['tmp_name'])) {
     $local_id = $_POST['infos'];
     $foto = $_FILES['photoimg']['tmp_name'];
-    $insert_photo = $imp->insert_sans($db, $foto, '../images_guia/', $local_id);
+    $insert_photo = $imp->insert_sans($foto, '../images_guia/', $local_id);
     if ($insert_photo) {
       $infos['foto'] = "Insertion foto pequena e grande  OK";
     } else {
@@ -111,7 +108,7 @@ include 'inc/header.php'
           <input type="text" name="lat" id="lat" value="<?= $items->lat; ?>">
           <input type="text" name="lng" id="lng" value="<?= $items->lng; ?>">
 
-         
+
 
           <div class="form-group">
             <label for="exampleInputEmail1">Titulo da foto</label>

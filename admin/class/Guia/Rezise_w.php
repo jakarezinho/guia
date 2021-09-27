@@ -25,7 +25,7 @@ $src = imagecreatefrombmp($uploadedfile);
 
 list($width,$height)=getimagesize($uploadedfile);
 $newheight=($height/$width)*$newwidth;
-var_dump($newheight);
+
 $tmp=imagecreatetruecolor($newwidth,$newheight);
 imagecopyresampled($tmp,$src,0,0,0,0,$newwidth,$newheight,$width,$height);
 $filename = $path.$actual_image_name;

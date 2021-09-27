@@ -1,6 +1,6 @@
 <?php 
 namespace guia;
-use\PDO;
+use \PDO;
 
 class Divers {
 

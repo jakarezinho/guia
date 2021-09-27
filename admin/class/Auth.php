@@ -10,6 +10,7 @@ class Auth{
     public function __construct($session, $options = []){
         $this->options = array_merge($this->options, $options);
         $this->session = $session;
+        
     }
 
     public function hashPassword($password){

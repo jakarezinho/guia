@@ -9,7 +9,6 @@ require 'inc/bootstrap.php';
 
 Autoloader::register();
 $auth = App::getAuth();
-$db = App::getDatabase();
 //////////////////
 $imp = new Image();
 
@@ -21,10 +20,10 @@ if (isset($_POST['infos']) && !empty( $_POST['infos'])) {
    $local_id = $_POST['infos'];
   if(!empty( $_FILES['photoimg']['tmp_name'])){
      $foto = $_FILES['photoimg']['tmp_name'];
-     $insert_photo=$imp->insert_sans($db,$foto,'../images_guia/',$local_id);
+     $insert_photo=$imp->insert_sans($foto,'../images_guia/',$local_id);
            if ($insert_photo){
           $infos['foto']= "Insertion foto pequena e grande  OK";}else{$errors['foto']="Insertion foto falhou"; $imp->delete($db,$local_id);}
-  }else{$errors['foto']="FOTO COM ERROS!"; $imp->delete($db,$local_id);}
+  }else{$errors['foto']="FOTO COM ERROS!"; $imp->delete($local_id);}
 	        
 	}//FILE
 	
@@ -34,7 +33,7 @@ if ( !empty( $_POST['title']) ) {
 	$hastag= $hast->gethashtags($_POST['texte']);
 	var_dump($hastag);
 
-    $insert_local_ID= $imp->insert_infos_sans($db,$_POST['title'],$_POST['texte'],$hastag,$_POST['lat'],$_POST['lng'],$recomendo='non',$public='0');
+    $insert_local_ID= $imp->insert_infos_sans($_POST['title'],$_POST['texte'],$hastag,$_POST['lat'],$_POST['lng'],$recomendo='non',$public='0');
 
     if ($insert_local_ID){ $infos['foto']= "Insertion infos  OK";}
 

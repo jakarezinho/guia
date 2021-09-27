@@ -8,7 +8,6 @@ use \Login\Guia\Hastag;
 require 'inc/bootstrap.php';
 Autoloader::register();
 $auth = App::getAuth();
-$db = App::getDatabase();
 App::getAuth()->restrict();
 
 //////////////////
@@ -17,14 +16,14 @@ $my_save_dir = '../images_guia/';
 $hast = new Hastag();
 $perPage=25;
 $public= 0;
-$total = $pages->total ($db,$public);
+$total = $pages->total ($public);
 $nbPages= $pages->nb_Pages($total,$perPage);
 
 if (isset($_GET['p'])  && $_GET['p']>0 && $_GET['p']<=$nbPages ) {
 	 $Cpage= $_GET['p'];
 	}else {$Cpage = 1;}
 	  
-$r= $pages->articles ($db,$perPage,$Cpage,$public);
+$r= $pages->articles ($perPage,$Cpage,$public);
 
 /// paginate_num($item_per_page, $current_page, $total_records, $total_pages, $page_url)
 ///include header //
