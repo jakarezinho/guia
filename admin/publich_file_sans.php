@@ -7,7 +7,7 @@ use \Login\Guia\Image;
 use \Login\Guia\Hastag;
 require 'inc/bootstrap.php';
 
-Autoloader::register();
+require '../vendor/autoload.php';
 $auth = App::getAuth();
 //////////////////
 $imp = new Image();

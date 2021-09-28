@@ -10,10 +10,8 @@ use \guia\Divers;
 use \guia\Hastag;
 use \guia\App;
 
-require 'class/Autoloader.php'; 
-Autoloader::register(); 
-$db= App::getDatabase();
-$pages= new Divers($db);
+require 'vendor/autoload.php';
+$pages= new Divers();
 
 $local_id =isset($_GET['id'])?$_GET['id']: false; 
 $p =isset($_GET['p'])? $_GET['p']: 0;

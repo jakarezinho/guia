@@ -1,12 +1,12 @@
 <?php 
-use \Login\Autoloader;
+
 use \Login\App;
 use \Login\Session;
 use \Login\Guia\Divers;
 use \Login\Guia\Image;
 use \Login\Guia\Hastag;
 require 'inc/bootstrap.php';
-Autoloader::register();
+require '../vendor/autoload.php';
 $auth = App::getAuth();
 //////////////////
 $imp = new Image();

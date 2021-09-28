@@ -2,16 +2,15 @@
 
 namespace guia;
 
-use\PDO;
+use \PDO;
 class Hastag
 {
 
   private $db;
-
-  function __construct($db)
-  {
-    $this->db = $db;
-  }
+    public function __construct()
+    {
+        $this->db = App::getDatabase();
+    }
 
 
 

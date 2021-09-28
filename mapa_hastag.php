@@ -1,21 +1,17 @@
 <?php
-require 'class/Autoloader.php';
+require 'vendor/autoload.php';
 
-use \guia\Autoloader;
 use \guia\Mobile_Detect;
 use \guia\Divers;
 use \guia\Hastag;
-use \guia\App;
 
-Autoloader::register();
-$db = App::getDatabase();
 ///
 $detect = new Mobile_Detect;
 $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
 ///
-$pages = new Divers($db);
+$pages = new Divers();
 $my_save_dir = '/guia/images_guia/';
-$hast = new Hastag($db);
+$hast = new Hastag();
 ///
 $hastag = isset($_GET['hastag']) ? $_GET['hastag'] : NULL;
 $refer = isset($_GET['refer']) ? $_GET['refer'] : false;

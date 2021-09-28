@@ -1,12 +1,14 @@
 <?php 
 
-use \Login\Autoloader;
-use \Login\App;
+use Login\App;
+
 use \Login\Session;
+use \Login\Autoloader;
 use \Login\Guia\Divers;
 use \Login\Guia\Hastag;
+require '../vendor/autoload.php';
 require 'inc/bootstrap.php';
-Autoloader::register();
+
 $auth = App::getAuth();
 App::getAuth()->restrict();
 ///////////////

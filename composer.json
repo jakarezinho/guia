@@ -1,0 +1,19 @@
+{
+    "name": "jo/guia",
+    "description": "guia app",
+    "authors": [
+        {
+            "name": "Jorge Melo",
+            "email": "jakarezinh@gmail.com"
+        }
+    ],
+    "require": {},
+    
+    "autoload": {
+        "psr-4": {
+            "Login\\": "admin/class",
+            "guia\\": "class/"
+        }
+    }
+}
+

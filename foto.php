@@ -1,23 +1,27 @@
 <?php
 require 'class/Autoloader.php';
 
-use \guia\App;
-use \guia\Autoloader;
 use \guia\Divers;
 use \guia\Hastag;
+use Login\Guia\Galeria;
 use \guia\Mobile_Detect;
 
-Autoloader::register();
-$db = App::getDatabase();
+require 'vendor/autoload.php';
 ////
 $local_id    = $_GET['id'];
-$pages       = new Divers($db);
+$pages       = new Divers();
 $my_save_dir = '/images_guia/';
-$hast        = new Hastag($db);
+$my_save_dir_historic = '/history/';
+$hast        = new Hastag();
 ///
+//galeria
+$galeria = new Galeria();
+$h = $galeria->history_index($local_id);
+
 $detect = new Mobile_Detect();
 $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
 $deviceType == 'computer' ? $tail = 'grande' : $tail = 'pequena';
+$deviceType == 'computer' ? $th = 'foto_grande' : $th = 'foto_pequena';
 
 ///
 $link = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : "";
@@ -110,8 +114,16 @@ $height = $data[1];
           <div>
             <!--//may photo//-->
             <span class="myfavphoto"></span>
-            <img class="foto" src="<?= $image; ?>" alt="<?= $nota->title; ?>"></div>
+            <!--//history//-->
+            <?php foreach ($h as $h_item) {
+              $deviceType == 'computer' ? $th = $h_item->foto_grande : $th = $h_item->foto_grande;
+              echo '<img class="foto" src="' . $my_save_dir_historic . $th . '"><p class="content"><i class="material-icons">schedule</i>  Data: ' . $h_item->date . '</p>';
+            } ?>
+            <img class="foto" src="<?= $image; ?>" alt="<?= $nota->title; ?>">
+          </div>
           <div class="content">
+
+            <p><i class="material-icons">schedule</i><?= $nota->time ?></p>
             <h4 class="modal-title" id="myModalLabel"><?= $nota->title; ?></h4>
             <div class="plus"> <?php if ($nota->recomendo == "yes") : ?><i class=" recomendo material-icons">favorite</i><?php endif; ?></div>
             <p><?= $hast->convertHashtags($nota->message, "hastag.php"); ?></p>
@@ -191,7 +203,8 @@ $height = $data[1];
       <input type="hidden" id="lng" name="lng">
     </form>
     <div id="envia" class="localiza pages_loc">
-      <i class="material-icons">my_location</i></div>
+      <i class="material-icons">my_location</i>
+    </div>
     <!--//-->
     <!--/row-->
   </div>

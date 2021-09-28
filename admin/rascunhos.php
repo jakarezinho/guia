@@ -1,12 +1,12 @@
 <?php
 define('ROOT',__DIR__);
-use \Login\Autoloader;
-use \Login\App;
-use \Login\Session;
+
+
+use Login\App;
 use \Login\Guia\Divers;
 use \Login\Guia\Hastag;
 require 'inc/bootstrap.php';
-Autoloader::register();
+require '../vendor/autoload.php';
 $auth = App::getAuth();
 App::getAuth()->restrict();
 

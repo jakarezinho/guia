@@ -1,19 +1,24 @@
 <?php
 
-use \Login\Autoloader;
+
 use \Login\App;
-use \Login\Guia\Divers;
 use \Login\Guia\Image;
+use \Login\Guia\Divers;
 use \Login\Guia\Hastag;
+use Login\Guia\Galeria;
 
 require 'inc/bootstrap.php';
-Autoloader::register();
+require '../vendor/autoload.php';
 $auth = App::getAuth();
-$db = App::getDatabase();
 App::getAuth()->restrict();
 ////
 
 $my_save_dir = '../images_guia/';
+$my_save_dir_historic = '../history/';
+$galeria = new Galeria();
+$actual_link = (isset($_SERVER['HTTPS']) ? 'https' : 'http').'://'.$_SERVER['HTTP_HOST'].$_SERVER["REQUEST_URI"];
+
+
 $imp = new Image();
 $hast = new Hastag();
 $pages = new Divers();
@@ -21,6 +26,8 @@ $pages = new Divers();
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
   $items = $pages->select_id($id)->fetch(PDO::FETCH_OBJ);
+  $history_galeria = $galeria->history_index($id);
+
 
 
   if ($items == false) {
@@ -36,7 +43,7 @@ $errors = [];
 if (!empty($_POST['lat']) && !empty($_POST['lng'])) {
 
   $hastag = $hast->gethashtags($_POST['texte']);
-///// UPDATE PHOTO INFOS
+  ///// UPDATE PHOTO INFOS
   $insert = $imp->update_infos(
     $_POST["title"],
     $_POST['texte'],
@@ -66,10 +73,28 @@ if (isset($_POST['infos']) && !empty($_POST['infos'])) {
       $errors['foto'] = "Insertion foto falhou";
     }
   } else {
-    $errors['foto'] = "IFOTO COM ERROS!"; //peque/grande
+    $errors['foto'] = "FOTO COM ERROS!"; //peque/grande
   }
 } //FILE1
 
+////// FILE HISTORY 
+if (isset($_POST['history']) && !empty($_POST['history'])) {
+  if (!empty($_FILES['photo_history']['tmp_name'])) {
+    $photo_history = $galeria->insert_history($_FILES['photo_history']['tmp_name'], $my_save_dir_historic, $_POST['id_photo']);
+    $photo_history = true ?  header('location:'.$actual_link) : $errors['foto'] = " SEM FOTO HISTORY !";
+  } else {
+    $errors['foto'] = " SEM FOTO HISTORY !";
+  }
+}
+
+
+//////FILE DELETE
+if(isset($_POST['photo_delete'])&& !empty($_POST['photo_delete'])&& !empty($_POST['pequena'])&& !empty($_POST['grande']))
+{
+ $delete= $galeria->delete_history($_POST['photo_delete'], $my_save_dir_historic, $_POST['grande'], $_POST['pequena']);
+ $delete = true ? header('location:'.$actual_link) : $errors['foto'] = " SEM FOTO HISTORY !";
+ 
+}
 /////header///
 include 'inc/header.php'
 ?>
@@ -166,16 +191,44 @@ include 'inc/header.php'
       <input name="infos" type="hidden" class="form-control" id="infos" value="<?= $id; ?>">
     </form>
     <hr>
-    <h2> spot</h2>
-    <form id="spot" method="post" autocomplete="off" enctype="multipart/form-data" action='#'>
+    <h2> Histórico</h2>
+    <div>
+      <p>historique</p>
+    </div>
+
+
+    <form id="historic" method="post" autocomplete="off" enctype="multipart/form-data" >
       <div class="form-group">
-        <label for="name_spot ">Nome do spot</label>
-        <input type="text" class="form-control" name="name_spot" id="mame_spot" value="">
+        <label for="photo_history ">Enviar foto para o historico</label>
+
+        <input type="file" name="photo_history" id="photo_history" />
+        <input type="text" name="id_photo" id="id_photo" value="<?= $id ?>">
+        <input type="hidden" name="history" id="history" value="history">
       </div>
-      <input type="text" name="lat_spot" id="lat_spot" value="<?= $items->lat; ?>">
-      <input type="text" name="lng_spot" id="lng_spot" value="<?= $items->lng; ?>">
-      <input type="text" name="spot_post_ID" id="spot_post_ID" value="<?= $id; ?>">
+      <div class="form-group"><button type="submit" class="btn btn-lg btn-block btn-secondary">Foto para o historico</button></div>
     </form>
+    <h2> Histórico em photos</h2>
+    <div class="row">
+    <?php if (count($history_galeria) > 0) : ?>
+      <?php foreach ($history_galeria as $item_galerie) : ?>
+        
+        <div class="col-md-6">
+          <hr>
+        <p> <img id="asas" src="<?= $my_save_dir_historic . $item_galerie->foto_pequena ?>" width="300px" height="auto"></p>
+        <p>Data: <?=$item_galerie->date?></p>
+        <form method="post" name="delete" id="delete">
+          <input type="hidden" name="photo_delete" id="photo_delete" value="<?= $item_galerie->id ?>">
+          <input type="hidden" name="pequena" id="pequena" value="<?= $item_galerie->foto_pequena ?>">
+          <input type="hidden" name="grande" id="grande" value="<?= $item_galerie->foto_grande?>">
+         
+          <input type="submit" class="btn  btn-secondary  " onclick="if (!confirm('Tem a certeza ?')) { return false }" value="Delete">
+        </form>
+        </div>
+        
+
+      <?php endforeach ?>
+    <?php endif ?>
+    </div>
   </div>
 
   <?php include 'inc/footer.php'; ?>

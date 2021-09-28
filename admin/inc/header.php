@@ -42,7 +42,7 @@
 </head>
 
 <body>
-
+<?php  $serchvalue = isset($_GET['search']) ? $_GET['search']: ''?>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="#">PEQUENO.EU</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,10 +52,10 @@
     <ul class="navbar-nav mr-auto ">
         <?php if (isset($_SESSION['auth'])): ?>
          <li>  <form class="form-inline" method="get" action="cherche.php"  >
-    <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
+    <input class="form-control mr-sm-2" type="search" name="search" value="<?=$serchvalue?>" placeholder="Search" aria-label="Search">
      <select class="form-control mr-sm-2" name="public">
   <option selected="1" value="1"> publicado</option>
-  <option value="0">Rascunho</option>}
+  <option value="0">Rascunho</option>
 
 </select>
     <button class="btn btn-outline my-2 my-sm-0" type="submit">Search</button>

@@ -3,7 +3,7 @@ use \Login\Autoloader;
 use \Login\App;
 use \Login\Session;
 require 'inc/bootstrap.php';
- Autoloader::register();
+require '../vendor/autoload.php';
 $auth = App::getAuth();
 $db = App::getDatabase();
 $auth->connectFromCookie($db);

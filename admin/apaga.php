@@ -5,7 +5,7 @@ use \Login\App;
 use Login\Guia\Image;
 
 require 'inc/bootstrap.php';
-Autoloader::register();
+require '../vendor/autoload.php';
 $auth = App::getAuth();
 $image = new Image();
 ////

@@ -6,10 +6,13 @@ class Auth{
         'restriction_msg' => "Vous n'avez pas le droit d'accéder à cette page"
     ];
     private $session;
-
-    public function __construct($session, $options = []){
+    private $actual_link ;
+    
+    public function __construct($session,$options = []){
         $this->options = array_merge($this->options, $options);
         $this->session = $session;
+        $this->actual_link = (isset($_SERVER['HTTPS']) ? 'https' : 'http').'://'.$_SERVER['HTTP_HOST'];;
+        ///
         
     }
 
@@ -27,7 +30,7 @@ class Auth{
             $token
         ]);
         $user_id = $db->lastInsertId();
-        mail($email, 'Confirmation de votre compte', "Afin de valider votre compte merci de cliquer sur ce lien\n\nhttp://www.pequeno.eu/admin/confirm.php?id=$user_id&token=$token");
+        mail($email, 'Confirmation de votre compte', "Afin de valider votre compte merci de cliquer sur ce lien\n\n{$this->actual_link}/admin/confirm.php?id=$user_id&token=$token");
         var_dump($email);
     }
 
@@ -110,11 +113,12 @@ class Auth{
     }
 
     public function resetPassword($db, $email){
+        $actual_link = (isset($_SERVER['HTTPS']) ? 'https' : 'http').'://'.$_SERVER['HTTP_HOST'];
         $user = $db->query('SELECT * FROM users WHERE email = ? AND confirmed_at IS NOT NULL', [$email])->fetch();
         if($user){
             $reset_token = Str::random(60);
             $db->query('UPDATE users SET reset_token = ?, reset_at = NOW() WHERE id = ?', [$reset_token, $user->id]);
-            mail($_POST['email'], 'Réinitiatilisation de votre mot de passe', "Afin de réinitialiser votre mot de passe merci de cliquer sur ce lien\n\nhttp://www.pequeno.eu/admin/reset.php?id={$user->id}&token=$reset_token");
+            mail($_POST['email'], 'Réinitiatilisation de votre mot de passe', "Afin de réinitialiser votre mot de passe merci de cliquer sur ce lien\n\n{$this->actual_link}/admin/reset.php?id={$user->id}&token=$reset_token");
             return $user;
         }
         return false;

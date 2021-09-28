@@ -4,7 +4,7 @@ use \Login\App;
 use \Login\Session;
 use \Login\Validator;
 require 'inc/bootstrap.php';
-Autoloader::register();
+require '../vendor/autoload.php';
 
 if(!empty($_POST)){
 

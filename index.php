@@ -1,15 +1,10 @@
 <?php
 
-use \guia\Autoloader;
 use \guia\Mobile_Detect;
 use \guia\Divers;
 use \guia\Hastag;
-use \guia\App;
+require 'vendor/autoload.php';
 
-require 'class/Autoloader.php';
-Autoloader::register();
-
-$db = App::getDatabase();
 ////
 
 $detect = new Mobile_Detect();
@@ -18,10 +13,10 @@ $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') 
 //$deviceType =='computer' ? $tail='grande' : $tail='pequena';
 $tail = 'pequena';
 ///
-$pages = new Divers($db);
+$pages = new Divers();
 
 $my_save_dir = '../images_guia/';
-$hast = new Hastag($db);
+$hast = new Hastag();
 ///
 
 $perPage = 6;
