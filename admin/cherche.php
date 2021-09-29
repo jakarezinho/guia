@@ -1,10 +1,10 @@
 <?php
 
-use \Login\Autoloader;
+
 use \Login\App;
-use \Login\Session;
 use \Login\Guia\Divers;
 use \Login\Guia\Hastag;
+use Login\Guia\Galeria;
 
 require 'inc/bootstrap.php';
 
@@ -15,6 +15,7 @@ App::getAuth()->restrict();
 $pages = new Divers();
 $my_save_dir = '../images_guia/';
 $hast = new Hastag();
+$galeria = new Galeria();
 $search = (isset($_GET['search']) && !empty($_GET['search'])) ? $_GET['search'] : header("location:public.php");
 $perPage = 25;
 $public = $_GET['public'];
@@ -45,6 +46,7 @@ include 'inc/header.php'
   <hr>
   <ol id="dados" class="list-unstyled">
     <?php foreach ($result as $req) : ?>
+      <?php $history_galeria = $galeria->history_index($req->id); ?>
       <?php $m =  $my_save_dir . 'pequena' . $req->id . '.jpg';
       $mini = file_exists($m) ? '<img class="media-object" src=' . $m . '>' : '<img class="media-object"  src="default.jpg">'; ?>
       <li class="media" id="<?= $req->id; ?>">
@@ -53,11 +55,11 @@ include 'inc/header.php'
         </div>
         <div class="media-body">
           <p class="media-heading"><strong><?= $req->title; ?></strong> /<a href="edite.php?id=<?= $req->id; ?>">/Editar</a></p>
-          <p><?= $req->morada; ?> </p>
+
           <p> <?= $hast->convertHashtags($req->message, "h.php"); ?> </p>
 
         </div>
-        <p class="delete"> REMOVER</p>
+        <?php echo  count($history_galeria) > 0 ? '<p> Eliminar primeiro  as fotos do historico !</p>' : ' <p class="delete">REMOVER </p>';?>
       </li>
 
     <?php endforeach; ?>

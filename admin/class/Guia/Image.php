@@ -174,7 +174,26 @@ class Image
   {
 
     $result = $this->db->query("DELETE from hastag WHERE id=?", [$id]);
-   return  $result = true  ? true : false;
-   
+    return  $result = true  ? true : false;
+  }
+
+
+  //////// DELETE FROM EDITE PAGE
+  public function delete_from_edit($id, $my_save_dir,$token)
+  {
+    if ($_SESSION['csrf_token'] != $token){
+      return false;
+    }
+    $grande = $my_save_dir . 'grande' . $id . '.jpg';
+    $pequena = $my_save_dir . 'pequena' . $id . '.jpg';
+    $result = $this->delete($id);
+    if (file_exists($grande) && file_exists($pequena) && $result) {
+      unlink($grande);
+      unlink($pequena);
+      clearstatcache();
+      return true;
+   }
+
+  
   }
 }///
