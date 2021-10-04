@@ -1,9 +1,9 @@
 <?php
-use \Login\Autoloader;
+
 use \Login\App;
 use \Login\Session;
 use \Login\Validator;
-require 'inc/bootstrap.php';
+
 require '../vendor/autoload.php';
 
 if(!empty($_POST)){

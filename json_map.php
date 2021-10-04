@@ -4,11 +4,9 @@ header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Methods: OPTIONS,GET,POST,PUT,DELETE");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
-use \guia\Autoloader;
-use \guia\Mobile_Detect;
+
 use \guia\Divers;
-use \guia\Hastag;
-use \guia\App;
+
 
 require 'vendor/autoload.php';
 $pages= new Divers();
@@ -26,7 +24,7 @@ $total = $pages->total_porperto($lat,$lng,$radius);
 $nbdepages = $pages->nb_Pages($total,$limite);
 
 $page =$pages->page_page($p,$nbdepages);
-$feed = $pages->porperto_feed($lat,$lng, $radius, $limite ,$page )->fetchAll(PDO::FETCH_ASSOC);
+$feed = $pages->porperto_feed($lat,$lng, $radius, $limite ,$page );
 //$array= $pages->porperto($db,$lat,$lng,$radius,$limite)->fetchAll(PDO::FETCH_ASSOC);
 
 echo json_encode($feed);
@@ -43,7 +41,7 @@ $nbPages= $pages->nb_Pages($total,$perPage);
 //// pages
 
 $Cpage =$pages->page_page($p,$nbPages);
-$posts= $pages->articles($perPage,$Cpage=$Cpage,$hastag,$refer)->fetchAll(PDO::FETCH_ASSOC);
+$posts= $pages->articles($perPage,$p,$hastag,$refer);
 
 if($p <= $nbPages){
   	echo json_encode(["posts" => $posts, 'pages'=>$nbPages]);
@@ -59,7 +57,7 @@ if($p <= $nbPages){
 }
 /// article unique
   elseif ($local_id){
-$article= $pages->foto($local_id)->fetchAll(PDO::FETCH_ASSOC);
+$article= $pages->foto($local_id);
 echo json_encode($article);
 }
 /*

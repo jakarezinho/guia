@@ -1,6 +1,21 @@
 @import url("social.css");
 :root {
+    --balck:#000;
     --link: #333;
+    --red: #f10b0b;
+    --gris: #ccc;
+    --blanc: #fff;
+    --black333: #333;
+    --coral: #ff7f50;
+    --grisfort: #4e4d4d;
+    --bleu: #087dc5;
+    --status: #777710;
+    --title: #666;
+    --title2: #999;
+    --jaune:#FF9;
+    --grisclair:#e9e9e9;
+    --rose:#f66;
+    
 }
 
 html {
@@ -33,8 +48,7 @@ body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #fff;
-    /*background-color: #211f1f;*/
+    background-color: var(--blanc);
 }
 
 hr {
@@ -49,17 +63,13 @@ hr {
     border-right-style: none;
     border-bottom-style: none;
     border-left-style: none;
-    border-top-color: #CCC;
-    border-right-color: #CCC;
-    border-bottom-color: #CCC;
-    border-left-color: #CCC;
+    border-color: var(--gris);
 }
 
 #logo {
     position: absolute;
     padding: 3px;
 }
-
 
 /* cible */
 
@@ -76,14 +86,13 @@ hr {
     z-index: 1000;
 }
 
-.croix:before,
-.croix:after {
+.croix:before, .croix:after {
     position: absolute;
     left: 15px;
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: #333;
+    background-color: var(--black333);
 }
 
 .croix:before {
@@ -96,7 +105,7 @@ hr {
 
 .visit {
     border-style: solid;
-    border-color: coral;
+    border-color: var(--coral);
 }
 
 .list-inline li {
@@ -112,7 +121,6 @@ hr {
     border-radius: 0px;
 }
 
-
 /* Preloader */
 
 #preloader {
@@ -121,10 +129,8 @@ hr {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
-    /* change if the mask should have another color then white */
+    background-color: var(--gris);
     z-index: 2000;
-    /* makes sure it stays on top */
 }
 
 #status {
@@ -139,17 +145,16 @@ hr {
     margin: -100px 0 0 -100px;
 }
 
-
 /*nav*/
 
 .site-nav {
     right: 0px;
     display: none;
-    background-color: #333;
+    background-color: var(--black333);
     z-index: 600;
     width: 500px;
     height: inherit;
-    color: #CCC;
+    color: var(--gris);
     padding: 8px;
     overflow-y: scroll;
     position: fixed;
@@ -162,15 +167,14 @@ hr {
     padding-top: 10px;
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color: #CCC;
+    border-top-color: var(--gris);
     padding-bottom: 10px;
     text-align: center;
 }
 
 .site-nav a {
-    color: #FFF;
+    color: var(--blanc);
 }
-
 
 /* centre */
 
@@ -186,12 +190,11 @@ hr {
 
 .grid-item {
     padding: 1%;
-    color: #4e4d4d;
+    color: var(--grisfort);
     float: left;
 }
 
-.grid-sizer,
-.grid-item {
+.grid-sizer, .grid-item {
     width: 20%;
 }
 
@@ -202,7 +205,7 @@ hr {
 }
 
 .grid-item p a {
-    color: #087dc5;
+    color: var(--bleu);
 }
 
 .grid-item h4 {
@@ -211,7 +214,7 @@ hr {
 }
 
 .page-load-status {
-    color: #777710;
+    color: var(--status);
 }
 
 .hidde_nave {
@@ -233,7 +236,7 @@ hr {
 }
 
 .title {
-    color: #666;
+    color:var(--title);
     text-align: center;
     padding-top: 60px;
     padding-bottom: 10px;
@@ -245,11 +248,11 @@ hr {
 .title h2 {
     font-weight: normal;
     font-size: 18px;
-    color: #999;
+    color: var(--title2);
 }
 
 .recomendo {
-    color: #F00;
+    color: var(--red);
     font-size: 25px;
     animation: 2.5s ease 0s normal none infinite running animateHeart;
     overflow: inherit;
@@ -258,19 +261,18 @@ hr {
 }
 
 .ring {
-    color: #F00;
+    color:--var(--red);
     font-size: 30px;
     animation: shake 0.72s ease 0s normal none infinite running;
     transform: translate3d(0, 0, 0);
 }
 
 .ias-trigger-next a {
-    background-color: #CCC;
+    background-color: var(--gris);
     text-transform: uppercase;
     padding: 8px;
-    border: 1px solid #CCC;
+    border: 1px solid var(--gris);
 }
-
 
 /*centre  ICON */
 
@@ -284,9 +286,8 @@ hr {
     transition: transform .2s ease-in-out;
     vertical-align: middle;
     border: 0 none;
-    background-color: #fff;
+    background-color: var(--blanc);
 }
-
 
 /**
  * Button height fix for Firefox
@@ -298,7 +299,7 @@ hr {
 }
 
 .content_burger {
-    background-color: #fff;
+    background-color: var(--blanc);
     position: fixed;
     padding: 15px;
     border-radius: 50%;
@@ -306,7 +307,6 @@ hr {
     right: 30px;
     z-index: 800;
 }
-
 
 /**
  * Focus fix for Chrome
@@ -316,34 +316,27 @@ hr {
     outline: 0;
 }
 
-.hamburger:before,
-.hamburger:after {
+.hamburger:before, .hamburger:after {
     content: "";
 }
 
-.hamburger:before,
-.hamburger .icon,
-.hamburger:after {
+.hamburger:before, .hamburger .icon, .hamburger:after {
     display: block;
     width: 100%;
     height: .2em;
     margin: 0 0 .2em;
     transition: transform .2s ease-in-out;
     border-radius: .05em;
-    background-color: #333333;
+    background-color: var(--black333);
 }
-
 
 /**
  * Styles for the active `.hamburger` icon
  */
 
-.hamburger.active:before,
-.hamburger.active .icon,
-.hamburger.active:after {
-    background-color: #333333;
+.hamburger.active:before, .hamburger.active .icon, .hamburger.active:after {
+    background-color:var(--black333);
 }
-
 
 /**
  * LEFT ARROW
@@ -367,7 +360,6 @@ hr {
     transform: translateX(.4em) translateY(-.2em) rotate(-45deg);
 }
 
-
 /*** icon */
 
 .header__icon {
@@ -378,7 +370,7 @@ hr {
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: #FF9;
+    background-color: var(--jaune);
     right: 20px;
     z-index: 5000;
     text-align: center;
@@ -393,7 +385,7 @@ hr {
 }
 
 .fecha {
-    color: #FFF;
+    color: var(--gris);
     display: block;
     cursor: pointer;
     font-size: 20px;
@@ -403,7 +395,7 @@ hr {
     padding-left: 5px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #CCC;
+    border-bottom-color:var(--gris);
     font-weight: bold;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -411,8 +403,8 @@ hr {
 
 .header {
     right: 0;
-    color: #333;
-    background-color: #FFF;
+    color:var(--black333);
+    background-color:var(--blanc);
     width: 100%;
     padding: 10px;
     position: fixed;
@@ -432,7 +424,6 @@ hr {
     margin-top: 10px;
 }
 
-
 /*--*/
 
 .ch_hastag {
@@ -441,7 +432,7 @@ hr {
 
 .ch_hastag li a {
     list-style-type: none;
-    color: #6CF;
+    color: var(--bleu);
 }
 
 .site-nav ul {
@@ -458,7 +449,7 @@ hr {
     text-decoration: none;
     padding: 5px;
     font-weight: bold;
-    color: #CCC;
+    color: var(--gris);
 }
 
 .social li a {
@@ -466,13 +457,12 @@ hr {
     text-decoration: none;
     display: block;
     border-radius: 4px;
-    color: #FFF;
+    color:var(--blanc);
 }
 
 .share {
-    color: #525050;
+    color: var(--grisfort);
 }
-
 
 /*localiza */
 
@@ -480,10 +470,10 @@ hr {
     position: fixed;
     bottom: 30px;
     left: 20px;
-    background-color: #FFF;
+    background-color: var(--blanc);
     padding: 10px;
     border-radius: 10px;
-    border: solid 1px #6d6c65;
+    border: solid 1px var(--grisfort);
 }
 
 .localiza {
@@ -499,8 +489,8 @@ hr {
     cursor: pointer;
     line-height: 50px;
     padding: 5px;
-    background-color: #09F;
-    color: #FFF;
+    background-color: var(--bleu);
+    color: var(--blanc);
 }
 
 .localiza .material-icons {
@@ -516,7 +506,6 @@ hr {
     bottom: 150px;
     left: 10px;
 }
-
 
 /* scrool top*/
 
@@ -537,7 +526,7 @@ hr {
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
     -moz-transition: opacity .3s 0s, visibility 0s .3s;
     transition: opacity .3s 0s, visibility 0s .3s;
-    background-color: #FF9;
+    background-color: var(--jaune);
     font-size: 90%;
     cursor: pointer;
     background-image: url(../images/top.png);
@@ -545,9 +534,7 @@ hr {
     background-position: center center;
 }
 
-.cd-top.cd-is-visible,
-.cd-top.cd-fade-out,
-.no-touch .cd-top:hover {
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
     -webkit-transition: opacity .3s 0s, visibility 0s 0s;
     -moz-transition: opacity .3s 0s, visibility 0s 0s;
     transition: opacity .3s 0s, visibility 0s 0s;
@@ -559,7 +546,6 @@ hr {
     opacity: 1;
 }
 
-
 /*foto*/
 
 .mapa_foto {
@@ -570,7 +556,7 @@ hr {
 }
 
 .modal_my {
-    background-color: #FFF;
+    background-color: var(--blanc);
     margin-top: 40px;
     margin-bottom: 30px;
     padding-right: 15px;
@@ -583,7 +569,7 @@ hr {
 }
 
 .fond {
-    background-color: #F66;
+    background-color:var(--rose);
 }
 
 .foto {
@@ -602,9 +588,9 @@ hr {
 .post {
     height: 250px;
     overflow: hidden;
-    background-color: #FFFFFF;
+    background-color: var(--blanc);
     margin-bottom: 15px;
-    border: 1px solid #DDD;
+    border: 1px solid var(--grisclair);
     position: relative;
     border-radius: 3px;
 }
@@ -613,19 +599,19 @@ hr {
     padding: 10px;
     position: absolute;
     bottom: 0px;
-    background-color: #FFF;
+    background-color: var(--blanc);
     width: 100%;
     border-top-width: 1px;
     border-top-style: dotted;
-    border-top-color: #E2E2E2;
+    border-top-color: var(--grisclair);
 }
 
 .infos_foto a {
-    color: #069;
+    color:var(--bleu);
 }
 
 .social a {
-    color: #CCC
+    color: var(--gris)
 }
 
 .content {
@@ -635,9 +621,8 @@ hr {
 }
 
 .content a {
-    color: #087dc5;
+    color: var(--bleu);
 }
-
 
 /*footer--*/
 
@@ -647,19 +632,18 @@ hr {
 }
 
 .footer {
-    background-color: #151313;
+    background-color: var(--balck);
     text-align: center;
     font-size: 13px;
-    color: #666;
+    color: var(--grisclair);
     padding: 15px;
     margin-top: 20px;
 }
 
 .foto_profil a {
-    color: #999;
+    color: var(--grisfort);
     text-decoration: none;
 }
-
 
 /* MAPA */
 
@@ -677,14 +661,13 @@ hr {
 
 .croix {}
 
-.croix:before,
-.croix:after {
+.croix:before, .croix:after {
     position: absolute;
     left: 20px;
     content: ' ';
     height: 40px;
     width: 2px;
-    background-color: #333;
+    background-color:var(--black333);
 }
 
 .croix:before {
@@ -715,12 +698,12 @@ hr {
     overflow-x: auto;
     overflow-y: hidden;
     padding-top: 0;
-    background-color: #FFF;
+    background-color:var(--blanc);
     white-space: nowrap;
 }
 
 .tabs_img span {
-    color: #000000;
+    color:var(--balck);
     font-size: 11px;
 }
 
@@ -742,16 +725,16 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #FF9;
+    background-color: var(--jaune);
 }
 
 .bulle a {
-    color: #FFF;
+    color: var(--blanc);
 }
 
 .bulle h3 {
     position: absolute;
-    background-color: #FFF;
+    background-color:var(--blanc);
     padding: 3px;
     text-transform: uppercase;
     font-size: 18px;
@@ -782,7 +765,7 @@ hr {
     position: absolute;
     bottom: 0px;
     padding: 8px;
-    color: #FFF;
+    color:var(--blanc);
     width: 300px;
 }
 
@@ -800,7 +783,7 @@ hr {
     width: 100%;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.2);
-    color: #FFF;
+    color: var(--blanc);
 }
 
 .resetzoom {
@@ -819,13 +802,12 @@ hr {
     right: 10px;
 }
 
-
 /*nav footer*/
 
 .more-notes {
-    background-color: #ffc;
+    background-color:var(--jaune);
     border-radius: 5px;
-    color: #333;
+    color: var(--black333);
     line-height: 25px;
     margin-top: 5px;
     padding: 10px;
@@ -838,11 +820,9 @@ hr {
     float: left;
 }
 
-.seguinte,
-.precedente,
-.lista {
-    background-color: #36c;
-    border: 1px solid #ccc;
+.seguinte, .precedente, .lista {
+    background-color: var(--bleu);
+    border: 1px solid var(var(--gris));
     padding-right: 8px;
     padding-left: 8px;
 }
@@ -856,7 +836,7 @@ hr {
 }
 
 .nav a {
-    color: #FFF;
+    color: var(--blanc);
     text-decoration: none;
     font-weight: bold;
 }
@@ -876,23 +856,22 @@ hr {
 }
 
 .top_tag {
-    color: #666;
+    color: var(--gris);
 }
 
 .top_tag li a {
-    color: #087dc5;
+    color: var(--bleu);
     font-size: 14px;
     font-variant: all-small-caps;
 }
 
-.label a,
-.badge a {
-    color: #FFF;
+.label a, .badge a {
+    color: var(--blanc);
 }
 
 .pat {
     font-size: 18px;
-    color: #666;
+    color: var(--gris);
     vertical-align: middle;
     line-height: normal;
 }
@@ -902,7 +881,7 @@ hr {
 }
 
 .cherche {
-    background-color: #e0dfdf;
+    background-color: var(--grisclair);
     border-radius: 20px;
     border: none;
 }
@@ -922,10 +901,10 @@ hr {
 .r {
     position: absolute;
     width: 95%;
-    background-color: #fff;
+    background-color: var(--blanc);
     margin-top: 5px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ffffffe6;
     overflow-y: auto;
     max-height: 100vh;
     padding: 5px;
@@ -933,10 +912,9 @@ hr {
 }
 
 .r li a {
-    color: #000;
+    color: var(--balck);
     font-weight: bold;
 }
-
 
 /* MY PHOTO */
 
@@ -946,7 +924,7 @@ hr {
     height: inherit;
     overflow-y: scroll;
     text-align: center;
-    background-color: #fff;
+    background-color: var(--blanc);
     z-index: 900;
     top: 0px;
     padding-top: 30px;
@@ -976,11 +954,11 @@ hr {
 }
 
 .flex-container p {
-    background-color: #1e6bf9bf;
+    background-color: var(--bleu);
     padding: 5px;
     font-size: 13px;
     border-radius: 5px;
-    color: #fff;
+    color: var(--blanc);
     margin: 5px;
 }
 
@@ -996,7 +974,7 @@ hr {
 .flex-container p a {
     margin-right: 10px;
     margin-left: 5px;
-    color: #fff;
+    color: var(--blanc);
 }
 
 #remove {
@@ -1012,17 +990,16 @@ hr {
     top: 60px;
     position: absolute;
     display: none;
-    background-color: #fff;
+    background-color:var(--blanc);
     padding: 2px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#my_fav span,
-#my_fav2 span {
+#my_fav span, #my_fav2 span {
     font-size: 11px;
-    background-color: red;
-    color: #fff;
+    background-color: var(--red);
+    color:var(--blanc);
     padding: 2px;
     margin-right: 5px;
 }
@@ -1030,51 +1007,46 @@ hr {
 .favOK {
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color: var(--blanc);
     padding: 3px;
     font-size: 13px;
     right: 3px;
-    color: #f10b0b;
+    color: var(--red);
 }
 
 .myfavphoto {
-    color: #f10b0b;
+    color: var(--red);
 }
 
 #my_fav2 {
-    color: #000;
+    color: var(--balck);
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    border: solid 1px #ccc;
+    border: solid 1px var(--gris);
     margin: 40px;
     padding: 5px;
-    background-color: #dad5d5;
+    background-color: var(--grisclair);
     display: none;
 }
 
 #my_fav2:hover {
-    background-color: #fff;
+    background-color: var(--blanc);
 }
 
-
 /*DEVISSES*/
-
 
 /* Large desktop */
 
 @media (min-width: 1200px) {}
 
-
 /* Portrait tablet to landscape and desktop */
 
 @media (min-width: 768px) and (max-width: 979px) {}
 
-
 /* Landscape phone to portrait tablet */
 
 @media (max-width: 767px) {}
-
 
 /* Landscape phones and down */
 
@@ -1109,7 +1081,6 @@ hr {
     }
 }
 
-
 /*animate heart */
 
 @keyframes animateHeart {
@@ -1134,31 +1105,23 @@ hr {
 }
 
 @keyframes shake {
-    10%,
-    90% {
+    10%, 90% {
         transform: translate3d(-1px, 0, 0);
     }
-    20%,
-    80% {
+    20%, 80% {
         transform: translate3d(2px, 0, 0);
     }
-    30%,
-    50%,
-    70% {
+    30%, 50%, 70% {
         transform: translate3d(-4px, 0, 0);
     }
-    40%,
-    60% {
+    40%, 60% {
         transform: translate3d(4px, 0, 0);
     }
 }
 
-
 /*spinner */
 
-.loader,
-.loader:before,
-.loader:after {
+.loader, .loader:before, .loader:after {
     border-radius: 50%;
     width: 2.5em;
     height: 2.5em;
@@ -1169,7 +1132,7 @@ hr {
 }
 
 .loader {
-    color: #211f1f;
+    color: var(--black);
     font-size: 10px;
     margin: 80px auto;
     position: relative;
@@ -1181,8 +1144,7 @@ hr {
     animation-delay: -0.16s;
 }
 
-.loader:before,
-.loader:after {
+.loader:before, .loader:after {
     content: '';
     position: absolute;
     top: 0;
@@ -1199,9 +1161,7 @@ hr {
 }
 
 @-webkit-keyframes load7 {
-    0%,
-    80%,
-    100% {
+    0%, 80%, 100% {
         box-shadow: 0 2.5em 0 -1.3em;
     }
     40% {
@@ -1210,9 +1170,7 @@ hr {
 }
 
 @keyframes load7 {
-    0%,
-    80%,
-    100% {
+    0%, 80%, 100% {
         box-shadow: 0 2.5em 0 -1.3em;
     }
     40% {

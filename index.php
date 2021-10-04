@@ -3,6 +3,7 @@
 use \guia\Mobile_Detect;
 use \guia\Divers;
 use \guia\Hastag;
+
 require 'vendor/autoload.php';
 
 ////
@@ -104,11 +105,7 @@ $dtc = $pages->detect("index");
 
   <div class="title">
     <h1>Picture Guide </h1>
-    <h2>Pequeno guia de <?= $nbPages; ?> <?php if ($nbPages > 1) {
-                                            echo "paginas";
-                                          } else {
-                                            echo "pagina";
-                                          } ?> </h2>
+    <h2>Pequeno guia de <?= $nbPages; ?> <?php if ($nbPages > 1) { echo "paginas"; } else { echo "pagina";} ?> </h2>
     <p> <i class="material-icons-two-tone">map</i><a href="mapa.php">ver no mapa »</a></p>
   </div>
 
@@ -122,7 +119,7 @@ $dtc = $pages->detect("index");
         <a href="foto.php?id=<?= $req->id; ?>" target="_blank"><img src="<?= $image; ?>" alt="<?= $req->title; ?>" width="100%" /></a>
         <h4><?= $req->title; ?></h4>
         <div class="plus"> <?php if ($req->recomendo == "yes") : ?><i class="recomendo material-icons">favorite</i><?php endif; ?></div>
-        <p><?= $hast->convertHashtags($req->message, "hastag.php"); ?></p>
+        <p><?= $hast->convertHashtags($req->message, "hastag.php");echo $pages->extinct($req->id, 'extinct')>0? '<i class="material-icons myfavphoto ">info</i> ' : ''; ?></p>
 
 
       </div>
@@ -167,8 +164,8 @@ $dtc = $pages->detect("index");
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+ <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
   <script src="js/localize.js"> </script>
 
   <script src="js/app.js"> </script>

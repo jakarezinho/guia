@@ -3,7 +3,7 @@
 use \Login\App;
 use \Login\Session;
 use \Login\Validator;
-require 'inc/bootstrap.php';
+
 require '../vendor/autoload.php';
 if(isset($_GET['id']) && isset($_GET['token'])){
     $auth = App::getAuth();

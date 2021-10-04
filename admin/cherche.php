@@ -6,8 +6,6 @@ use \Login\Guia\Divers;
 use \Login\Guia\Hastag;
 use Login\Guia\Galeria;
 
-require 'inc/bootstrap.php';
-
 require '../vendor/autoload.php';
 
 App::getAuth()->restrict();
@@ -29,7 +27,7 @@ if (isset($_GET['p'])  && $_GET['p'] > 0 && $_GET['p'] <= $nbPages) {
   $Cpage = 1;
 }
 
-$result = $pages->cherche($search, $perPage, $Cpage, $public)->fetchAll(PDO::FETCH_OBJ);
+$result = $pages->cherche($search, $perPage, $Cpage, $public);
 
 //////include header //
 include 'inc/header.php'
@@ -54,7 +52,7 @@ include 'inc/header.php'
           <?= $mini; ?>
         </div>
         <div class="media-body">
-          <p class="media-heading"><strong><?= $req->title; ?></strong> /<a href="edite.php?id=<?= $req->id; ?>">/Editar</a></p>
+          <p class="media-heading"><strong><?= $req->title; ?></strong> //<a href="edite.php?id=<?= $req->id; ?>">Editar</a><br><small><?= date_format(date_create($req->time),"d-m-Y H:i:s"); ?></small></p>
 
           <p> <?= $hast->convertHashtags($req->message, "h.php"); ?> </p>
 

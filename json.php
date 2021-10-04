@@ -13,7 +13,7 @@ $lng = $_GET['lng'];
 ///// por perto
 $radius =1;
 $limite= 10;
- $array= $pages->porperto($lat ,$lng ,$radius,$limite)->fetchAll(PDO::FETCH_ASSOC);
+ $array= $pages->porperto($lat ,$lng ,$radius,$limite);
 					echo json_encode($array);
 }else{echo 'error';}
  ?>

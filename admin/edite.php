@@ -7,7 +7,7 @@ use \Login\Guia\Divers;
 use \Login\Guia\Hastag;
 use Login\Guia\Galeria;
 
-require 'inc/bootstrap.php';
+
 require '../vendor/autoload.php';
 $auth = App::getAuth();
 App::getAuth()->restrict();
@@ -125,7 +125,7 @@ include 'inc/header.php'
       }
       echo "</ul> </div>";
     } ?>
-    <p>Lat <?= $items->lat; ?> / Lng <?= $items->lng; ?> / data: <?= $items->time; ?> </p>
+    <p>Lat <?= $items->lat; ?> / Lng <?= $items->lng; ?> / data: <?= date_format(date_create($items->time),"d-m-Y H:i:s");?> </p>
 
     <hr>
     <div class="row">
@@ -153,8 +153,8 @@ include 'inc/header.php'
             <select class="form-control" name="public" id="public">
               <label for="public ">publicado</label>
               <option value="<?= $items->public; ?>" selected><?= $pages->publicado($items->public); ?></option>
-              <option value="0">Não publicado</option>
-              <option value="1">publicado</option>
+              <?php echo  $items->public == 1? '<option value="0">Não publicar</option>':'<option value="1">Publicar</option>';?>
+         
             </select>
           </div>
 
@@ -162,8 +162,7 @@ include 'inc/header.php'
             <label for="recomendado ">Recomendado</label>
             <select class="form-control" name="recomendado" id="recomendado">
               <option value="<?= $items->recomendo; ?>" selected><?= $pages->publicado($items->recomendo); ?></option>
-              <option value="non">não recomendado</option>
-              <option value="yes">recomendado</option>
+              <?php echo  $items->recomendo == 'non'? '<option value="yes">Recomendado</option>':'<option value="non">Não recomendado</option>';?>
             </select>
           </div>
 
@@ -207,7 +206,7 @@ include 'inc/header.php'
       <input name="infos" type="hidden" class="form-control" id="infos" value="<?= $id; ?>">
     </form>
     <hr>
-    <h3> Histórico</h3>
+    <h3> Histórico </h3>
     <div>
     </div>
     <div id="historydisplay"></div>
@@ -220,7 +219,7 @@ include 'inc/header.php'
         <input type="hidden" name="id_photo" id="id_photo" value="<?= $id ?>">
         <input type="hidden" name="history" id="history" value="history">
       </div>
-      <div class="form-group"><button type="submit" class="btn btn-lg btn-block btn-secondary">Enviar foto para o historico » </button></div>
+      <div class="form-group"><button type="submit" class="btn btn-lg btn-block btn-secondary">Enviar uma foto para o historico » </button></div>
     </form>
     <h4> Histórico deste local em photos</h4>
     <div class="row">

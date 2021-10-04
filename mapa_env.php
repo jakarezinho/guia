@@ -180,7 +180,7 @@ if (isset($_POST['lat']) && isset($_POST['lng'])) {
         })
         // var bounds = L.latLngBounds()
 
-        fetch(url + '?' + 'lat=' + lat + '&lng=' + lng + '&radius=' + radius)
+        fetch(`${url}?lat=${lat}&lng=${lng}$radius=${radius}`)
           .then(response => {
             if (response.status == 200 && response.ok == true) {
               response.json()

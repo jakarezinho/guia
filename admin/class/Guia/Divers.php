@@ -3,6 +3,7 @@
 namespace Login\Guia;
 
 use Login\App;
+use \PDO;
 
 class Divers
 {
@@ -44,7 +45,7 @@ class Divers
     {
 
         $paged = ($Cpage - 1) * $perPage;
-        $r = $this->db->query("SELECT * FROM hastag WHERE public=$public ORDER BY id DESC  LIMIT $paged ,$perPage");
+        $r = $this->db->query("SELECT * FROM hastag WHERE public=$public ORDER BY id DESC  LIMIT $paged ,$perPage")->fetchAll(PDO::FETCH_OBJ);
         return $r;
     }
 
@@ -60,23 +61,23 @@ class Divers
         }
     }
 
-    ////// ARTIGOS PHOTOS PUBLICADOS  
+    ////// ARTIGOS PHOTOS PUBLICADOS  ou RECOMENDADOS
     public function publicado($public)
     {
         if ($public == "1") {
-            return "publicadas";
+            return "Publicado";
         } elseif ($public == "0") {
             return "Não publicado";
         } elseif ($public == "non") {
-            return "sem recomendação";
+            return "Sem recomendação";
         } elseif ($public == "yes") {
-            return "recomendado";
+            return "Recomendado";
         }
     }
 
 
     ///////// PAGINAÇÃO ARTIGOS PHOTOS 
-    public function paginate_num($item_per_page, $current_page, $total_records, $total_pages, $page_url)
+    public function  paginate_num($current_page, $total_pages, $nbPages, $page_url)
     {
         $pagination = '';
         if ($total_pages > 0 && $total_pages != 1 && $current_page <= $total_pages) { //verify total pages and current page number
@@ -107,15 +108,16 @@ class Divers
                 $pagination .= '<li class="active page-item"><a class="page-link"  href="#">' . $current_page . '</a></li>';
             }
 
-            for ($i = $current_page + 1; $i < $right_links; $i++) { //create right-hand side links
-                if ($i <= $total_pages) {
+            for ($i = ($current_page + 1); $i < $right_links; $i++) { //create right-hand side links
+                if ($i <= $nbPages) {
                     $pagination .= '<li class="page-item"><a class="page-link"  href="' . $page_url . '?p=' . $i . '">' . $i . '</a></li>';
                 }
             }
-            if ($current_page < $total_pages) {
+            //////aqui
+            if ($current_page + 1 <= $nbPages) {
                 $next_link = $current_page + 1;
-                $pagination .= '<li class="page-item"><a class="page-link" href="' . $page_url . '?p=' . $next_link . '" > &rarr;</a></li>'; //next link
-                $pagination .= '<liv class="last"><a class="page-link"  href="' . $page_url . '?p=' . $total_pages . '" title="Last">&raquo;</a></li>'; //last link
+                $pagination .= '<li class="page-item"><a class="page-link" href="' . $page_url . '?p=' . $next_link . '" > &rarr;</a> next</li>'; //next link
+                $pagination .= '<liv class="last"><a class="page-link"  href="' . $page_url . '?p=' . $nbPages . '" title="Last">&raquo;</a> last</li>'; //last link
             }
 
             $pagination .= '</ul>';

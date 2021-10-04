@@ -9,17 +9,18 @@ class Divers
 
 
 	private $db;
+	private $actual_link;
 	public function __construct()
 	{
 		$this->db = App::getDatabase();
+		$this->actual_link = (isset($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
 	}
 
 	//// GET PHOTO
-
 	public function foto($local_id)
 	{
 		$n = $this->db->query("SELECT * FROM hastag WHERE id= '$local_id'  AND public='1'");
-		return $n;
+		return $n->fetch(PDO::FETCH_OBJ);
 	}
 
 
@@ -53,7 +54,7 @@ class Divers
 			$articles = $this->db->query("SELECT  * FROM hastag WHERE public='1' ORDER BY id DESC  LIMIT $paged ,$perPage");
 		}
 
-		return $articles;
+		return $articles->fetchAll(PDO::FETCH_OBJ);
 	}
 
 	/// PAGINATE 
@@ -124,10 +125,12 @@ class Divers
 	////REFER LINK
 
 	public function refer($link)
-	{
-		$states = explode('guia', $link, -1);
+	{   //se esta num directorio guia///
+		$states = explode('guia/', $link, -1);
 		$str = implode(' ', $states);
-		if (isset($link) && $str == "https://www.pequeno.eu/") {
+		//////////////////////////////////
+		
+		if (isset($link) && $link == $this->actual_link) {
 			return true;
 		} else {
 			return false;
@@ -140,11 +143,11 @@ class Divers
 	public function detect($prov, $id = null)
 	{
 		if ($prov == "foto") {
-			$url = "https://www.pequeno.eu/guia/foto.php?id=$id";
+			$url = $this->actual_link . "/foto.php?id=$id";
 		} else if ($prov == "hastag") {
-			$url = "https://www.pequeno.eu/guia/hastag.php?hastag=$id";
+			$url = $this->actual_link . "/hastag.php?hastag=$id";
 		} else {
-			$url = "https://www.pequeno.eu/guia/";
+			$url = $this->actual_link;
 		}
 		return trim($url);
 	}
@@ -163,7 +166,7 @@ class Divers
 	public function porperto($lat, $lng, $radius, $limite = 5)
 	{
 		$perto = $this->db->query("SELECT  *,( 6371 * acos( cos( radians('$lat') ) * cos( radians( lat ) ) * cos( radians( lng ) - radians('$lng') ) + sin( radians('$lat') ) * sin( radians( lat ) ) ) ) AS distance FROM hastag WHERE public='1' HAVING distance < '$radius' ORDER BY distance LIMIT 0 , $limite");
-		return $perto;
+		return $perto->fetchAll(PDO::FETCH_OBJ);
 	}
 
 	///LOCAIS POR PERTO PAGINATION 
@@ -171,7 +174,7 @@ class Divers
 	{
 		$paged = ($page - 1) * $perpage;
 		$perto_feed = $this->db->query("SELECT  *,( 6371 * acos( cos( radians('$lat') ) * cos( radians( lat ) ) * cos( radians( lng ) - radians('$lng') ) + sin( radians('$lat') ) * sin( radians( lat ) ) ) ) AS distance FROM hastag WHERE public='1' HAVING distance < '$radius' ORDER BY distance LIMIT $paged ,$perpage");
-		return $perto_feed;
+		return $perto_feed->fetchAll(PDO::FETCH_ASSOC);
 	}
 
 	//////POR PERTO JSON //////
@@ -188,5 +191,13 @@ class Divers
 	public function img_utilities($img)
 	{
 		return  getimagesize($img);
+	}
+
+	/////// EXTINTO NÃO EXISTE
+	public function extinct($id, $name)
+	{
+		$nbArt = $this->db->query("SELECT hastag FROM hastag WHERE id = $id AND hastag LIKE '%$name%'");
+
+		return $nbArt->rowCount();
 	}
 }//class

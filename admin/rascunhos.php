@@ -7,7 +7,6 @@ use \Login\Guia\Divers;
 use Login\Guia\Galeria;
 use \Login\Guia\Hastag;
 
-require 'inc/bootstrap.php';
 require '../vendor/autoload.php';
 $auth = App::getAuth();
 App::getAuth()->restrict();
@@ -44,7 +43,7 @@ include 'inc/header.php'
 
     <hr>
     <ol id="dados" class="list-unstyled">
-      <?php while ($req = $r->fetch(PDO::FETCH_OBJ)) : ?>
+      <?php  foreach($r as $req)  : ?>
         <?php $history_galeria = $galeria->history_index($req->id); ?>
         <?php $m =  $my_save_dir . 'pequena' . $req->id . '.jpg';
         $mini = file_exists($m) ? '<img class="media-object" src=' . $m . '>' : '<img class="media-object"  src="default.jpg">'; ?>
@@ -55,21 +54,21 @@ include 'inc/header.php'
             <?= $mini; ?>
           </div>
           <div class="media-body">
-            <p class="media-heading"><strong><?= $req->title; ?></strong> /<a href="edite.php?id=<?= $req->id; ?>">/Editar</a></p>
-           
+            <p class="media-heading"><strong><?= $req->title; ?></strong> //<a href="edite.php?id=<?= $req->id; ?>">Editar</a><br><small><?= date_format(date_create($req->time),"d-m-Y H:i:s");?></small> </p>
+          
             <p> <?= $hast->convertHashtags($req->message, "h.php"); ?> </p>
 
           </div>
-          <?php echo  count($history_galeria) > 0 ? '<p> Eliminar primeiro  as fotos do historico !</p>' : ' <p class="delete">REMOVER </p>';
-            ?>
+          <?php echo  count($history_galeria) > 0 ? '<p> Eliminar primeiro  as fotos do historico !</p>' : ' <p class="delete">REMOVER </p>';?>
 
         </li>
 
-      <?php endwhile; ?>
+      <?php endforeach; ?>
     </ol>
     <nav>
-      <?= $pages->paginate_num($perPage, $Cpage, $total, $nbPages, "rascunhos.php"); ?>
+     
+      <?= $pages->paginate_num($Cpage, $total,$nbPages, "rascunhos.php"); ?>
     </nav>
-    <hr>
+    
   </div>
   <?php include 'inc/footer.php'; ?>

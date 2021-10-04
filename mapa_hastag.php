@@ -31,7 +31,7 @@ function pagine($p, $nbPages)
   }
 }
 
-$notas = $pages->articles($perPage, $Cpage, $hastag, $refer)->fetchAll(PDO::FETCH_OBJ);
+$notas = $pages->articles($perPage, $Cpage, $hastag, $refer);
 ?>
 
 <!DOCTYPE html>

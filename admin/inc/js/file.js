@@ -3,17 +3,20 @@ var fileDisplayArea = document.getElementById('output');
 
 ///PREVIWE IMAGES
 function reader(e) {
-    var file = e.target.files[0];
     var t = e.target
+    var d = document.createElement('div')
+    d.classList.add('reader')
+    var r = document.querySelector('.reader')
+    r != null ? r.remove() : ''
+
+    console.log(r)
+    var file = e.target.files[0];
+
     var imageType = /image.jpeg/;
     if (file.type.match(imageType)) {
         var reader = new FileReader();
-        var d = document.createElement('div')
-         d.classList.add('reader')
-        reader.onload = function (e) {
-           
-            d.innerHTML = "";
 
+        reader.onload = function (e) {
             var img = new Image();
             img.src = reader.result;
 

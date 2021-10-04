@@ -1,11 +1,10 @@
 <?php 
 
 use \Login\App;
-use \Login\Session;
-use \Login\Guia\Divers;
+
 use \Login\Guia\Image;
 use \Login\Guia\Hastag;
-require 'inc/bootstrap.php';
+
 require '../vendor/autoload.php';
 $auth = App::getAuth();
 //////////////////
@@ -90,7 +89,7 @@ if (isset($_POST['photo'])) {
 					<form id="imageform" method="post" autocomplete="off" enctype="multipart/form-data" action='#'>
 						Escolher inagem: 
 						<div class="form-group">
-							<input type="file" name="photoimg" id="photoimg" />
+						<input type="file" name="photoimg" id="photoimg" onchange="reader(event)" />
 						</div>
 						<div class="form-group"><button type="submit" class="btn btn-primary btn-lg btn-block">ENVIAR FOTO </button></div>
 

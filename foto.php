@@ -27,7 +27,7 @@ $deviceType == 'computer' ? $th = 'foto_grande' : $th = 'foto_pequena';
 $link = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : "";
 //$url = isset ($_SERVER['REQUEST_URI']) ?  "https://pequeno.eu". $_SERVER['REQUEST_URI']: "";
 ///
-$nota = $pages->foto($local_id)->fetch(PDO::FETCH_OBJ);
+$nota = $pages->foto($local_id);
 
 if (!isset($nota->id)) {
   header('Location: index.php');
@@ -41,8 +41,8 @@ $dtc = $pages->detect("foto", $local_id);
 ///// por perto
 $radius = 1;
 $limite = 13;
-$ar = $pages->porperto($nota->lat, $nota->lng, $radius, $limite)->fetchAll(PDO::FETCH_OBJ);
-//var_dump($ar);
+$ar = $pages->porperto($nota->lat, $nota->lng, $radius, $limite);
+
 $conta = count($ar);
 $data = getimagesize("images_guia/grande" . $nota->id . ".jpg");
 $width = $data[0];
@@ -116,17 +116,17 @@ $height = $data[1];
             <span class="myfavphoto"></span>
             <!--//history//-->
             <?php foreach ($h as $h_item) {
-              $deviceType == 'computer' ? $th = $h_item->foto_grande : $th = $h_item->foto_grande;
-              echo '<img class="foto" src="' . $my_save_dir_historic . $th . '"><p class="content"><i class="material-icons">schedule</i>  Data: ' . $h_item->date . '</p>';
+              $deviceType == 'computer' ? $th = $h_item->foto_grande : $th = $h_item->foto_pequena;
+              echo '<img class="foto" src="' . $my_save_dir_historic . $th . '"><p class="content"><i class="material-icons">schedule</i>  Data: ' . date_format(date_create($h_item->date), "d-m-Y H:i:s") . '</p>';
             } ?>
             <img class="foto" src="<?= $image; ?>" alt="<?= $nota->title; ?>">
           </div>
           <div class="content">
 
-            <p><i class="material-icons">schedule</i><?= $nota->time ?></p>
+            <p><i class="material-icons">schedule</i><?= date_format(date_create($nota->time), "d-m-Y H:i:s"); ?></p>
             <h4 class="modal-title" id="myModalLabel"><?= $nota->title; ?></h4>
             <div class="plus"> <?php if ($nota->recomendo == "yes") : ?><i class=" recomendo material-icons">favorite</i><?php endif; ?></div>
-            <p><?= $hast->convertHashtags($nota->message, "hastag.php"); ?></p>
+            <p><?= $hast->convertHashtags($nota->message, "hastag.php");?><?= $pages->extinct($nota->id, 'extinct')>0? '<i class="material-icons myfavphoto ">info</i> ' : ''; ?></p>
           </div>
           <!--//GARDE COOKIE -->
           <p id="garde" class=" text-center "><span id="myf" class="btn btn-danger"><i class="material-icons">favorite_border</i> Adicionar ao roteiro</span></p>
@@ -159,14 +159,14 @@ $height = $data[1];
           <!--//-->
 
         </div>
-        <?php $display = count($ar);
-        if ($display > 1) : ?>
+        <?php if ($conta> 1) : ?>
           <h4> Por perto / nearby ...</h4>
 
           <?php if ($conta > 10) : ?> <p> <i class="material-icons">my_location</i> Spot!</p> <?php endif; ?>
           <hr>
           <div class="row">
-            <?php foreach ($ar as $rond) : ?>
+            <?php foreach ($ar as $rond) :?>
+             
               <?php $corrent = $rond->id == $local_id ? 'cible' : '';
               $dist = (round($rond->distance, 3)) * 1000; ?>
               <div class="col-sm-6 col-md-6 <?= $corrent; ?>">
@@ -186,7 +186,7 @@ $height = $data[1];
 
           </div>
           <!-- localiza por perto -->
-          <?php if ($display == 13) : ?>
+          <?php if ($conta == 13) : ?>
             <form action="mapa_env.php" method="post" id="local">
               <input type="hidden" id="lat" name="lat" value="<?= $nota->lat; ?>">
               <input type="hidden" id="lng" name="lng" value="<?= $nota->lng; ?>">

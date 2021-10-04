@@ -160,7 +160,7 @@ class Image
   public function update_infos($title, $message, $hastag,  $lat, $lng, $recomendo, $public, $id)
   {
 
-    $update = $this->db->query("UPDATE   hastag SET title=?, message=?, hastag=?, lat=?, lng=?, recomendo=?, public=?,time=NOW() WHERE id=?", [$title, $message, $hastag,  $lat, $lng, $recomendo, $public, $id]);
+    $update = $this->db->query("UPDATE   hastag SET title=?, message=?, hastag=?, lat=?, lng=?, recomendo=?, public=? WHERE id=?", [$title, $message, $hastag,  $lat, $lng, $recomendo, $public, $id]);
 
     if ($update) {
       return true;
@@ -179,9 +179,9 @@ class Image
 
 
   //////// DELETE FROM EDITE PAGE
-  public function delete_from_edit($id, $my_save_dir,$token)
+  public function delete_from_edit($id, $my_save_dir, $token)
   {
-    if ($_SESSION['csrf_token'] != $token){
+    if ($_SESSION['csrf_token'] != $token) {
       return false;
     }
     $grande = $my_save_dir . 'grande' . $id . '.jpg';
@@ -192,8 +192,6 @@ class Image
       unlink($pequena);
       clearstatcache();
       return true;
-   }
-
-  
+    }
   }
 }///

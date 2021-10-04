@@ -2,7 +2,7 @@
 use \Login\Autoloader;
 use \Login\App;
 use \Login\Session;
-require 'inc/bootstrap.php';
+
 require '../vendor/autoload.php';
 $auth = App::getAuth();
 $db = App::getDatabase();
@@ -10,7 +10,7 @@ $auth->connectFromCookie($db);
 if($auth->user()){
     App::redirect('account.php');
 }
-var_dump($_SESSION);
+
 if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])) {
     $user = $auth->login($db, $_POST['username'], $_POST['password'], isset($_POST['remember']));
     $session = Session::getInstance();

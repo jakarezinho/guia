@@ -1,15 +1,21 @@
-/*cherche*/
+:root {
+--jaune: #FF6;
+--blanc:#fff;
+--bleu: #00c;
+--orange:#f60;
+--gris:#ccc;
+}
 
 .r {
 	display: none;
 	position: absolute;
-	background-color: #FFF;
+	background-color: var(--blanc);
 	width: 100%;
 	padding: 20px;
 }
 
 .r ul li a {
-	color: #00C;
+	color: var(--bleu);
 	font-weight: bold;
 }
 
@@ -19,7 +25,7 @@
 }
 
 .fond {
-	background-color: #FF6;
+	background-color: var(--jaune);
 	padding-right: 0px;
 	padding-left: 0px;
 }
@@ -43,7 +49,7 @@
 }
 
 .delete {
-	color: #F60;
+	color: var(--orange);
 	cursor: pointer;
 	text-align: right;
 	margin: 0px;
@@ -51,11 +57,11 @@
 }
 
 .media {
-	background-color: #F0F0F0;
+	background-color: var(--blanc);
 	margin-bottom: 3px;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
-	border-bottom-color: #CCC;
+	border-bottom-color:var(--gris);
 	padding: 5px;
 }
 

@@ -15,7 +15,7 @@ class Auth
     {
         $this->options = array_merge($this->options, $options);
         $this->session = $session;
-        $this->actual_link = (isset($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];;
+        $this->actual_link = (isset($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
         ///
 
     }
@@ -37,7 +37,6 @@ class Auth
         ]);
         $user_id = $db->lastInsertId();
         mail($email, 'Confirmation de votre compte', "Afin de valider votre compte merci de cliquer sur ce lien\n\n{$this->actual_link}/admin/confirm.php?id=$user_id&token=$token");
-      
     }
 
     public function confirm($db, $user_id, $token)
@@ -130,7 +129,7 @@ class Auth
 
     public function resetPassword($db, $email)
     {
-    
+
         $user = $db->query('SELECT * FROM users WHERE email = ? AND confirmed_at IS NOT NULL', [$email])->fetch();
         if ($user) {
             $reset_token = Str::random(60);
@@ -153,12 +152,12 @@ class Auth
         // Check if a token is present for the current session
         if (!isset($_SESSION["csrf_token"])) {
             // No token present, generate a new one
-           $token = $this->session->write('csrf_token',Str::random(60));
-      
+            $token = $this->session->write('csrf_token', Str::random(60));
         } else {
             // Reuse the token
-            $token =$this->session->read('csrf_token'); }
-            
+            $token = $this->session->read('csrf_token');
+        }
+
         return $token;
     }
 }

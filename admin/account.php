@@ -2,7 +2,7 @@
 use \Login\Autoloader;
 use \Login\App;
 use \Login\Session;
-require 'inc/bootstrap.php';
+
 require '../vendor/autoload.php';
 $db = App::getDatabase();
 App::getAuth()->restrict();
