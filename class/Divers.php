@@ -3,6 +3,8 @@
 namespace guia;
 
 use \PDO;
+use Login\App;
+
 
 class Divers
 {

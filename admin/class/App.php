@@ -8,7 +8,7 @@ class App
 
     const DB_NAME = "guia";
     const DB_USER = "root";
-    const DB_PASS = "";
+    const DB_PASS = "root";
 
 
     static $db = null;
