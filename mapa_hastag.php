@@ -1,9 +1,10 @@
 <?php
-require 'vendor/autoload.php';
 
 use \guia\Mobile_Detect;
 use \guia\Divers;
 use \guia\Hastag;
+
+require 'vendor/autoload.php';
 
 ///
 $detect = new Mobile_Detect;

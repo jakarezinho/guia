@@ -1,5 +1,4 @@
 <?php
-require 'class/Autoloader.php';
 
 use \guia\Autoloader;
 use \guia\Mobile_Detect;

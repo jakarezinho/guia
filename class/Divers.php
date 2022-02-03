@@ -45,7 +45,7 @@ class Divers
 
 	/////// TOTAL ARTICLES
 
-	public function articles($perPage = 25, $Cpage, $hastag = false, $refer = false)
+	public function articles($perPage, $Cpage, $hastag = false, $refer = false)
 	{
 		$paged = ($Cpage - 1) * $perPage;
 		if ($hastag && $refer) {

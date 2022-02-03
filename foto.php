@@ -1,6 +1,4 @@
 <?php
-require 'class/Autoloader.php';
-
 use \guia\Divers;
 use \guia\Hastag;
 use Login\Guia\Galeria;
