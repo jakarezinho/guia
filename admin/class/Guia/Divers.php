@@ -41,7 +41,7 @@ class Divers
 
     /////// GET ARTICLES PHOTOS 
     /// function articles///>articles ($db,$total,$perPage,$Cpage,$nbPages,$public);
-    public function articles($perPage = 25, $Cpage, $public)
+    public function articles($perPage, $Cpage, $public)
     {
 
         $paged = ($Cpage - 1) * $perPage;
@@ -134,7 +134,7 @@ class Divers
     }
 
     /////// PESQUISA GERAL  ////////
-    public function cherche($text, $perPage = 25, $Cpage, $public)
+    public function cherche($text, $perPage , $Cpage, $public)
     {
 
         $paged = ($Cpage - 1) * $perPage;
