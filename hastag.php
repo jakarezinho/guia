@@ -1,10 +1,10 @@
 <?php
 
-use \guia\Autoloader;
+
 use \guia\Mobile_Detect;
 use \guia\Divers;
 use \guia\Hastag;
-use \guia\App;
+
 
 require 'vendor/autoload.php';
 ///
