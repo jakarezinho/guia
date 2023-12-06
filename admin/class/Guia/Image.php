@@ -15,11 +15,6 @@ class Image
     $this->db = App::getDatabase();
   }
 
-
-
-  //////////RSIZE IMAGE////////
-
-
   //////// FUNCTION GET GPS LATITUDE LONGITUDE 
   public function getGps($exifCoord, $hemi)
   {
@@ -63,6 +58,7 @@ class Image
       $lat = $this->getGps($exif["GPSLatitude"], $exif['GPSLatitudeRef']);
     }
     if (isset($lat) && isset($lng)) {
+
       $insert = $this->db->query("INSERT INTO hastag SET lat='$lat', lng='$lng', recomendo='non', public='0',time=NOW()");
       $local_id = $this->db->lastInsertId();
 

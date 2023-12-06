@@ -131,7 +131,7 @@ class Divers
 		$states = explode('guia/', $link, -1);
 		$str = implode(' ', $states);
 		//////////////////////////////////
-		
+
 		if (isset($link) && $link == $this->actual_link) {
 			return true;
 		} else {

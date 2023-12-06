@@ -33,7 +33,9 @@ if (isset($_GET['id'])) {
     die('<h2>Informação indesponivel</h2>');
   }
   $image = $my_save_dir . $items->foto_mini;
-}; //fin GET
+} else {
+  header('Location: public.php');
+} //fin GET
 
 $infos = [];
 $errors = [];
@@ -57,6 +59,8 @@ if (!empty($_POST['lat']) && !empty($_POST['lng'])) {
 
   if ($insert) {
     $infos['base'] = "actgualizado  hastag ok";
+    header("Refresh:1");
+    
   }
 }
 
@@ -97,13 +101,13 @@ if (isset($_POST['photo_delete']) && !empty($_POST['photo_delete']) && !empty($_
 ////////////////////////// DELETE POST////////////////
 if (isset($_POST['delete_post_id']) && !empty($_POST['delete_post_id']) && isset($_POST['csrf_token']) && !empty($_POST['csrf_token'])) {
 
-  $delete_post = $imp->delete_from_edit($_POST['delete_post_id'], $my_save_dir,$_POST['csrf_token']);
+  $delete_post = $imp->delete_from_edit($_POST['delete_post_id'], $my_save_dir, $_POST['csrf_token']);
   $delete_post == true ? header('location:public.php') : $errors['foto'] = "ERRO NA ELIMINAÇAO DO ARTIGO!";
 }
 /////header///
 include 'inc/header.php'
 ?>
-
+<header('Content-type: text/html; charset=UTF-8');></header>
 <body>
 
   <div class="container">
@@ -125,7 +129,7 @@ include 'inc/header.php'
       }
       echo "</ul> </div>";
     } ?>
-    <p>Lat <?= $items->lat; ?> / Lng <?= $items->lng; ?> / data: <?= date_format(date_create($items->time),"d-m-Y H:i:s");?> </p>
+    <p>Lat <?= $items->lat; ?> / Lng <?= $items->lng; ?> / data: <?= date_format(date_create($items->time), "d-m-Y H:i:s"); ?> </p>
 
     <hr>
     <div class="row">
@@ -153,8 +157,8 @@ include 'inc/header.php'
             <select class="form-control" name="public" id="public">
               <label for="public ">publicado</label>
               <option value="<?= $items->public; ?>" selected><?= $pages->publicado($items->public); ?></option>
-              <?php echo  $items->public == 1? '<option value="0">Não publicar</option>':'<option value="1">Publicar</option>';?>
-         
+              <?php echo  $items->public == 1 ? '<option value="0">Não publicar</option>' : '<option value="1">Publicar</option>'; ?>
+
             </select>
           </div>
 
@@ -162,7 +166,7 @@ include 'inc/header.php'
             <label for="recomendado ">Recomendado</label>
             <select class="form-control" name="recomendado" id="recomendado">
               <option value="<?= $items->recomendo; ?>" selected><?= $pages->publicado($items->recomendo); ?></option>
-              <?php echo  $items->recomendo == 'non'? '<option value="yes">Recomendado</option>':'<option value="non">Não recomendado</option>';?>
+              <?php echo  $items->recomendo == 'non' ? '<option value="yes">Recomendado</option>' : '<option value="non">Não recomendado</option>'; ?>
             </select>
           </div>
 

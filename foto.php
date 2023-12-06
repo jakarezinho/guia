@@ -1,4 +1,5 @@
 <?php
+
 use \guia\Divers;
 use \guia\Hastag;
 use Login\Guia\Galeria;
@@ -124,7 +125,7 @@ $height = $data[1];
             <p><i class="material-icons">schedule</i><?= date_format(date_create($nota->time), "d-m-Y H:i:s"); ?></p>
             <h4 class="modal-title" id="myModalLabel"><?= $nota->title; ?></h4>
             <div class="plus"> <?php if ($nota->recomendo == "yes") : ?><i class=" recomendo material-icons">favorite</i><?php endif; ?></div>
-            <p><?= $hast->convertHashtags($nota->message, "hastag.php");?><?= $pages->extinct($nota->id, 'extinct')>0? '<i class="material-icons myfavphoto ">info</i> ' : ''; ?></p>
+            <p><?= $hast->convertHashtags($nota->message, "hastag.php"); ?><?= $pages->extinct($nota->id, 'extinct') > 0 ? '<i class="material-icons myfavphoto ">info</i> ' : ''; ?></p>
           </div>
           <!--//GARDE COOKIE -->
           <p id="garde" class=" text-center "><span id="myf" class="btn btn-danger"><i class="material-icons">favorite_border</i> Adicionar ao roteiro</span></p>
@@ -157,14 +158,14 @@ $height = $data[1];
           <!--//-->
 
         </div>
-        <?php if ($conta> 1) : ?>
+        <?php if ($conta > 1) : ?>
           <h4> Por perto / nearby ...</h4>
 
           <?php if ($conta > 10) : ?> <p> <i class="material-icons">my_location</i> Spot!</p> <?php endif; ?>
           <hr>
           <div class="row">
-            <?php foreach ($ar as $rond) :?>
-             
+            <?php foreach ($ar as $rond) : ?>
+
               <?php $corrent = $rond->id == $local_id ? 'cible' : '';
               $dist = (round($rond->distance, 3)) * 1000; ?>
               <div class="col-sm-6 col-md-6 <?= $corrent; ?>">

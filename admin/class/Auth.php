@@ -56,7 +56,7 @@ class Auth
         if (!$this->session->read('auth')) {
             $this->session->setFlash('danger', $this->options['restriction_msg']);
             if (strpos($url, "/") !== false) {
-                header('Location: ../login.php');;
+                header('Location: login.php');
             } else {
                 header('Location: login.php');
             }

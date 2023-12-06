@@ -108,7 +108,7 @@ $dtc = $pages->detect("hastag", $hastag);
           <a href="foto.php?id=<?= $req->id; ?>" target="_blank"><img src="<?= $image; ?>" alt="<?= $req->title; ?>" width="100%" /></a>
           <h4><?= $req->title; ?></h4>
           <div class="plus"> <?php if ($req->recomendo == "yes") : ?><i class=" recomendo material-icons">favorite</i><?php endif; ?></div>
-          <p><?= $hast->convertHashtags($req->message, "hastag.php"); ?><?= $pages->extinct($req->id, 'extinct')>0? '<i class="material-icons myfavphoto ">info</i> ' : ''; ?></p>
+          <p><?= $hast->convertHashtags($req->message, "hastag.php"); ?><?= $pages->extinct($req->id, 'extinct')>0? '<i class="material-icons myfavphoto ">close</i> ' : ''; ?></p>
 
           <!-- <p class="samll_loc"><i class="material-icons">location_on</i> <?= $req->morada; ?></p>-->
         </div>

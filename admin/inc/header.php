@@ -10,7 +10,7 @@
   <meta name="author" content="">
   <link rel="icon" href="">
 
-  <title>Pequeno eut</title>
+  <title>Pequeno eu</title>
   <meta name="robots" content="noindex,nofollow">
   <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

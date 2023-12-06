@@ -30,7 +30,7 @@ if (isset($_POST['infos']) && !empty( $_POST['infos'])) {
 if ( !empty( $_POST['title']) ) {
 	if ( !empty( $_POST['lat']) && !empty( $_POST['lng'])) {
 	$hastag= $hast->gethashtags($_POST['texte']);
-	var_dump($hastag);
+
 
     $insert_local_ID= $imp->insert_infos_sans($_POST['title'],$_POST['texte'],$hastag,$_POST['lat'],$_POST['lng'],$recomendo='non',$public='0');
 
